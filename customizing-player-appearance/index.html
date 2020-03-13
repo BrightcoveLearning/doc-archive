@@ -1,0 +1,1192 @@
+<html lang="en" dir="ltr" class=" js"><head>
+    <meta charset="utf-8"><script type="text/javascript" src="https://bam.nr-data.net/1/e78a80aa93?a=129613202&amp;v=1167.2a4546b&amp;to=YwBUZkcFVktUWhJQX1pKd1FBDVdWGkkHXlVrBldRXQE%3D&amp;rst=13480&amp;ref=https://support.brightcove.com/customizing-player-appearance&amp;ap=18&amp;be=450&amp;fe=13462&amp;dc=8667&amp;perf=%7B%22timing%22:%7B%22of%22:1582290503439,%22n%22:0,%22f%22:0,%22dn%22:0,%22dne%22:0,%22c%22:0,%22ce%22:0,%22rq%22:117,%22rp%22:415,%22rpe%22:428,%22dl%22:450,%22di%22:8668,%22ds%22:8668,%22de%22:8730,%22dc%22:13463,%22l%22:13463,%22le%22:13465%7D,%22navigation%22:%7B%7D%7D&amp;at=T0dXEA8fRUU%3D&amp;jsonp=NREUM.setToken"></script><script src="https://js-agent.newrelic.com/nr-1167.min.js"></script><script type="text/javascript" async="" src="//cdn.feedbackify.com/f.js"></script><script async="" src="https://fullstory.com/s/fs.js"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"e78a80aa93",applicationID:"129613202"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-2728311-17", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)">
+<meta name="MobileOptimized" content="width">
+<meta name="HandheldFriendly" content="true">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="http://support.brightcove.com/sites/default/files/favicon-64.png" type="image/png">
+<link rel="alternate" hreflang="en" href="https://support.brightcove.com/customizing-player-appearance">
+<link rel="canonical" href="https://support.brightcove.com/customizing-player-appearance">
+<link rel="shortlink" href="https://support.brightcove.com/node/18066">
+<link rel="revision" href="https://support.brightcove.com/customizing-player-appearance">
+
+    <title>Customizing Player Appearance | Brightcove Learning</title>
+    <link rel="stylesheet" media="all" href="http://support.brightcove.com/sites/default/files/css/css_d7PoQ20hWbRiei75VgExP_tm8C1ylIRfzB3zIYLc5Cw.css?q23msc">
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css">
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/@unicorn-fail/drupal-bootstrap-styles@0.0.2/dist/3.4.0/8.x-3.x/drupal-bootstrap.min.css">
+<link rel="stylesheet" media="all" href="http://support.brightcove.com/sites/default/files/css/css_fr7ugR_m15spMT57voAomC2Aklj0ATM7MmH6hvb3pp4.css?q23msc">
+
+    
+<!--[if lte IE 8]>
+<script src="/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+
+    <meta name="uri-translation" content="on">
+    <script>
+window['_fs_debug'] = false; window['_fs_host'] = 'fullstory.com';
+window['_fs_org'] = 'BX3Q1';
+window['_fs_namespace'] = 'FS';
+(function(m,n,e,t,l,o,g,y){
+if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
+g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+g.consent=function(a){g("consent",!arguments.length||a)};
+g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+g.clearUserCookie=function(){};
+})(window,document,window['_fs_namespace'],'script','user');
+    </script>
+  <style type="text/css">html{_background:url(//about:blank) fixed;}.fby-on select {visibility:hidden!important;}.fby-on .fby-hide-iframe {visibility:hidden!important;}.fby-hide-embed embed {visibility:hidden!important;}.fby-hide-object object {visibility:hidden!important;}@media not screen {.fby-tab {display: none;}}#feedbackify *{box-sizing:content-box!important;-moz-box-sizing:content-box!important;-webkit-box-sizing:content-box!important;}#feedbackify input{box-sizing:border-box!important;-moz-box-sizing:border-box!important;-webkit-box-sizing:border-box!important;max-width:none!important;}#feedbackify *:before{content:none!important;}#feedbackify *:after{content:none!important;}#feedbackify ,#feedbackify div,#feedbackify span,#feedbackify textarea,#feedbackify input,#feedbackify table,#feedbackify tbody,#feedbackify tr,#feedbackify td,#feedbackify img,#feedbackify p,#feedbackify a{border:0!important;outline:none!important;width:auto;height:auto;text-align:left!important;text-indent:0!important;float:none!important;padding:0!important;margin:0!important;font:12px arial,helvetica,sans-serif!important;overflow:visible!important;color:#000!important;line-height:1.2!important;background:0 none!important;position:static!important;vertical-align:baseline!important;box-shadow:none!important;}#feedbackify table{border-collapse:collapse!important;border-spacing:0!important;max-width:inherit!important;width:auto!important;}#feedbackify td{word-break:normal!important;}#feedbackify {z-index:2147483646!important;position:static!important;top:0;left:0;}#feedbackify .fby-screen{z-index:2147483646!important;position:fixed!important;top:0;left:0;width:0;height:100%;_position:absolute!important;_top:expression(eval(document.body.scrollTop||document.documentElement.scrollTop))!important;_left:expression(eval(document.body.scrollLeft||document.documentElement.scrollLeft))!important;_width:0!important;_height:expression(document.documentElement.clientHeight||document.body.clientHeight+"px")!important;}#feedbackify .fby-mask{display:none!important;position:fixed!important;top:0;left:0;width:100%;height:100%;background-color:#000!important;opacity:0.2;filter:alpha(opacity=20);_position:absolute!important;_width:expression(document.documentElement.clientWidth||document.body.clientWidth+"px")!important;_height:expression(this.parentNode.style.height)!important;}#feedbackify .fby-show{display:block!important;visibility:visible!important;}#feedbackify .fby-hide{display:none!important;visibility:hidden!important;}</style><style type="text/css">#feedbackify .fby-tab{position:fixed!important;width:36px;height:100px;overflow:hidden!important;_position:absolute!important;}#feedbackify .fby-tab a{display:block!important;position:absolute!important;width:36px;height:100px;background-color:#000000!important;cursor:pointer!important;background:url(https://cdn.feedbackify.com/img/classic/tab.png)!important;_background:none!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/tab.png)!important;}#feedbackify .fby-tab-l{top:50%;left:0;margin-top:-50px!important;_top:expression((parseInt(this.parentNode.style.height)-this.clientHeight)/2+"px")!important;_margin-top:0!important;}#feedbackify .fby-tab-l a{margin-left:-5px!important;}#feedbackify .fby-tab-l a:hover{margin-left:-2px!important;}#feedbackify .fby-tab-r{top:50%;right:0px!important;margin-top:-50px!important;_top:expression((parseInt(this.parentNode.style.height)-this.clientHeight)/2+"px")!important;_left:expression((document.documentElement.clientWidth||document.body.clientWidth)-this.clientWidth+"px")!important;_margin-top:0!important;}#feedbackify .fby-tab-r a{margin-left:5px!important;}#feedbackify .fby-tab-r a:hover{margin-left:2px!important;}#feedbackify .fby-tab-t{top:0;margin-top:0px!important;}#feedbackify .fby-tab-b{top:auto;bottom:0!important;_top:expression(parseInt(this.parentNode.style.height)-this.clientHeight+"px")!important;}</style><style type="text/css">#feedbackify grammarly-ghost{display:none!important;}#feedbackify grammarly-btn{display:none!important;}#feedbackify #fby-form{z-index:2147483646!important;width:618px!important;position:absolute!important;}#feedbackify .fby-d-main{width:600px;height:50px;vertical-align:top!important;background-color:#FFFFFF!important;position:relative!important;}#feedbackify .fby-d{background:url(https://cdn.feedbackify.com/img/classic/dlg_shad_sprite.png)!important;_background:none!important;}#feedbackify .fby-d-h{height:9px;background:url(https://cdn.feedbackify.com/img/classic/dlg_shad_sprite_h.png)!important;_background:none!important;}#feedbackify .fby-d-h2{height:9px;background-color:#FFFFFF!important;}#feedbackify .fby-d-tl{background-position:-18px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_tl.png)!important;}#feedbackify .fby-d-t{_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_t.png,sizingMethod=scale)!important;}#feedbackify .fby-d-tr{background-position:-36px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_tr.png)!important;}#feedbackify .fby-d-l{_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_l.png,sizingMethod=scale)!important;}#feedbackify .fby-d-r{background-position:-9px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_r.png,sizingMethod=scale)!important;}#feedbackify .fby-d-bl{background-position:-54px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_bl.png)!important;}#feedbackify .fby-d-br{background-position:-72px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_br.png)!important;}#feedbackify .fby-d-b{background-position:0px -9px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_b.png,sizingMethod=scale)!important;}#feedbackify .fby-d-load{position:relative!important;}#feedbackify .fby-d-load img{position:absolute!important;left:8px;}#feedbackify .fby-d-load div{position:absolute!important;padding:4px 18px!important;font-size:16px!important;font-weight:bold!important;color:#333!important;}</style><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script></head>
+  <body class="path-node page-node-type-support-doc has-glyphicons">
+    <a href="#main-content/index.html" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas="">
+              <header class="navbar navbar-default container" id="navbar" role="banner">
+      <div class="navigation-secondary clearfix">
+          <div class="region region-navigation-secondary">
+    <section id="block-styles" class="block block-block-content block-block-contentfbb71e48-a6cd-4d2b-8239-43f18db69e60 clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><link rel="stylesheet" media="all" href="https://learning-services-media.brightcove.com/doc-assets/css/drupal-fix.css"></div>
+      
+  </section>
+
+<nav role="navigation" aria-labelledby="block-secondarynavigation-menu" id="block-secondarynavigation">
+            
+  <h2 class="visually-hidden" id="block-secondarynavigation-menu">Secondary Navigation</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="contact-support/index.html" title="Create a Support Request" data-drupal-link-system-path="node/18632">Support Request</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://status.brightcove.com/">System Status</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://university.brightcove.com/">Brightcove University</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<section id="block-gtranslate" class="block block-gtranslate block-gtranslate-block clearfix">
+  
+    
+
+      
+<div class="gtranslate">
+<script type="text/javascript">/* <![CDATA[ */
+function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;var lang=lang_pair.split('|')[1];var plang=location.pathname.split('/')[1];if(plang.length !=2 && plang != 'zh-CN' && plang != 'zh-TW')plang='en';if(lang == 'en')location.pathname=location.pathname.replace('/'+plang+'/', '/');else location.pathname='/'+lang+location.pathname.replace('/'+plang+'/', '/');}
+/* ]]> */
+</script><select onchange="doGTranslate(this);"><option value="">Select Language</option><option value="en|en" style="font-weight:bold;background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -0px;padding-left:18px;">English</option><option value="en|fr" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -160px;padding-left:18px;">French</option><option value="en|de" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -176px;padding-left:18px;">German</option><option value="en|ja" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -240px;padding-left:18px;">Japanese</option><option value="en|ko" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -256px;padding-left:18px;">Korean</option><option value="en|es" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -352px;padding-left:18px;">Spanish</option></select>
+</div>
+<div class="gtranslate__credits">
+  Translations Provided by Google Translate
+</div>
+
+  </section>
+
+
+  </div>
+
+      </div>
+      <div class="navbar-header col-md-3">
+                  <a class="logo navbar-btn pull-left" href="" title="Home" rel="home">
+            <img src="http://support.brightcove.com/themes/custom/bcdocs/images/brightcove.png" alt="Home">
+          </a>
+                
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+                    <div class="navbar-collapse collapse">
+            <div class="region region-navigation-collapsible">
+    <nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation">
+            <h2 class="sr-only" id="block-mainnavigation-menu">Main navigation</h2>
+
+      
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="brightcove-learning-home/index.html" title="Home page" data-drupal-link-system-path="node/18643">Home</a>
+                  </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Products
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="video-cloud/index.html" data-drupal-link-system-path="node/18332">Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://gallery.support.brightcove.com">Gallery</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player/index.html" data-drupal-link-system-path="node/18283">Brightcove Player</a>
+                  </li>
+                              <li class="expanded">
+        <a href="live/index.html" data-drupal-link-system-path="node/18642">Live</a>
+                  </li>
+                              <li class="expanded">
+        <a href="social/index.html" data-drupal-link-system-path="node/18444">Social</a>
+                  </li>
+                              <li class="expanded">
+        <a href="audience/index.html" data-drupal-link-system-path="node/18445">Audience</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://zencoder.support.brightcove.com">Zencoder</a>
+                  </li>
+                              <li class="expanded">
+        <a href="ssai/index.html" data-drupal-link-system-path="node/18650">SSAI</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://support.ottflow.com">OTT Flow</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Quick Links
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="analytics-api/index.html" data-drupal-link-system-path="node/18370">Analytics API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="audience-api/index.html" data-drupal-link-system-path="node/18371">Audience API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="cms-api/index.html" data-drupal-link-system-path="node/18372">CMS API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="cms-connectors-video-cloud/index.html" data-drupal-link-system-path="node/18662">CMS Connectors for Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="data-collection-api/index.html" data-drupal-link-system-path="node/18876">Data Collection API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="delivery-system-api/index.html" data-drupal-link-system-path="node/18387">Delivery System API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="developer-tools-and-concepts/index.html" data-drupal-link-system-path="node/18430">Developer Tools and Concepts</a>
+                  </li>
+                              <li class="expanded">
+        <a href="native-player-sdks/index.html" data-drupal-link-system-path="node/18367">Device SDKs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="dynamic-ingest-api/index.html" data-drupal-link-system-path="node/18373">Dynamic Ingest API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="getting-started-brightcove-apis-0/index.html" data-drupal-link-system-path="node/18711">Getting Started - Brightcove APIs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="page-experience-api/index.html" data-drupal-link-system-path="node/18616">In-Page Experience APIs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="ingest-profiles-api/index.html" data-drupal-link-system-path="node/18374">Ingest Profiles API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="live/index.html" data-drupal-link-system-path="node/18642">Live API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="oauth-api/index.html" data-drupal-link-system-path="node/18376">OAuth API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="platform-api-code-samples/index.html" data-drupal-link-system-path="node/18675">Platform API Code Samples</a>
+                  </li>
+                              <li class="expanded">
+        <a href="playback-api/index.html" data-drupal-link-system-path="node/18380">Playback API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player-code-samples/index.html" data-drupal-link-system-path="node/18630">Player Code Samples</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player-developer/index.html" data-drupal-link-system-path="node/18362">Player Developer</a>
+                  </li>
+                              <li class="expanded">
+        <a href="player-management-api/index.html" data-drupal-link-system-path="node/18378">Player Management API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="policy-api/index.html" data-drupal-link-system-path="node/18381">Policy API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="release-notes/index.html" data-drupal-link-system-path="node/18687">Release Notes</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Training
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="https://university.brightcove.com">Online Courses</a>
+                  </li>
+                              <li class="expanded">
+        <a href="register-training/index.html" data-drupal-link-system-path="node/18270">Register for a Course</a>
+                  </li>
+        </ul>
+  
+            </li>
+                              <li class="expanded">
+        <a href="brightcove-support-documentation-announcements/index.html" title="See what's new in Brightcove Documentation" data-drupal-link-system-path="node/18896">What's New</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+        </div>
+          </header>
+  
+    <div class="full-width-headline">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12" role="heading">
+            <div class="region region-header">
+          <section id="block-brightcoveheadlineblock" class="block block-bc-general block-bc-general-headline-block clearfix">
+  
+    
+
+      Documentation
+  </section>
+
+
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+      <div role="main" class="main-container container  js-quickedit-main-content">
+    <div class="row">
+
+                              <aside class="col-sm-3" role="complementary">
+              <div class="region region-sidebar-first">
+    <section class="bc-search-fixes-search-block-form block block-bc-search-fixes block-bc-search-fixes-search-block clearfix" data-drupal-selector="bc-search-fixes-search-block-form" id="block-brightcovesearchblock">
+  
+    
+
+      <form action="/customizing-player-appearance" method="post" id="bc-search-fixes-search-block-form" accept-charset="UTF-8">
+  <div class="form-item js-form-item form-type-textfield js-form-type-textfield form-item-search js-form-item-search form-no-label form-group">
+      <label for="edit-search" class="control-label sr-only">Search</label>
+  
+  
+  <input data-drupal-selector="edit-search" class="form-text form-control" type="text" id="edit-search" name="search" value="" size="15" maxlength="128" placeholder="Search">
+
+  
+  
+  </div>
+<input autocomplete="off" data-drupal-selector="form-ot2lrmrzsntyauw5pyoma-esjeft4ixsjecbgetwvtq" type="hidden" name="form_build_id" value="form-OT2lRmrzSNTyaUW5PyOma-esJEfT4ixSjeCbgetWVtQ"><input data-drupal-selector="edit-bc-search-fixes-search-block-form" type="hidden" name="form_id" value="bc_search_fixes_search_block_form"><div data-drupal-selector="edit-actions" class="form-actions form-group js-form-wrapper form-wrapper" id="edit-actions"><button data-drupal-selector="edit-submit" class="button js-form-submit form-submit btn-primary btn icon-only" type="submit" id="edit-submit" name="op" value="Search"><span class="sr-only">Search</span><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button></div>
+
+</form>
+
+  </section>
+
+<section id="block-inpagenavigationblock" class="hidden-xs block block-bc-ipnav block-bc-ipnav-block clearfix" style="width: 476px;">
+  
+      <h2 class="block-title">On This Page</h2>
+    
+
+      <div class="bc-ipnav-block"><ul><li><a href="#Create_own_skin/index.html">Create own skin</a></li><li><a href="#Player/index.html">Player</a></li><li><a href="#iframe_player/index.html">iframe player</a></li><li><a href="#Play_button/index.html">Play button</a></li><li><a href="#Controls_visibility/index.html">Controls visibility</a></li><li><a href="#Progress_bar/index.html">Progress bar</a></li><li><a href="#Volume_controls/index.html">Volume controls</a></li><li><a href="#Fonts/index.html">Fonts</a></li><li><a href="#Controlbar_icon_manipulation/index.html">Controlbar icon manipulation</a></li><li><a href="#Remove_fullscreen_icon/index.html">Remove fullscreen button</a></li><li><a href="#Controlbar_icon_glow/index.html">Controlbar icon "glow"</a></li><li><a href="#Hover_gradient/index.html">Hover gradient</a></li><li><a href="#Caption_list_items/index.html">Caption list items</a></li><li><a href="#CSS_specificity/index.html">CSS specificity</a></li><li><a href="#Component_selectors/index.html">Component selectors</a></li><li><a href="#PLAYER_CLASS/index.html">{PLAYER_CLASS}</a></li><li><a href="#bc-ipnav-16/index.html">Related content</a></li></ul></div>
+  </section>
+
+
+  </div>
+
+          </aside>
+              
+                  <section class="col-sm-9">
+
+                                      <div class="highlighted">  <div class="region region-highlighted">
+    <div data-drupal-messages-fallback="" class="hidden"></div>
+
+  </div>
+</div>
+                  
+                
+                
+                
+                          <a id="main-content"></a>
+            <div class="region region-content">
+        <h1 class="page-header"><span>Customizing Player Appearance</span>
+</h1>
+
+  
+<div class="node node--type-support-doc node--view-mode-full bcdocs-four-rows clearfix">
+
+  
+
+  <div class="group-first-row">
+      </div>
+
+  <div class="group-second-row">
+  
+  <div class="field field--name-field-products field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Product(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--product" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--product"></use>
+        </svg>
+              <div class="field--item">Video Cloud</div>
+          <div class="field--item">Brightcove Player</div>
+              </div>
+      </div>
+
+  <div class="field field--name-field-roles field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Role(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--roles" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--roles"></use>
+        </svg>
+              <div class="field--item">Player Developer</div>
+              </div>
+      </div>
+
+</div>
+
+  
+<div class="group-third-row taxonomy__tags">
+      <svg class="icon--label" viewBox="0 0 100 100">
+      <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--label"></use>
+    </svg>
+    
+  <div class="field field--name-field-topics field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Topic(s)</div>
+          <div class="field--items">
+              <div class="field--item">Styling</div>
+              </div>
+      </div>
+
+</div>
+
+  <div class="group-fourth-row">
+  
+            <div class="field field--name-field-support-doc-body field--type-text-with-summary field--label-hidden field--item"><!-- Place document intro sentence(s) here --><p>This topic is a primer on customizing the appearance of Brightcove Player. The content uses Chrome's development tools, but all modern browsers have equivalent functionality. For a brief introduction to using development tools in different browsers see the <a href="concepts-javascript-debugging-basics/index.html">Debugging Basics</a> document.</p>
+      <article class="bcls-article"><aside class="bcls-aside bcls-aside--information language-editable">This document customizes the player using CSS. There are a limited set of customization options available in Studio, which requires no knowledge of CSS to implement. See the <a href="styling-players/index.html">Styling Players</a> document for more information.</aside><section class="bcls-section"><h2 id="Create_own_skin">Create own skin</h2>
+
+<p class="language-editable">If you wish to not use the default skin and create your own, this is possible using the Player Management API. The <a href="player-configuration-guide#skin/index.html">Player Configuration Guide</a> provides the necessary information.</p>
+</section><section class="bcls-section"><h2 id="Player">Player</h2>
+
+<aside class="bcls-aside bcls-aside--information language-editable">Note: This document assumes some knowledge of CSS and using a browser's development tools to view HTML element's classes and examine applicable CSS. If you do not have the pre-requisite base knowledge it would be best if you work through the <a href="step-step-player-customization/index.html">Step-by-Step: Player Customization</a>.</aside><p class="language-editable">You can alter the appearance of the player, but you must first have a way to address it. To see this, browse an HTML page with the Advanced (in-page embed) code inserted. In the <strong><span class="notranslate">Elements</span></strong> section of the Development Tools locate the <code class=" language-editable">&lt;video-js&gt;</code> tag and you will see it has a class with the value <code class=" language-editable">video-js</code> assigned, among many others.</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="customize-player-elements" src="http://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/customize-appearance/player-elements.png"></figure><p class="language-editable">Once you know this, you can use styles to alter the player itself. For instance, to include a border around the player you can use this style:</p>
+
+<pre class="line-numbers language-html"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style language-css">
+  <span class="token selector"><span class="token class">.video-js</span> </span><span class="token punctuation">{</span>
+    <span class="token property">border-style</span><span class="token punctuation">:</span> double<span class="token punctuation">;</span>
+    <span class="token property">border-width</span><span class="token punctuation">:</span> thick<span class="token punctuation">;</span>
+    <span class="token property">border-color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="customize-player-elements" src="http://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/customize-appearance/double-border.png"></figure></section><section class="bcls-section"><h2 id="iframe_player">iframe player</h2>
+
+<p class="language-editable">If you are using the Standard (iframe) implementation of the player the situation is different. You will still see the player with the <code class=" language-editable">video-js</code> class, but it will be, of course, inside the iframe, and inside the <code class=" language-editable">video-js</code> tag.</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="iframe-player-elements" src="http://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/customize-appearance/iframe-elements.png"></figure><p class="language-editable">The styles you create will still work with the player in the iframe, but a CSS file will need to be created and associated with the player using Studio. You do this by going to the <strong>Players</strong> module, then click on the player with which you wish to associate the CSS, then in the <strong>Plugins &gt; Stylesheets</strong> section add the path you your CSS file.</p>
+
+<p class="language-editable">If you do wish to customize the iframe itself, you can do this by using an element selector. Then use a <code class=" language-editable">&lt;style&gt;</code> tag to modify as wished. In the example below a border is added around the player.</p>
+
+<pre class="line-numbers language-html"><code class=" language-html"><span class="token doctype">&lt;!doctype html&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>Untitled Document<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style language-css">
+    <span class="token selector"><span class="token class"></span></span><span class="bcls-highlight"><span class="token selector"><span class="token class">.video-js</span> </span><span class="token punctuation">{</span>
+      <span class="token property">border-style</span><span class="token punctuation">:</span> double<span class="token punctuation">;</span>
+      <span class="token property">border-width</span><span class="token punctuation">:</span> thick<span class="token punctuation">;</span>
+      <span class="token property">border-color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span></span><span class="token punctuation"></span>
+  </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>iframe</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://players.brightcove.net/1507807800001/default_default/index.html?videoId=6065136830001<span class="token punctuation">"</span></span>
+  <span class="token attr-name">allowfullscreen</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span>
+  <span class="token attr-name">allow</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>encrypted-media<span class="token punctuation">"</span></span>
+  <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>640<span class="token punctuation">"</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>360<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>iframe</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</section><section class="bcls-section"><h2 id="Play_button">Play button</h2>
+
+<p class="language-editable">If you wish to alter the appearance of the play button you first need to know how to address it. In Chrome, right click on the button. From the selections that appear choose <strong><span class="notranslate">Inspect</span></strong>. When you select <strong><span class="notranslate">Inspect</span></strong>, Chrome's&nbsp;<strong>Development Tools</strong> will open.</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="inspect-button" src="http://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/customize-appearance/inspect-button.png"></figure><p class="language-editable">In the <strong><span class="notranslate">Elements</span></strong> section of the Development Tools, you will see the HTML code that corresponds to the button element.</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="big-play-button" src="http://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/customize-appearance/big-play-button.png"></figure><p class="language-editable">From the highlighted code above, you can see the class assigned to the button is <code class=" language-editable">vjs-big-play-button</code>. The play button's color (to match the tiger) and opacity will be changed with these styles:</p>
+
+<pre class="line-numbers language-css"><code class=" language-css"><span class="token selector"><span class="token class">.vjs-big-play-button</span> </span><span class="token punctuation">{</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token hexcode">#B37D5B</span><span class="token punctuation">;</span>
+  <span class="token property">opacity</span><span class="token punctuation">:</span> <span class="token number">.6</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p class="language-editable">You would think that this approach would work, but it does not. When working with CSS you need to be aware of property specificity. This refers to how the browser determines which property values get applied to an element based on their relevance.</p>
+
+<p class="language-editable">One way to apply the button changes is to add another class in the selector. For instance, you can use the <code class=" language-editable">.video-js</code> class to increase the selector's specificity. For more details, see the <a href="#specificity/index.html">CSS specificity</a> section</p>
+
+<p class="language-editable">Then, reference the player's big play button in the CSS as follows:</p>
+
+<pre class="line-numbers language-css"><code class=" language-css"><span class="token selector"><span class="token class"><span class="bcls-highlight">.video-js</span></span> <span class="token class">.vjs-big-play-button</span> </span><span class="token punctuation">{</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token hexcode">#B37D5B</span><span class="token punctuation">;</span>
+  <span class="token property">opacity</span><span class="token punctuation">:</span> <span class="token number">.6</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p class="language-editable">Here is the result of changing the button from dark grey to orange:</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="orange-play-button" src="http://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/customize-appearance/orange-play-button.png"></figure><h3>Hide play button</h3>
+
+<p class="language-editable">You can completely hide the play button by using the following style:</p>
+
+<pre class="line-numbers language-javascript"><code class=" language-javascript">display<span class="token punctuation">:</span> none<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3>Experiment</h3>
+
+<p class="language-editable">The following CodePen permits you to experiment with the play button. Note that the triangle in the play button is actually a font, and its size is controlled with a <code class=" language-editable">font-size</code> style.</p>
+
+<div class="cp_embed_wrapper"><iframe name="cp_embed_1" src="https://codepen.io/mboles/embed/KVVNLX?height=414&amp;theme-id=14832&amp;slug-hash=KVVNLX&amp;default-tab=result&amp;user=mboles&amp;name=cp_embed_1" scrolling="no" frameborder="0" height="414" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_KVVNLX"></iframe></div>
+<script async="" src="//assets.codepen.io/assets/embed/ei.js"></script><h3>Change hover text</h3>
+
+<p class="language-editable">If you would like to change the text which displays when you hover over the big play button, which is <strong>Play Video</strong>&nbsp;by default, to something more specific to your videos, you can do that. Add the following JavaScript using your desired verbiage as the argument for the <code class=" language-editable">controlText</code> method.</p>
+
+<pre class="line-numbers language-javascript"><code class=" language-javascript">videojs<span class="token punctuation">.</span><span class="token function">getPlayer</span><span class="token punctuation">(</span><span class="token string">'myPlayerID'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">ready</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> myPlayer <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">;</span>
+  myPlayer<span class="token punctuation">.</span><span class="token function">getChild</span><span class="token punctuation">(</span><span class="token string">'bigPlayButton'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">controlText</span><span class="token punctuation">(</span><span class="token string">'Play Audio'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+</section><section class="bcls-section"><h2 id="Controls_visibility">Controls visibility</h2>
+
+<p class="language-editable">You can control if you want the controlbar, and controls contained therein, visible or not. If you wish to hide the controlbar from the start of player creation you can use this style:</p>
+
+<pre class="line-numbers language-css"><code class=" language-css"><span class="token selector"><span class="token class">.video-js</span> <span class="token class">.vjs-control-bar</span> </span><span class="token punctuation">{</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p class="language-editable">If you wish to do this dynamically based on some event, you can use the <code class=" language-editable">controlBar.hide()/show()</code> methods. The code snippet below demonstrates the methods use (this assumes you have an <code class=" language-editable">id</code> with a value of <code class=" language-editable">myPlayer</code> on the video):</p>
+
+<pre class="line-numbers language-javascript"><code class=" language-javascript"><span class="token operator">&lt;</span>video<span class="token operator">-</span>js id<span class="token operator">=</span><span class="token string">"myPlayerID"</span>
+	data<span class="token operator">-</span>video<span class="token operator">-</span>id<span class="token operator">=</span><span class="token string">"5781068653001"</span>
+	data<span class="token operator">-</span>account<span class="token operator">=</span><span class="token string">"1507807800001"</span>
+	data<span class="token operator">-</span>player<span class="token operator">=</span><span class="token string">"default"</span>
+	data<span class="token operator">-</span>embed<span class="token operator">=</span><span class="token string">"default"</span>
+	data<span class="token operator">-</span>application<span class="token operator">-</span>id
+	<span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"video-js"</span>
+	controls<span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>video<span class="token operator">-</span>js<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>script src<span class="token operator">=</span><span class="token string">"https://players.brightcove.net/1507807800001/default_default/index.min.js"</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+
+<span class="token operator">&lt;</span>p<span class="token operator">&gt;</span><span class="token operator">&lt;</span>button onclick<span class="token operator">=</span><span class="token string">"hideBtn()"</span><span class="token operator">&gt;</span>hide controls<span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>p<span class="token operator">&gt;</span><span class="token operator">&lt;</span>button onclick<span class="token operator">=</span><span class="token string">"showBtn()"</span><span class="token operator">&gt;</span>show controls<span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">&gt;</span>
+
+<span class="token operator">&lt;</span>script<span class="token operator">&gt;</span>
+  <span class="token keyword">var</span> myPlayer<span class="token punctuation">;</span>
+	videojs<span class="token punctuation">.</span><span class="token function">getPlayer</span><span class="token punctuation">(</span><span class="token string">'myPlayerID'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">ready</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		myPlayer <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token keyword">function</span> <span class="token function">hideBtn</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		myPlayer<span class="token punctuation">.</span>controlBar<span class="token punctuation">.</span><span class="token function">hide</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token keyword">function</span> <span class="token function">showBtn</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		myPlayer<span class="token punctuation">.</span>controlBar<span class="token punctuation">.</span><span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3>Controls never hide</h3>
+
+<p class="language-editable">You can also make it so the controls never hide. To do this use the <code class=" language-editable">transform.none</code> style. The selector is very long as six classes are used for the specificity of transforms.</p>
+
+<pre class="line-numbers language-css"><code class=" language-css"><span class="token selector"><span class="token class">.video-js.not-hover.vjs-has-started.vjs-paused.vjs-user-active</span> <span class="token class">.vjs-control-bar</span><span class="token pseudo-class">:not(.vjs-focus-within):not(.vjs-control-bar-visible)</span>,
+<span class="token class">.video-js.not-hover.vjs-has-started.vjs-paused.vjs-user-inactive</span> <span class="token class">.vjs-control-bar</span><span class="token pseudo-class">:not(.vjs-focus-within):not(.vjs-control-bar-visible)</span>,
+<span class="token class">.video-js.not-hover.vjs-has-started.vjs-playing.vjs-user-active</span> <span class="token class">.vjs-control-bar</span><span class="token pseudo-class">:not(.vjs-focus-within):not(.vjs-control-bar-visible)</span>,
+<span class="token class">.video-js.not-hover.vjs-has-started.vjs-playing.vjs-user-inactive</span> <span class="token class">.vjs-control-bar</span><span class="token pseudo-class">:not(.vjs-focus-within):not(.vjs-control-bar-visible)</span>,
+<span class="token class">.video-js.vjs-has-started.vjs-paused.vjs-ad-playing.vjs-user-inactive</span> <span class="token class">.vjs-control-bar</span>,
+<span class="token class">.video-js.vjs-has-started.vjs-playing.vjs-user-inactive</span> <span class="token class">.vjs-control-bar</span><span class="token pseudo-class">:not(.vjs-focus-within):not(.vjs-control-bar-visible)</span></span><span class="token punctuation">{</span>
+  <span class="token property">transform</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+  <span class="token property">-ms-transform</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<aside class="bcls-aside bcls-aside--information language-editable">Although considered a bit of a hack, you can simply repeat the class of the controlbar eight times to build its specificity to match the selector above:
+<pre class="line-numbers language-css"><code class=" language-css"><span class="token selector"><span class="token class">.vjs-control-bar.vjs-control-bar.vjs-control-bar.vjs-control-bar.vjs-control-bar.vjs-control-bar.vjs-control-bar.vjs-control-bar</span> </span><span class="token punctuation">{</span>
+  <span class="token property">transform</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+  <span class="token property">-ms-transform</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</aside><aside class="bcls-aside bcls-aside--tip language-editable">Using this CSS to stop the controlbar from disappearing is very helpful when right-clicking on elements in the controlbar to inspect them. If you don't do this, as you right-click the controlbar disappears. Also note, the first right-click displays the Brightcove Player information menu, and the <strong>second right-click will display the menu where you can choose to inspect</strong>.</aside></section><section class="bcls-section"><h2 id="Progress_bar">Progress bar</h2>
+
+<p class="language-editable">Now you will see how to change the color of the progress indicator. The default color for indicator is fuchsia, as shown here:</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="customize-player-elements" src="http://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/customize-appearance/play-progress-standard.png"></figure><p class="language-editable">The challenge here is to find the class names for the elements. Using the same technique as described earlier in the document, right-clicking on an element and choosing <strong><span class="notranslate">Inspect</span></strong>, then drilling down you will see the <code class=" language-editable">vjs-play-progress</code> class.</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="progress-and-volume-elements" src="http://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/customize-appearance/play-progress-element.png"></figure><aside class="bcls-aside bcls-aside--tip language-editable">In browsers you can actually search for class names in the console. For instance, in Chrome simply use <strong>CTL-F</strong> then enter the class for which you are looking.</aside><p class="language-editable">The <code class=" language-editable">background-color</code> changes the color of the element and needs to be styled. The needed style is shown here:</p>
+
+<pre class="line-numbers language-css"><code class=" language-css"><span class="token selector"><span class="token class">.video-js</span> <span class="token class">.vjs-play-progress</span> </span><span class="token punctuation">{</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> green<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p class="language-editable">Notice that the <code class=" language-editable">.video-js</code> class was added into the selector. This is done to increase the selector's CSS specificity.</p>
+
+<p class="language-editable">The results appear as follows, showing a now green progress bar:</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="customize-player-elements" src="http://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/customize-appearance/play-progress-green.png"></figure></section><section class="bcls-section"><h2 id="Volume_controls">Volume controls</h2>
+
+<p class="language-editable">You can customize the volume control by using CSS or by passing in the <code class=" language-editable">options</code> object during player creation.</p>
+
+<h3>Update using CSS</h3>
+
+<p class="language-editable">Now you will see how to change the color of the volume controls. The default look is shown here, a white volume button with a fuchsia volume level bar:</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="customize-player-elements" src="http://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/customize-appearance/volume-standard.png"></figure><p class="language-editable">To change the color of the volume button, and the mute button when you click it, use the selector shown here:</p>
+
+<pre class="line-numbers language-css"><code class=" language-css"><span class="token selector"><span class="token class">.vjs-volume-panel.vjs-control.vjs-volume-panel-horizontal</span> </span><span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> yellow<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p class="language-editable">To change the color of the volume bar, the <code class=" language-editable">background-color</code> of the element needs to be styled. The needed style is shown here:</p>
+
+<pre class="line-numbers language-css"><code class=" language-css"><span class="token selector"><span class="token class">.video-js</span> <span class="token class">.vjs-volume-level</span></span><span class="token punctuation">{</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> yellow<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p class="language-editable">Notice that the <code class=" language-editable">.video-js</code> class was added into the selector. This is done to increase the selector's CSS specificity.</p>
+
+<p class="language-editable">The results of styling the button and volume bar are shown here:</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="customize-player-elements" src="http://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/customize-appearance/volume-yellow.png"></figure><h3>Update using options object</h3>
+
+<p class="language-editable">To change the layout of the volume control, you can pass the <code class=" language-editable">options</code> object into the <a href="delaying-player-instantiation/index.html">bc() method</a> as follows:</p>
+
+<ol class="bcls-tasklist"><li class="language-editable">Delay player creation by removing the following attributes from the <code class=" language-editable">video</code> tag:
+
+	<ul><li class="language-editable"><code class=" language-editable">data-account</code></li>
+		<li class="language-editable"><code class=" language-editable">data-player</code></li>
+		<li class="language-editable"><code class=" language-editable">data-video-id</code></li>
+	</ul></li>
+	<li class="language-editable">Define the <code class=" language-editable">options</code> object so that the <code class=" language-editable">volumePanel</code> is vertical and not inline with the controlbar.
+	<pre class="line-numbers language-css"><code class=" language-css"><span class="token selector">var options = </span><span class="token punctuation">{</span>
+  <span class="token selector">controlBar: </span><span class="token punctuation">{</span>
+    <span class="token selector">volumePanel: </span><span class="token punctuation">{</span>
+      <span class="token property">inline</span><span class="token punctuation">:</span> false,
+      <span class="token property">vertical</span><span class="token punctuation">:</span> true
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+	</li>
+	<li class="language-editable">Add the player attributes that were initially removed.</li>
+	<li class="language-editable">Create the player by calling the <a href="delaying-player-instantiation/index.html">bc() method</a> with the <code class=" language-editable">options</code> object.
+	<pre class=" language-css"><code class=" language-css"><span class="token function">bc</span><span class="token punctuation">(</span><span class="token string">"myPlayerID"</span>, options<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+	</li>
+	<li class="language-editable">For details, see the <a href="brightcove-player-sample-vertical-volume-control/index.html">Vertical Volume Control</a> player sample.
+	<figure class="bcls-figure"><img class="bcls-image" alt="customize-player-elements" src="http://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/customize-appearance/vertical-volume.png"></figure></li>
+</ol></section><section class="bcls-section"><h2 id="Fonts">Fonts</h2>
+
+<p class="language-editable">The title and description appear when the player is first loaded, and when the user hovers over the player. You can change the style for the fonts for the title and description, either together or separately. The HTML for the <strong>dock</strong> appears as shown in the following screenshot. Note that there is a <code class=" language-editable">&lt;div&gt;</code> element with a class of <code class=" language-editable">vjs-dock-text</code> that contains two other <code class=" language-editable">&lt;div&gt;</code> elements that contain the <strong>title</strong> and <strong>description</strong>.</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="dock text selectors" src="http://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/customize-appearance/dock-text-elements.png"></figure><p class="language-editable">You can affect both the title and description by setting a style on the <code class=" language-editable">vjs-dock-text</code> class. Note that styles set on the <code class=" language-editable">.vjs-dock-title</code> and <code class=" language-editable">.vjs-dock-description</code> will, of course, not be completely overridden by the style set at a higher level. Some styles are inherited, as shown by the following style and its result on the text:</p>
+
+<pre class="line-numbers language-css"><code class=" language-css"><span class="token selector"><span class="token class">.video-js</span> <span class="token class">.vjs-dock-text</span> </span><span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> yellow<span class="token punctuation">;</span>
+  <span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token number">.7</span>em<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="dock text selector example" src="http://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/customize-appearance/dock-text-selector.png"></figure><p class="language-editable">You can directly style the individual title and description. The following shows styles set on the <code class=" language-editable">.vjs-dock-title</code> and <code class=" language-editable">.vjs-dock-description</code> class selectors, with the resulting text displaying the styles:</p>
+
+<pre class="line-numbers language-css"><code class=" language-css"><span class="token selector"><span class="token class">.video-js</span> <span class="token class">.vjs-dock-title</span> </span><span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+  <span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token number">1.5</span>em<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector"><span class="token class">.video-js</span> <span class="token class">.vjs-dock-description</span> </span><span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> yellow<span class="token punctuation">;</span>
+  <span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token number">1.0</span>em<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="title and description selectors" src="http://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/customize-appearance/title-and-description-selectors.png"></figure></section><section class="bcls-section"><h2 id="Controlbar_icon_manipulation">Controlbar icon manipulation</h2>
+
+<p class="language-editable">Controlbar icon order determined by the order of the HTML <code class=" language-editable">&lt;div&gt;</code>s in the parent controlbar <code class=" language-editable">&lt;div&gt;</code>. Here you see the controlbar <code class=" language-editable">&lt;div&gt;</code> with all of its children.</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="elements-controlbar-div" src="http://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/customize-appearance/elements-controlbar-div.png"></figure><p class="language-editable">Generally, this is the approach to take when placing in icon in the controlbar:</p>
+
+<ul><li class="language-editable">Dynamically build the element you wish to insert into the controlbar.</li>
+	<li class="language-editable">Get a reference to the controlbar element.</li>
+	<li class="language-editable">Get a reference to the element you wish to insert your new element in front of in the controlbar.</li>
+	<li class="language-editable">Use the JavaScript <code class=" language-editable">insertBefore()</code> method to place the icon.</li>
+</ul><aside class="bcls-aside bcls-aside--tip language-editable"><p class="language-editable">The syntax for <code class=" language-editable">insertBefore()</code> is:</p>
+
+<pre class="line-numbers language-javascript"><code class=" language-javascript">parent<span class="token punctuation">.</span><span class="token function">insertBefore</span><span class="token punctuation">(</span>newElement<span class="token punctuation">,</span>insertBeforeElement<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p class="language-editable">This means in the detailed code below you will see JavaScript to get a reference to the controlbar (parent), a new <code class=" language-editable">&lt;div&gt;</code> with an icon to insert into the controlbar, and lastly a reference to the element which the new icon will be inserted in from of.</p>
+</aside><p class="language-editable">Specifically, the following code is used to insert a download video icon in front of the volume icon:</p>
+
+<ul><li class="language-editable">Lines 280-285: Style for the download button.</li>
+	<li class="language-editable">Lines 291-295: Assign variables and create HTML elements for:
+	<ul><li class="language-editable">The <code class=" language-editable">&lt;div&gt;</code> which will contain the icon for the download icon.</li>
+		<li class="language-editable">The anchor tag which make the icon clickable.</li>
+		<li class="language-editable">The icon image itself.</li>
+	</ul></li>
+	<li class="language-editable">Lines 297-2980: Assign and id and CSS classes to the new element.</li>
+	<li class="language-editable">Line 300: Assign a source to the image.</li>
+	<li class="language-editable">Line 301: Assign an <code class=" language-editable">href</code> to the link.</li>
+	<li class="language-editable">Line 302: Append the image to the link.</li>
+	<li class="language-editable">Line 303: Append the link to the dynamically created <code class=" language-editable">&lt;div&gt;</code>.</li>
+	<li class="language-editable">Line 306: Get a reference to the controlbar to use with <code class=" language-editable">insertBefore()</code>.</li>
+	<li class="language-editable">Line 308: Get a reference to the element which the new icon will be insert in front of, to use with <code class=" language-editable">insertBefore()</code>.</li>
+	<li class="language-editable">Line 310: Insert the dynamically created element.</li>
+</ul><pre class="line-numbers language-javascript" data-start="279" style="counter-reset: linenumber 278;"><code class=" language-javascript"><span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span> styles <span class="token keyword">for</span> page <span class="token operator">--</span><span class="token operator">&gt;</span>
+  <span class="token comment">/* Style the download icon */</span>
+  #downloadButton <span class="token punctuation">{</span>
+      width<span class="token punctuation">:</span> 34px<span class="token punctuation">;</span>
+      height<span class="token punctuation">:</span> 33px<span class="token punctuation">;</span>
+      margin<span class="token operator">-</span>top<span class="token punctuation">:</span> 6px<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>style<span class="token operator">&gt;</span>
+
+<span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">"text/javascript"</span><span class="token operator">&gt;</span>
+  videojs<span class="token punctuation">.</span><span class="token function">getPlayer</span><span class="token punctuation">(</span><span class="token string">'myPlayerID'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">ready</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// Create variables and new div, anchor and image for download icon</span>
+    <span class="token keyword">var</span> myPlayer <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">,</span>
+      controlBar<span class="token punctuation">,</span>
+      newElement <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'div'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      newLink <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'a'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      newImage <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'img'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// Assign id and classes to div for icon</span>
+    newElement<span class="token punctuation">.</span>id <span class="token operator">=</span> <span class="token string">'downloadButton'</span><span class="token punctuation">;</span>
+    newElement<span class="token punctuation">.</span>className <span class="token operator">=</span> <span class="token string">'downloadStyle vjs-control'</span><span class="token punctuation">;</span>
+    <span class="token comment">// Assign properties to elements and assign to parents</span>
+    newImage<span class="token punctuation">.</span><span class="token function">setAttribute</span><span class="token punctuation">(</span><span class="token string">'src'</span><span class="token punctuation">,</span><span class="token string">'http://solutions.brightcove.com/bcls/brightcove-player/download-video/file-download.png'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    newLink<span class="token punctuation">.</span><span class="token function">setAttribute</span><span class="token punctuation">(</span><span class="token string">'href'</span><span class="token punctuation">,</span><span class="token string">'http://www.brightcove.com'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    newLink<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>newImage<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    newElement<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>newLink<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// Get controlbar and insert before elements</span>
+    <span class="token comment">// Remember that getElementsByClassName() returns an array</span>
+    controlBar <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementsByClassName</span><span class="token punctuation">(</span><span class="token string">'vjs-control-bar'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token comment">// Change the class name here to move the icon in the controlBar</span>
+    insertBeforeNode <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementsByClassName</span><span class="token punctuation">(</span><span class="token string">'vjs-volume-menu-button'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token comment">// Insert the icon div in proper location</span>
+    controlBar<span class="token punctuation">.</span><span class="token function">insertBefore</span><span class="token punctuation">(</span>newElement<span class="token punctuation">,</span>insertBeforeNode<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p class="language-editable">Here you see the result of the code, with the newly inserted icon highlighted in yellow:</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="download-icon-before-volume" src="http://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/customize-appearance/download-icon-before-volume.png"></figure><p class="language-editable">If you wish to have the icon in a different location, you need only to change the code which gets the element to insert in front of. For instance, to move the new icon in front of the fullscreen button, use this:</p>
+
+<pre class="line-numbers language-javascript"><code class=" language-javascript">insertBeforeNode <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementsByClassName</span><span class="token punctuation">(</span><span class="token string">'vjs-fullscreen-control'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p class="language-editable">The result would appear as follows:</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="download-icon-before-fullscreen" src="http://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/customize-appearance/download-icon-before-fullscreen.png"></figure><h3>Icon on far right</h3>
+
+<p class="language-editable">If you wish the icon to appear at the far right of the controlbar, you would replace the <code class=" language-editable">insertBefore()</code> with the <code class=" language-editable">appendChild()</code> method, as shown here:</p>
+
+<pre class="line-numbers language-javascript"><code class=" language-javascript">controlBar<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>newElement<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p class="language-editable">An example of adding an icon (for downloading a file in this case) is shown in the <a href="brightcove-player-sample-download-video-plugin/index.html">Brightcove Player Sample: Download Video Plugin</a> document.</p>
+
+<h3 id="spacer">Use the spacer</h3>
+
+<p class="language-editable">Although the techniques above work for placing icons on the controlbar, it is possible they will not be compatible with other code that manipulates the controlbar. Also, you most likely would not want to abstract the code into a plugin for general reuse.</p>
+
+<p class="language-editable">Weaknesses in the previous paragraph can be overcome by using the special <strong>spacer</strong> element inserted into the controlbar especially for adding icons. The drawback of the spacer is you do not have full control over where the icon can be placed, whereas you do using the techniques shown earlier in this section.</p>
+
+<p class="language-editable">The spacer element is located in the controlbar between the time information on the left and the fullscreen icon on the right, as shown in the following screenshot (highlighted in the green oval). Note in the <strong>Elements</strong> section of the Dev Tools the element is defined an HTML <code class=" language-editable">&lt;div&gt;</code>.</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="spacer" src="http://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/customize-appearance/spacer.png"></figure><p class="language-editable">To place an icon in the spacer element, you use the following code, which is very similar to the code shown earlier in this section. The result of the code is shown in the screenshot which follows the code snippet.</p>
+
+<pre class="line-numbers language-javascript"><code class=" language-javascript"><span class="token comment">// Get the spacer element</span>
+spacer <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementsByClassName</span><span class="token punctuation">(</span><span class="token string">'vjs-spacer'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token comment">// Place the new element in the spacer</span>
+spacer<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>newElement<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="spacer-left" src="http://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/customize-appearance/spacer-left.png"></figure><p class="language-editable">If you wish to place the icon on the right side of the spacer, another line of code needs to be used. The spacer layout is controlled by an HTML Flexbox. So adding a Flexbox style you can push the added icon to the right. The result of the code is shown in the screenshot which follows the code snippet.</p>
+
+<pre class="line-numbers language-javascript"><code class=" language-javascript"><span class="token comment">// Set the content of the spacer to be right justified</span>
+spacer<span class="token punctuation">.</span><span class="token function">setAttribute</span><span class="token punctuation">(</span><span class="token string">"style"</span><span class="token punctuation">,</span> <span class="token string">"justify-content: flex-end;"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="spacer-right" src="http://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/customize-appearance/spacer-right.png"></figure></section><section class="bcls-section"><h2 id="Remove_fullscreen_icon">Remove fullscreen button</h2>
+
+<p class="language-editable">There can be issues if you permit fullscreen viewing of videos on iOS, detailed in the <a href="ios-and-brightcove-player/index.html">iOS and Brightcove Player</a> document. If you wish to remove the fullscreen button from the controlbar you can so using this code:</p>
+
+<pre class="line-numbers language-html"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text/javascript<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript">
+  videojs<span class="token punctuation">.</span><span class="token function">getPlayer</span><span class="token punctuation">(</span><span class="token string">'myPlayerID'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">ready</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> myPlayer <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">,</span>
+      <span class="bcls-highlight">fullScreenElement <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementsByClassName</span><span class="token punctuation">(</span><span class="token string">"vjs-fullscreen-control"</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>videojs<span class="token punctuation">.</span>browser<span class="token punctuation">.</span>IS_IOS <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      fullScreenElement<span class="token punctuation">.</span>parentNode<span class="token punctuation">.</span><span class="token function">removeChild</span><span class="token punctuation">(</span>fullScreenElement<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span></span><span class="token punctuation"></span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p class="language-editable">Note the <code class=" language-editable">if</code> statement so the button is only removed on iOS devices.</p>
+</section><section class="bcls-section"><h2 id="Controlbar_icon_glow">Controlbar icon "glow"</h2>
+
+<p class="language-editable">You can change the text shadow (sometimes referred to as the "glow") of the icons in the controlbar. For instance, you may want to change the color or increase the glow to bring more focus on the icon. The following screenshot shows the text shadow in red.</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="red text shadow" src="http://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/customize-appearance/red-glow.png"></figure><p class="language-editable">The affect shown is done by changing the CSS <code class=" language-editable">text-shadow</code>. The selector determines that the change will only occur with the icon has focus or hover states.</p>
+
+<pre class="line-numbers language-css"><code class=" language-css"><span class="token selector"><span class="token class">.video-js</span> <span class="token class">.vjs-control</span><span class="token pseudo-class">:hover</span><span class="token pseudo-element">:before</span>, <span class="token class">.video-js</span> <span class="token class">.vjs-control</span><span class="token pseudo-class">:focus</span><span class="token pseudo-element">:before</span> </span><span class="token punctuation">{</span>
+  <span class="token property">text-shadow</span><span class="token punctuation">:</span> <span class="token number">0</span> <span class="token number">0</span> <span class="token number">1</span>em <span class="token hexcode">#f00</span>,<span class="token number">0</span> <span class="token number">0</span> <span class="token number">1</span>em <span class="token hexcode">#f00</span>,<span class="token number">0</span> <span class="token number">0</span> <span class="token number">1</span>em <span class="token hexcode">#f00</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p class="language-editable">For more information on the rather complex <code class=" language-editable">text-shadow</code> style, see MDN's <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow">text-shadow</a> document.</p>
+</section><section class="bcls-section"><h2 id="Hover_gradient">Hover gradient</h2>
+
+<p class="language-editable">When the player is first loaded, and when you mouse over the player, you see the video title displayed, as well as a black to transparent gradient over the top portion of the player. This section will show you how to alter the gradient.</p>
+
+<p class="language-editable">The actual gradient is controlled by the CSS <code class=" language-editable">linear-gradient</code> function in the <code class=" language-editable">vjs-dock-text</code> HTML <code class=" language-editable">&lt;div&gt;.</code> The size of the gradient can be controlled by the height of the <code class=" language-editable">vjs-dock-text</code> HTML <code class=" language-editable">&lt;div&gt;</code>. Here is that element, and its children, from the player:</p>
+
+<pre class="line-numbers language-html"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>vjs-dock-text<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>vjs-dock-title<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Tiger<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>vjs-dock-description<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p class="language-editable">The default values for the gradient use the <code class=" language-editable">rgba()</code> (red-green-blue-alpha) function, as shown here:</p>
+
+<pre class="line-numbers language-javascript"><code class=" language-javascript">linear<span class="token operator">-</span><span class="token function">gradient</span><span class="token punctuation">(</span>180deg<span class="token punctuation">,</span><span class="token function">rgba</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token punctuation">.</span><span class="token number">8</span><span class="token punctuation">)</span> <span class="token number">25</span><span class="token operator">%</span><span class="token punctuation">,</span>transparent <span class="token number">100</span><span class="token operator">%</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p class="language-editable">These values cause the gradient to horizontally fade from black, with an alpha of <strong>.8</strong>, to transparent. The value of <strong>25%</strong> is a cut off value, meaning the value set in the <code class=" language-editable">rgba</code> function will be used for the first 25% of the space before the fading to transparent begins.</p>
+
+<p class="language-editable">For instructional purposes, as you would not use this gradient in production, the following style creates the gradient in the screenshot.</p>
+
+<pre class="line-numbers language-css"><code class=" language-css"><span class="token selector"><span class="token class">.video-js</span> <span class="token class">.vjs-dock-text</span> </span><span class="token punctuation">{</span>
+  <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">linear-gradient</span><span class="token punctuation">(</span><span class="token number">45</span>deg, <span class="token function">rgba</span><span class="token punctuation">(</span><span class="token number">0</span>,<span class="token number">0</span>,<span class="token number">255</span>,<span class="token number">.8</span><span class="token punctuation">)</span> <span class="token number">35%</span>, transparent<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">80%</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="bad blue gradient" src="http://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/customize-appearance/gradient-blue.png"></figure><p class="language-editable">In this example, a blue gradient with a .8 alpha is applied at a 45 degree downhill angle. The color/alpha set in the linear gradient will be used for the first 35% of the gradient before it begins to fade. Also, 80% of the element height is used.</p>
+
+<p class="language-editable">The following CodePen permits you to experiment with values. Start the video and mouse in and out to see the subtle gradient used by default.</p>
+
+<div class="cp_embed_wrapper"><iframe name="cp_embed_2" src="https://codepen.io/bcls/embed/XXyKqx?height=371&amp;theme-id=14832&amp;slug-hash=XXyKqx&amp;default-tab=result&amp;user=bcls&amp;name=cp_embed_2" scrolling="no" frameborder="0" height="371" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_XXyKqx"></iframe></div>
+<script async="" src="//assets.codepen.io/assets/embed/ei.js"></script></section><section class="bcls-section"><h2 id="Caption_list_items">Caption list items</h2>
+
+<p>If you wish to style/control the list items in the captions menu, the selectors are shown here:</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="Selectors for caption list items" width="800" height="281" src="http://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/customize-appearance/caption-list-items.png"></figure><p>You can style all the items using the selector:</p>
+
+<pre class="line-numbers language-javascript"><code class=" language-javascript"><span class="token punctuation">.</span>vjs<span class="token operator">-</span>subs<span class="token operator">-</span>caps<span class="token operator">-</span>button <span class="token punctuation">.</span>vjs<span class="token operator">-</span>menu <span class="token punctuation">.</span>vjs<span class="token operator">-</span>menu<span class="token operator">-</span>content <span class="token punctuation">.</span>vjs<span class="token operator">-</span>menu<span class="token operator">-</span>item<span class="token punctuation">.</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</section><section class="bcls-section"><h2 id="CSS_specificity">CSS specificity</h2>
+
+<p class="language-editable">CSS specificity refers to the way browsers determine which property values get applied to an element based on their relevance. For details about this concept, review the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity">Specificity</a> article.</p>
+
+<p class="language-editable">In Chrome, inspect the big play button. Notice that the <code class=" language-editable">background</code> property is set using multiple classes. This means that we cannot use just the one <code class=" language-editable">.vjs-big-play-button</code> class to override this property.</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="play-button-classes" src="http://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/customize-appearance/play-button-classes.png"></figure><p class="language-editable">Here are three approaches to customize the big play button:</p>
+
+<ul><li class="language-editable">Reference an id assigned to the player.</li>
+	<li class="language-editable">Use multiple classes to raise the relevance of the properties.</li>
+	<li class="language-editable">Use JavaScript to set the id attribute on the player and then reference it in the CSS.</li>
+</ul><h3>Referencing an id</h3>
+
+<p class="language-editable">Since an <code class=" language-editable">id</code> attribute has a high relevance regarding CSS specificity, adding an <code class=" language-editable">id</code> to the CSS selector will override the <code class=" language-editable">background-color</code> property.</p>
+
+<p class="language-editable">If you haven't already done so, add an <code class=" language-editable">id</code> attribute to the <code class=" language-editable">video</code> element as follows:</p>
+
+<pre class="line-numbers language-html"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation"></span></span><span class="bcls-highlight"><span class="token tag"><span class="token punctuation">&lt;</span>video-js</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>video_1<span class="token punctuation">"</span></span></span><span class="token attr-value"><span class="token punctuation"></span></span>
+  <span class="token attr-name">data-account</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>1752604059001<span class="token punctuation">"</span></span>
+  <span class="token attr-name">data-player</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>68f30408-8fb4-431d-accb-8c5baa8c4790<span class="token punctuation">"</span></span>
+  <span class="token attr-name">data-embed</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>default<span class="token punctuation">"</span></span>
+  <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>video-js<span class="token punctuation">"</span></span> <span class="token attr-name">controls</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>video-js</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p class="language-editable">In the CSS, add the id value to the <code class=" language-editable">.vjs-big-play-button</code> class selector. Override the background color and opacity as follows:</p>
+
+<pre class="line-numbers language-html"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style language-css">
+<span class="bcls-highlight">  <span class="token selector"><span class="token id">#video_1</span> <span class="token class">.vjs-big-play-button</span> </span><span class="token punctuation">{</span>
+      <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token hexcode">#B37D5B</span><span class="token punctuation">;</span>
+      <span class="token property">opacity</span><span class="token punctuation">:</span> <span class="token number">.6</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span></span><span class="token punctuation"></span>
+    <span class="token selector"><span class="token class">.video-js</span> </span><span class="token punctuation">{</span>
+      <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">640</span>px<span class="token punctuation">;</span>
+      <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">360</span>px<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p class="language-editable">You should see that the big play button is now orange.</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="orange-play-button.png" src="http://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/customize-appearance/orange-play-button.png"></figure><h3>Using multiple classes</h3>
+
+<p class="language-editable">Since the <code class=" language-editable">background</code> property for the big play button is set using two classes, you will need at least two classes in the CSS selector to override this property.</p>
+
+<p class="language-editable">Add the <code class=" language-editable">.video-js</code> class to the <code class=" language-editable">.vjs-big-play-button</code> class selector. Remember that the <code class=" language-editable">.video-js</code> class is set on the video container.</p>
+
+<p class="language-editable">With these values, we are saying select all elements with a class name of <code class=" language-editable">vjs-big-play-button</code> which are decedents of elements with a class name of <code class=" language-editable">.video-js</code>.</p>
+
+<pre class="line-numbers language-html"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style language-css">
+<span class="bcls-highlight">  <span class="token selector"><span class="token class">.video-js</span> <span class="token class">.vjs-big-play-button</span> </span><span class="token punctuation">{</span></span><span class="token punctuation"></span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token hexcode">#B37D5B</span><span class="token punctuation">;</span>
+    <span class="token property">opacity</span><span class="token punctuation">:</span> <span class="token number">.6</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token selector"><span class="token class">.video-js</span> </span><span class="token punctuation">{</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">640</span>px<span class="token punctuation">;</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">360</span>px<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p class="language-editable">You should see that the big play button is now orange. Working with multiple classes can be tricky and may affect multiple elements, whereas an id is specific to one element.</p>
+
+<h3>Using JavaScript</h3>
+
+<p class="language-editable">You can also use JavaScript to dynamically add an id to the big play button. Then you can reference that id from the CSS.</p>
+
+<p class="language-editable">Add code to add an id to the big play button element.</p>
+
+<ul><li class="language-editable">Line 173: Gets a reference to the first element which has a class of <code class=" language-editable">vjs-big-play-button</code>.</li>
+	<li class="language-editable">Line 174: Adds an <code class=" language-editable">id</code> attribute to the big play button.</li>
+</ul><pre class="line-numbers language-html" data-start="171" style="counter-reset: linenumber 170;"><code class=" language-html">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text/JavaScript<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript">
+
+    <span class="token keyword">var</span> playButton <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementsByClassName</span><span class="token punctuation">(</span><span class="token string">"vjs-big-play-button"</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    playButton<span class="token punctuation">.</span><span class="token function">setAttribute</span><span class="token punctuation">(</span><span class="token string">"id"</span><span class="token punctuation">,</span> <span class="token string">"myPlayButton"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p class="language-editable">In the CSS, change the selector to use the <code class=" language-editable">myPlayButton</code> id name.</p>
+
+<pre class="line-numbers language-html"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style language-css">
+<span class="bcls-highlight">    <span class="token selector"><span class="token id">#myPlayButton</span> </span><span class="token punctuation">{</span></span><span class="token punctuation"></span>
+      <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token hexcode">#B37D5B</span><span class="token punctuation">;</span>
+      <span class="token property">opacity</span><span class="token punctuation">:</span> <span class="token number">.6</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token selector"><span class="token class">.video-js</span> </span><span class="token punctuation">{</span>
+      <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">640</span>px<span class="token punctuation">;</span>
+      <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">360</span>px<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p class="language-editable">You should see that the big play button is now orange.</p>
+</section><section class="bcls-section"><h2 id="Component_selectors">Component selectors</h2>
+
+<p class="language-editable">These screenshots and following table show the components and the CSS selectors needed to manipulate that component. For more information on the components themselves see the <a href="overview-components/index.html">Components Overview</a> doc.</p>
+
+<h3>On player load and hover</h3>
+
+<figure class="bcls-figure"><img style="max-width: none" width="794" height="352" alt="components on load" src="http://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/customize-appearance/5x-components-onload.png"></figure><h3>During playback</h3>
+
+<figure class="bcls-figure"><img class="bcls-image" style="max-width: none" width="831" height="525" alt="components playback" src="http://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/5x-player-styling/customize-appearance/6x-components.png"></figure><h3>Summary of component selectors</h3>
+
+<table class="table-styles"><thead><tr><th style="width:30%">Component</th>
+			<th style="width:70%">Selector</th>
+		</tr></thead><tbody><tr><td>BigPlayButton</td>
+			<td><code>.video-js.vjs-mouse .vjs-big-play-button</code></td>
+		</tr><tr><td>ControlBar</td>
+			<td><code>.video-js .vjs-control-bar</code> (Inherited by icons in the ControlBar, but NOT the ProgressControl)</td>
+		</tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;PlayToggle</td>
+			<td><code>.video-js .vjs-play-control</code></td>
+		</tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;MuteToggle</td>
+			<td><code>.vjs-volume-panel.vjs-control.vjs-volume-panel-horizontal</code></td>
+		</tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VolumeBar</td>
+			<td><code>.vjs-volume-bar.vjs-slider-bar.vjs-slider.vjs-slider-horizontal</code></td>
+		</tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VolumeLevel</td>
+			<td><code>.video-js .vjs-volume-level</code></td>
+		</tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;CurrentTimeDisplay</td>
+			<td><code>.video-js .vjs-current-time</code></td>
+		</tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;TimeDivider</td>
+			<td><code>.video-js .vjs-time-divider</code></td>
+		</tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;DurationDisplay</td>
+			<td><code>.video-js .vjs-duration</code></td>
+		</tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SeekBar</td>
+			<td><code>.video-js .vjs-progress-control.vjs-control</code></td>
+		</tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LoadProgressBar</td>
+			<td><code>.video-js .vjs-load-progress</code></td>
+		</tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PlayProgressBar</td>
+			<td><code>.video-js .vjs-play-progress.vjs-slider-bar</code></td>
+		</tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;ChaptersButton</td>
+			<td><code>.video-js .vjs-chapters-button.vjs-menu-button</code></td>
+		</tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;CaptionsButton</td>
+			<td><code>.video-js .vjs-captions-button.vjs-menu-button</code></td>
+		</tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;FullScreenToggle</td>
+			<td><code>.video-js .vjs-fullscreen-control.vjs-control</code></td>
+		</tr><tr><td>DockText</td>
+			<td><code>.vjs-dock-text</code> (Inherited by both DockTitle and DockDescription)</td>
+		</tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;DockTitle</td>
+			<td><code>.vjs-dock-title</code></td>
+		</tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;DockDescription</td>
+			<td><code>.vjs-dock-description</code></td>
+		</tr></tbody></table><p class="language-editable">If the selector you are seeking is not in the table, please let us know by emailing the <a id="selectorrequest" href="mailto:docs@brightcove.com">Knowledge Team</a> and we will get it into the table.</p>
+</section><section class="bcls-section"><h2 id="PLAYER_CLASS">{PLAYER_CLASS}</h2>
+
+<p class="language-editable">The <code class=" language-editable">{PLAYER_CLASS}</code> is a selector and will be replaced with the actual class specific selector for the player, for example:</p>
+
+<pre class="line-numbers language-css"><code class=" language-css"><span class="token number">.</span>bc-player-oH<span class="token number">9</span>IdGudo_default<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p class="language-editable"><code class=" language-editable">{PLAYER_CLASS}</code> helps you make your CSS specific enough to overwrite the built-in styles without having to make CSS for each player individually or use something like:</p>
+
+<pre class="line-numbers language-css"><code class=" language-css"><span class="token number">.</span>video-js<span class="token number">.</span>video-js<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p class="language-editable">For instance, say you want to override the loading spinner, you might use:</p>
+
+<pre class="line-numbers language-css"><code class=" language-css"><span class="token selector"><span class="token class">.video-js.video-js</span> <span class="token class">.vjs-loading-spinner</span> </span><span class="token punctuation">{</span><span class="token number">...</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p class="language-editable">That is specific enough to override the default, but if you happen to have a second player on the page. Using the following would NOT affect any other player in the page:</p>
+
+<pre class="line-numbers language-css"><code class=" language-css"><span class="token selector"><span class="token class">.video-js</span></span><span class="token punctuation">{</span>PLAYER_CLASS<span class="token punctuation">}</span> <span class="token selector"><span class="token class">.vjs-loading-spinner</span> </span><span class="token punctuation">{</span><span class="token number">...</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>Note that the <code>{PLAYER_CLASS}</code> selector can only be used in CSS files that are added to a player configuration stylesheets array (for example, via Studio or the Player Management API) and built directly into the player. This selector will not work with Advanced implementation code CSS separately included via <code>&lt;style&gt;&lt;/style&gt;</code> or <code>&lt;link&gt;&lt;/link&gt;</code> tags.</p>
+</section></article></div>
+      
+</div>
+
+</div>
+
+
+<section class="views-element-container block block-views block-views-blockrelated-content-by-field-block-1 clearfix" id="block-views-block-related-content-by-field-block-1">
+  
+    
+
+      <div class="form-group"><div class="view view-related-content-by-field view-id-related_content_by_field view-display-id-block_1 js-view-dom-id-9ef070af20fb99bc915cda2f358d919d6a97d31fd8eb10c3e2879619b14ccae6">
+  
+    
+      <div class="view-header">
+      <h2 id="bc-ipnav-16">Related content</h2>
+    </div>
+      
+      <div class="view-content">
+      <div class="item-list">
+  
+  <ul>
+
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="step-step-player-customization/index.html" hreflang="en">Step-by-Step: Player Customization</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="styling-players/index.html" hreflang="en">Styling Players</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="skins-and-player-versions/index.html" hreflang="en">Skins and Player Versions</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="sizing-player/index.html" hreflang="en">Sizing the Player</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="overview-components/index.html" hreflang="en">Overview: Components</a></span></span></div></li>
+    
+  </ul>
+
+</div>
+
+    </div>
+  
+          </div>
+</div>
+
+  </section>
+
+
+  </div>
+
+              </section>
+
+                </div>
+  </div>
+
+      <footer class="footer container" role="contentinfo">
+              <div class="row">
+            <div class="region region-footer-top-left col-md-9" style="margin-bottom: 1em;">
+    <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Brightcove Support</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="https://status.brightcove.com">System Status</a>
+                  </li>
+                              <li class="expanded">
+        <a href="contact-support/index.html" data-drupal-link-system-path="node/18632">Support - Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="en/contact/create/index.html">Support - Zencoder</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-documentation-menu" id="block-documentation" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Documentation</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="" data-drupal-link-system-path="<front>">Home</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Training</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="online-training-courses/index.html" data-drupal-link-system-path="node/18286">Online Courses</a>
+                  </li>
+                              <li class="expanded">
+        <a href="register-training/index.html" data-drupal-link-system-path="node/18270">Register for a course</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-brightcove-menu" id="block-brightcove" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Brightcove</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="https://www.brightcove.com">Brightcove.com</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+            <div class="region region-footer-top-right col-md-3">
+    <section id="block-footerlegaltext" class="block block-block-content block-block-content4507d09c-a528-4947-b91d-36ec6671822b clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><p>Brightcove Inc. (NASDAQ: BCOV), is a leading global provider of powerful cloud solutions for delivering and monetizing video across connected devices.</p>
+</div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+                    <div class="row">
+            <div class="region region-footer-bottom-left col-md-8">
+    <section id="block-footercopyrightlinewithlinks" class="block block-block-content block-block-content3a164ef9-02d8-42c4-bcc6-3ab435f670b3 clearfix">
+  
+    
+
+      <div class="block-content block-content--type-copyright-block-with-links block-content--view-mode-full ds-1col clearfix">
+
+  
+
+  
+            <div class="field field--name-field-copyright-year field--type-string field--label-hidden field--item">2020</div>
+      
+            <div class="field field--name-field-copyright-text field--type-string-long field--label-hidden field--item">Brightcove Inc. All rights reserved.</div>
+      
+      <div class="field field--name-field-legal-links field--type-link field--label-hidden field--items">
+              <div class="field--item"><a href="https://www.brightcove.com/en/privacy">Privacy</a></div>
+              <div class="field--item"><a href="https://www.brightcove.com/en/terms-and-conditions">Terms &amp; Conditions</a></div>
+          </div>
+  
+
+</div>
+
+
+  </section>
+
+
+  </div>
+
+            <div class="region region-footer-bottom-right col-md-4">
+    <section id="block-footersocialblock" class="block block-block-content block-block-content4fc23afd-8d37-420e-ab28-73b2ba24e836 clearfix">
+  
+    
+
+      
+      <div class="field field--name-field-social-icon field--type-entity-reference-revisions field--label-hidden field--items">
+              <div class="field--item">
+
+<a href="https://www.linkedin.com/company/brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--linkedin">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--linkedin"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://twitter.com/brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--twitter">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--twitter"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://www.facebook.com/Brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--facebook">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--facebook"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item" style="display:none;color:white">
+
+<a href="https://plus.google.com/100830370440271567091" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--google-plus">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--google-plus"></use>
+  </svg>
+</a>
+
+</div>
+          </div>
+  
+
+
+  </section>
+
+<section id="block-scripts" class="block block-block-content block-block-content42e4bd63-d879-470d-a6de-d5e4529a01be clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><script src="https://learning-services-media.brightcove.com/doc-assets/js/gtrans.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/js/support-feedback.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/feedback-support.js"></script>
+<script src="https://learning-services-media.brightcove.com/doc-assets/js/hide-google-plus.js"></script></div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+          </footer>
+  
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/18066","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","google_analytics":{"trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"bootstrap":{"forms_has_error_value_toggle":1,"modal_animation":1,"modal_backdrop":"true","modal_focus_input":1,"modal_keyboard":1,"modal_select_text":1,"modal_show":1,"modal_size":"","popover_enabled":1,"popover_animation":1,"popover_auto_close":1,"popover_container":"body","popover_content":"","popover_delay":"0","popover_html":0,"popover_placement":"right","popover_selector":"","popover_title":"","popover_trigger":"click"},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true},"user":{"uid":0,"permissionsHash":"3b7fdb4927baca3ee2939edeb777485b3e2c2d36cf8c80e0d8f49c6dc5e2eeca"}}</script>
+<script src="/sites/default/files/js/js_8fmTAXGyuAUNVu11XoXJaeM8QBDFuAvX7ADwOnigrhc.js"></script><div id="feedbackify"><div id="fby-screen" class="fby-screen"><div id="fby-mask" class="fby-mask"></div><div id="fby-tab-14941" class="fby

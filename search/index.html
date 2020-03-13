@@ -1,0 +1,2295 @@
+<html lang="en" dir="ltr" class=" js"><head>
+    <meta charset="utf-8"><script type="text/javascript" src="https://bam.nr-data.net/1/e78a80aa93?a=129613202&amp;v=1167.2a4546b&amp;to=YwBUZkcFVktUWhJQX1pKd1FBDVdWGkkHXlVrBldRXQE%3D&amp;rst=5153&amp;ref=https://support.brightcove.com/search&amp;ap=13&amp;be=2806&amp;fe=5106&amp;dc=4859&amp;perf=%7B%22timing%22:%7B%22of%22:1582290185460,%22n%22:0,%22f%22:0,%22dn%22:0,%22dne%22:0,%22c%22:0,%22ce%22:0,%22rq%22:49,%22rp%22:500,%22rpe%22:2610,%22dl%22:2806,%22di%22:4860,%22ds%22:4860,%22de%22:4862,%22dc%22:5107,%22l%22:5107,%22le%22:5108%7D,%22navigation%22:%7B%7D%7D&amp;at=T0dXEA8fRUU%3D&amp;jsonp=NREUM.setToken"></script><script src="https://js-agent.newrelic.com/nr-1167.min.js"></script><script type="text/javascript" async="" src="//cdn.feedbackify.com/f.js"></script><script async="" src="https://fullstory.com/s/fs.js"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"e78a80aa93",applicationID:"129613202"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-2728311-17", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)">
+<meta name="MobileOptimized" content="width">
+<meta name="HandheldFriendly" content="true">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="http://support.brightcove.com/sites/default/files/favicon-64.png" type="image/png">
+
+    <title>Search | Brightcove Learning</title>
+    <link rel="stylesheet" media="all" href="http://support.brightcove.com/sites/default/files/css/css_n_hYilxfAOQXDT80TX8GvXP6UaK_XG_PJvpjf0d4HzI.css?q23msc">
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css">
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/@unicorn-fail/drupal-bootstrap-styles@0.0.2/dist/3.4.0/8.x-3.x/drupal-bootstrap.min.css">
+<link rel="stylesheet" media="all" href="http://support.brightcove.com/sites/default/files/css/css_ta7TGCgoUiRN-eGLyLEf4xmuIaBKIL7GD5KPf2fNREM.css?q23msc">
+
+    
+<!--[if lte IE 8]>
+<script src="/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+
+    <meta name="uri-translation" content="on">
+    <script>
+window['_fs_debug'] = false; window['_fs_host'] = 'fullstory.com';
+window['_fs_org'] = 'BX3Q1';
+window['_fs_namespace'] = 'FS';
+(function(m,n,e,t,l,o,g,y){
+if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
+g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+g.consent=function(a){g("consent",!arguments.length||a)};
+g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+g.clearUserCookie=function(){};
+})(window,document,window['_fs_namespace'],'script','user');
+    </script>
+  <style type="text/css">html{_background:url(//about:blank) fixed;}.fby-on select {visibility:hidden!important;}.fby-on .fby-hide-iframe {visibility:hidden!important;}.fby-hide-embed embed {visibility:hidden!important;}.fby-hide-object object {visibility:hidden!important;}@media not screen {.fby-tab {display: none;}}#feedbackify *{box-sizing:content-box!important;-moz-box-sizing:content-box!important;-webkit-box-sizing:content-box!important;}#feedbackify input{box-sizing:border-box!important;-moz-box-sizing:border-box!important;-webkit-box-sizing:border-box!important;max-width:none!important;}#feedbackify *:before{content:none!important;}#feedbackify *:after{content:none!important;}#feedbackify ,#feedbackify div,#feedbackify span,#feedbackify textarea,#feedbackify input,#feedbackify table,#feedbackify tbody,#feedbackify tr,#feedbackify td,#feedbackify img,#feedbackify p,#feedbackify a{border:0!important;outline:none!important;width:auto;height:auto;text-align:left!important;text-indent:0!important;float:none!important;padding:0!important;margin:0!important;font:12px arial,helvetica,sans-serif!important;overflow:visible!important;color:#000!important;line-height:1.2!important;background:0 none!important;position:static!important;vertical-align:baseline!important;box-shadow:none!important;}#feedbackify table{border-collapse:collapse!important;border-spacing:0!important;max-width:inherit!important;width:auto!important;}#feedbackify td{word-break:normal!important;}#feedbackify {z-index:2147483646!important;position:static!important;top:0;left:0;}#feedbackify .fby-screen{z-index:2147483646!important;position:fixed!important;top:0;left:0;width:0;height:100%;_position:absolute!important;_top:expression(eval(document.body.scrollTop||document.documentElement.scrollTop))!important;_left:expression(eval(document.body.scrollLeft||document.documentElement.scrollLeft))!important;_width:0!important;_height:expression(document.documentElement.clientHeight||document.body.clientHeight+"px")!important;}#feedbackify .fby-mask{display:none!important;position:fixed!important;top:0;left:0;width:100%;height:100%;background-color:#000!important;opacity:0.2;filter:alpha(opacity=20);_position:absolute!important;_width:expression(document.documentElement.clientWidth||document.body.clientWidth+"px")!important;_height:expression(this.parentNode.style.height)!important;}#feedbackify .fby-show{display:block!important;visibility:visible!important;}#feedbackify .fby-hide{display:none!important;visibility:hidden!important;}</style><style type="text/css">#feedbackify .fby-tab{position:fixed!important;width:36px;height:100px;overflow:hidden!important;_position:absolute!important;}#feedbackify .fby-tab a{display:block!important;position:absolute!important;width:36px;height:100px;background-color:#000000!important;cursor:pointer!important;background:url(https://cdn.feedbackify.com/img/classic/tab.png)!important;_background:none!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/tab.png)!important;}#feedbackify .fby-tab-l{top:50%;left:0;margin-top:-50px!important;_top:expression((parseInt(this.parentNode.style.height)-this.clientHeight)/2+"px")!important;_margin-top:0!important;}#feedbackify .fby-tab-l a{margin-left:-5px!important;}#feedbackify .fby-tab-l a:hover{margin-left:-2px!important;}#feedbackify .fby-tab-r{top:50%;right:0px!important;margin-top:-50px!important;_top:expression((parseInt(this.parentNode.style.height)-this.clientHeight)/2+"px")!important;_left:expression((document.documentElement.clientWidth||document.body.clientWidth)-this.clientWidth+"px")!important;_margin-top:0!important;}#feedbackify .fby-tab-r a{margin-left:5px!important;}#feedbackify .fby-tab-r a:hover{margin-left:2px!important;}#feedbackify .fby-tab-t{top:0;margin-top:0px!important;}#feedbackify .fby-tab-b{top:auto;bottom:0!important;_top:expression(parseInt(this.parentNode.style.height)-this.clientHeight+"px")!important;}</style><style type="text/css">#feedbackify grammarly-ghost{display:none!important;}#feedbackify grammarly-btn{display:none!important;}#feedbackify #fby-form{z-index:2147483646!important;width:618px!important;position:absolute!important;}#feedbackify .fby-d-main{width:600px;height:50px;vertical-align:top!important;background-color:#FFFFFF!important;position:relative!important;}#feedbackify .fby-d{background:url(https://cdn.feedbackify.com/img/classic/dlg_shad_sprite.png)!important;_background:none!important;}#feedbackify .fby-d-h{height:9px;background:url(https://cdn.feedbackify.com/img/classic/dlg_shad_sprite_h.png)!important;_background:none!important;}#feedbackify .fby-d-h2{height:9px;background-color:#FFFFFF!important;}#feedbackify .fby-d-tl{background-position:-18px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_tl.png)!important;}#feedbackify .fby-d-t{_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_t.png,sizingMethod=scale)!important;}#feedbackify .fby-d-tr{background-position:-36px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_tr.png)!important;}#feedbackify .fby-d-l{_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_l.png,sizingMethod=scale)!important;}#feedbackify .fby-d-r{background-position:-9px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_r.png,sizingMethod=scale)!important;}#feedbackify .fby-d-bl{background-position:-54px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_bl.png)!important;}#feedbackify .fby-d-br{background-position:-72px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_br.png)!important;}#feedbackify .fby-d-b{background-position:0px -9px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_b.png,sizingMethod=scale)!important;}#feedbackify .fby-d-load{position:relative!important;}#feedbackify .fby-d-load img{position:absolute!important;left:8px;}#feedbackify .fby-d-load div{position:absolute!important;padding:4px 18px!important;font-size:16px!important;font-weight:bold!important;color:#333!important;}</style></head>
+  <body class="path-search has-glyphicons">
+    <a href="#main-content/index.html" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas="">
+              <header class="navbar navbar-default container" id="navbar" role="banner">
+      <div class="navigation-secondary clearfix">
+          <div class="region region-navigation-secondary">
+    <section id="block-styles" class="block block-block-content block-block-contentfbb71e48-a6cd-4d2b-8239-43f18db69e60 clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><link rel="stylesheet" media="all" href="https://learning-services-media.brightcove.com/doc-assets/css/drupal-fix.css"></div>
+      
+  </section>
+
+<nav role="navigation" aria-labelledby="block-secondarynavigation-menu" id="block-secondarynavigation">
+            
+  <h2 class="visually-hidden" id="block-secondarynavigation-menu">Secondary Navigation</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="contact-support/index.html" title="Create a Support Request" data-drupal-link-system-path="node/18632">Support Request</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://status.brightcove.com/">System Status</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://university.brightcove.com/">Brightcove University</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<section id="block-gtranslate" class="block block-gtranslate block-gtranslate-block clearfix">
+  
+    
+
+      
+<div class="gtranslate">
+<script type="text/javascript">/* <![CDATA[ */
+function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;var lang=lang_pair.split('|')[1];var plang=location.pathname.split('/')[1];if(plang.length !=2 && plang != 'zh-CN' && plang != 'zh-TW')plang='en';if(lang == 'en')location.pathname=location.pathname.replace('/'+plang+'/', '/');else location.pathname='/'+lang+location.pathname.replace('/'+plang+'/', '/');}
+/* ]]> */
+</script><select onchange="doGTranslate(this);"><option value="">Select Language</option><option value="en|en" style="font-weight:bold;background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -0px;padding-left:18px;">English</option><option value="en|fr" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -160px;padding-left:18px;">French</option><option value="en|de" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -176px;padding-left:18px;">German</option><option value="en|ja" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -240px;padding-left:18px;">Japanese</option><option value="en|ko" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -256px;padding-left:18px;">Korean</option><option value="en|es" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -352px;padding-left:18px;">Spanish</option></select>
+</div>
+<div class="gtranslate__credits">
+  Translations Provided by Google Translate
+</div>
+
+  </section>
+
+
+  </div>
+
+      </div>
+      <div class="navbar-header col-md-3">
+                  <a class="logo navbar-btn pull-left" href="" title="Home" rel="home">
+            <img src="http://support.brightcove.com/themes/custom/bcdocs/images/brightcove.png" alt="Home">
+          </a>
+                
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+                    <div class="navbar-collapse collapse">
+            <div class="region region-navigation-collapsible">
+    <nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation">
+            <h2 class="sr-only" id="block-mainnavigation-menu">Main navigation</h2>
+
+      
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="brightcove-learning-home/index.html" title="Home page" data-drupal-link-system-path="node/18643">Home</a>
+                  </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Products
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="video-cloud/index.html" data-drupal-link-system-path="node/18332">Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://gallery.support.brightcove.com">Gallery</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player/index.html" data-drupal-link-system-path="node/18283">Brightcove Player</a>
+                  </li>
+                              <li class="expanded">
+        <a href="live/index.html" data-drupal-link-system-path="node/18642">Live</a>
+                  </li>
+                              <li class="expanded">
+        <a href="social/index.html" data-drupal-link-system-path="node/18444">Social</a>
+                  </li>
+                              <li class="expanded">
+        <a href="audience/index.html" data-drupal-link-system-path="node/18445">Audience</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://zencoder.support.brightcove.com">Zencoder</a>
+                  </li>
+                              <li class="expanded">
+        <a href="ssai/index.html" data-drupal-link-system-path="node/18650">SSAI</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://support.ottflow.com">OTT Flow</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Quick Links
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="analytics-api/index.html" data-drupal-link-system-path="node/18370">Analytics API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="audience-api/index.html" data-drupal-link-system-path="node/18371">Audience API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="cms-api/index.html" data-drupal-link-system-path="node/18372">CMS API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="cms-connectors-video-cloud/index.html" data-drupal-link-system-path="node/18662">CMS Connectors for Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="data-collection-api/index.html" data-drupal-link-system-path="node/18876">Data Collection API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="delivery-system-api/index.html" data-drupal-link-system-path="node/18387">Delivery System API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="developer-tools-and-concepts/index.html" data-drupal-link-system-path="node/18430">Developer Tools and Concepts</a>
+                  </li>
+                              <li class="expanded">
+        <a href="native-player-sdks/index.html" data-drupal-link-system-path="node/18367">Device SDKs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="dynamic-ingest-api/index.html" data-drupal-link-system-path="node/18373">Dynamic Ingest API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="getting-started-brightcove-apis-0/index.html" data-drupal-link-system-path="node/18711">Getting Started - Brightcove APIs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="page-experience-api/index.html" data-drupal-link-system-path="node/18616">In-Page Experience APIs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="ingest-profiles-api/index.html" data-drupal-link-system-path="node/18374">Ingest Profiles API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="live/index.html" data-drupal-link-system-path="node/18642">Live API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="oauth-api/index.html" data-drupal-link-system-path="node/18376">OAuth API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="platform-api-code-samples/index.html" data-drupal-link-system-path="node/18675">Platform API Code Samples</a>
+                  </li>
+                              <li class="expanded">
+        <a href="playback-api/index.html" data-drupal-link-system-path="node/18380">Playback API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player-code-samples/index.html" data-drupal-link-system-path="node/18630">Player Code Samples</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player-developer/index.html" data-drupal-link-system-path="node/18362">Player Developer</a>
+                  </li>
+                              <li class="expanded">
+        <a href="player-management-api/index.html" data-drupal-link-system-path="node/18378">Player Management API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="policy-api/index.html" data-drupal-link-system-path="node/18381">Policy API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="release-notes/index.html" data-drupal-link-system-path="node/18687">Release Notes</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Training
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="https://university.brightcove.com">Online Courses</a>
+                  </li>
+                              <li class="expanded">
+        <a href="register-training/index.html" data-drupal-link-system-path="node/18270">Register for a Course</a>
+                  </li>
+        </ul>
+  
+            </li>
+                              <li class="expanded">
+        <a href="brightcove-support-documentation-announcements/index.html" title="See what's new in Brightcove Documentation" data-drupal-link-system-path="node/18896">What's New</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+        </div>
+          </header>
+  
+    <div class="full-width-headline">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12" role="heading">
+            <div class="region region-header">
+          <section id="block-brightcoveheadlineblock" class="block block-bc-general block-bc-general-headline-block clearfix">
+  
+    
+
+      Search
+  </section>
+
+
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+      <div role="main" class="main-container container  js-quickedit-main-content">
+    <div class="row">
+
+                              <aside class="col-sm-3" role="complementary">
+              <div class="region region-sidebar-first">
+    <section id="block-product" class="block-facet--links block block-facets block-facet-blockproducts-taxonomy-term-name clearfix">
+  
+      <h2 class="block-title">Product</h2>
+    
+
+      <div class="facets-widget-links">
+      <ul data-drupal-facet-id="products_taxonomy_term_name" data-drupal-facet-alias="products" class="js-facets-links item-list__links"><li class="facet-item"><a href="search?f%5B0%5D=products%3AAudience/index.html" data-drupal-facet-item-id="products-Audience" data-drupal-facet-item-value="Audience"><span class="facet-item__value">Audience</span>
+  <span class="facet-item__count badge">42</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=products%3ABrightcove%20Player/index.html" data-drupal-facet-item-id="products-Brightcove-Player" data-drupal-facet-item-value="Brightcove Player"><span class="facet-item__value">Brightcove Player</span>
+  <span class="facet-item__count badge">366</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=products%3AGallery/index.html" data-drupal-facet-item-id="products-Gallery" data-drupal-facet-item-value="Gallery"><span class="facet-item__value">Gallery</span>
+  <span class="facet-item__count badge">98</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=products%3ALive/index.html" data-drupal-facet-item-id="products-Live" data-drupal-facet-item-value="Live"><span class="facet-item__value">Live</span>
+  <span class="facet-item__count badge">60</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=products%3AOoyala/index.html" data-drupal-facet-item-id="products-Ooyala" data-drupal-facet-item-value="Ooyala"><span class="facet-item__value">Ooyala</span>
+  <span class="facet-item__count badge">16</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=products%3AOTT%20Flow/index.html" data-drupal-facet-item-id="products-OTT-Flow" data-drupal-facet-item-value="OTT Flow"><span class="facet-item__value">OTT Flow</span>
+  <span class="facet-item__count badge">2</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=products%3ASocial/index.html" data-drupal-facet-item-id="products-Social" data-drupal-facet-item-value="Social"><span class="facet-item__value">Social</span>
+  <span class="facet-item__count badge">23</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=products%3ASSAI/index.html" data-drupal-facet-item-id="products-SSAI" data-drupal-facet-item-value="SSAI"><span class="facet-item__value">SSAI</span>
+  <span class="facet-item__count badge">20</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=products%3AVideo%20Cloud/index.html" data-drupal-facet-item-id="products-Video-Cloud" data-drupal-facet-item-value="Video Cloud"><span class="facet-item__value">Video Cloud</span>
+  <span class="facet-item__count badge">808</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=products%3AZencoder/index.html" data-drupal-facet-item-id="products-Zencoder" data-drupal-facet-item-value="Zencoder"><span class="facet-item__value">Zencoder</span>
+  <span class="facet-item__count badge">141</span>
+</a></li></ul>
+</div>
+
+  </section>
+
+<section id="block-role" class="block-facet--links block block-facets block-facet-blockroles-taxonomy-term-name clearfix">
+  
+      <h2 class="block-title">Role</h2>
+    
+
+      <div class="facets-widget-links">
+      <ul data-drupal-facet-id="roles_taxonomy_term_name" data-drupal-facet-alias="roles" class="js-facets-links item-list__links"><li class="facet-item"><a href="search?f%5B0%5D=roles%3AAPI%20Developer/index.html" data-drupal-facet-item-id="roles-API-Developer" data-drupal-facet-item-value="API Developer"><span class="facet-item__value">API Developer</span>
+  <span class="facet-item__count badge">450</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=roles%3ADevice%20SDK%20Developer/index.html" data-drupal-facet-item-id="roles-Device-SDK-Developer" data-drupal-facet-item-value="Device SDK Developer"><span class="facet-item__value">Device SDK Developer</span>
+  <span class="facet-item__count badge">126</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=roles%3APlayer%20Developer/index.html" data-drupal-facet-item-id="roles-Player-Developer" data-drupal-facet-item-value="Player Developer"><span class="facet-item__value">Player Developer</span>
+  <span class="facet-item__count badge">327</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=roles%3AStudio%20User/index.html" data-drupal-facet-item-id="roles-Studio-User" data-drupal-facet-item-value="Studio User"><span class="facet-item__value">Studio User</span>
+  <span class="facet-item__count badge">389</span>
+</a></li></ul>
+</div>
+
+  </section>
+
+<section id="block-task" class="block-facet--links block block-facets block-facet-blocktasks-taxonomy-term-name clearfix">
+  
+      <h2 class="block-title">Task</h2>
+    
+
+      <div class="facets-widget-links">
+      <ul data-drupal-facet-id="tasks_taxonomy_term_name" data-drupal-facet-alias="tasks" class="js-facets-links item-list__links"><li class="facet-item"><a href="search?f%5B0%5D=tasks%3AAdd%20Videos/Assets/index.html" data-drupal-facet-item-id="tasks-Add-Videos/Assets" data-drupal-facet-item-value="Add Videos/Assets"><span class="facet-item__value">Add Videos/Assets</span>
+  <span class="facet-item__count badge">59</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=tasks%3AConfigure%20Gallery%20Settings/index.html" data-drupal-facet-item-id="tasks-Configure-Gallery-Settings" data-drupal-facet-item-value="Configure Gallery Settings"><span class="facet-item__value">Configure Gallery Settings</span>
+  <span class="facet-item__count badge">6</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=tasks%3ACreate%20%26%20Configure%20Players/index.html" data-drupal-facet-item-id="tasks-Create-&amp;-Configure-Players" data-drupal-facet-item-value="Create &amp; Configure Players"><span class="facet-item__value">Create &amp; Configure Players</span>
+  <span class="facet-item__count badge">58</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=tasks%3ACreate%20%26%20Use%20Playlists/index.html" data-drupal-facet-item-id="tasks-Create-&amp;-Use-Playlists" data-drupal-facet-item-value="Create &amp; Use Playlists"><span class="facet-item__value">Create &amp; Use Playlists</span>
+  <span class="facet-item__count badge">17</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=tasks%3ACreate%20a%20Landing%20Page%20Experience/index.html" data-drupal-facet-item-id="tasks-Create-a-Landing-Page-Experience" data-drupal-facet-item-value="Create a Landing Page Experience"><span class="facet-item__value">Create a Landing Page Experience</span>
+  <span class="facet-item__count badge">3</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=tasks%3ACreate%20an%20Event%20Experience/index.html" data-drupal-facet-item-id="tasks-Create-an-Event-Experience" data-drupal-facet-item-value="Create an Event Experience"><span class="facet-item__value">Create an Event Experience</span>
+  <span class="facet-item__count badge">8</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=tasks%3ACreate%20an%20In-Page%20Experience/index.html" data-drupal-facet-item-id="tasks-Create-an-In-Page-Experience" data-drupal-facet-item-value="Create an In-Page Experience"><span class="facet-item__value">Create an In-Page Experience</span>
+  <span class="facet-item__count badge">28</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=tasks%3ACreate%20a%20Portal%20Experience/index.html" data-drupal-facet-item-id="tasks-Create-a-Portal-Experience" data-drupal-facet-item-value="Create a Portal Experience"><span class="facet-item__value">Create a Portal Experience</span>
+  <span class="facet-item__count badge">35</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=tasks%3ADevelop%20with%20the%20Native%20SDKs/index.html" data-drupal-facet-item-id="tasks-Develop-with-the-Native-SDKs" data-drupal-facet-item-value="Develop with the Native SDKs"><span class="facet-item__value">Develop with the Native SDKs</span>
+  <span class="facet-item__count badge">47</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=tasks%3AGet%20Started%20using%20Brightcove%20Player%20Studio/index.html" data-drupal-facet-item-id="tasks-Get-Started-using-Brightcove-Player-Studio" data-drupal-facet-item-value="Get Started using Brightcove Player Studio"><span class="facet-item__value">Get Started using Brightcove Player Studio</span>
+  <span class="facet-item__count badge">2</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=tasks%3AGet%20Started%20using%20Gallery/index.html" data-drupal-facet-item-id="tasks-Get-Started-using-Gallery" data-drupal-facet-item-value="Get Started using Gallery"><span class="facet-item__value">Get Started using Gallery</span>
+  <span class="facet-item__count badge">11</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=tasks%3AGet%20Started%20using%20Video%20Cloud%20Studio/index.html" data-drupal-facet-item-id="tasks-Get-Started-using-Video-Cloud-Studio" data-drupal-facet-item-value="Get Started using Video Cloud Studio"><span class="facet-item__value">Get Started using Video Cloud Studio</span>
+  <span class="facet-item__count badge">13</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=tasks%3AGet%20Started%20with%20Player%20Development/index.html" data-drupal-facet-item-id="tasks-Get-Started-with-Player-Development" data-drupal-facet-item-value="Get Started with Player Development"><span class="facet-item__value">Get Started with Player Development</span>
+  <span class="facet-item__count badge">9</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=tasks%3AGet%20Video%20Metadata/index.html" data-drupal-facet-item-id="tasks-Get-Video-Metadata" data-drupal-facet-item-value="Get Video Metadata"><span class="facet-item__value">Get Video Metadata</span>
+  <span class="facet-item__count badge">11</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=tasks%3AManage%20Videos/index.html" data-drupal-facet-item-id="tasks-Manage-Videos" data-drupal-facet-item-value="Manage Videos"><span class="facet-item__value">Manage Videos</span>
+  <span class="facet-item__count badge">69</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=tasks%3ANative%20SDK%20for%20Android/index.html" data-drupal-facet-item-id="tasks-Native-SDK-for-Android" data-drupal-facet-item-value="Native SDK for Android"><span class="facet-item__value">Native SDK for Android</span>
+  <span class="facet-item__count badge">2</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=tasks%3ANative%20SDK%20for%20iOS/index.html" data-drupal-facet-item-id="tasks-Native-SDK-for-iOS" data-drupal-facet-item-value="Native SDK for iOS"><span class="facet-item__value">Native SDK for iOS</span>
+  <span class="facet-item__count badge">1</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=tasks%3APreview%20%26%20Publish%20Experiences/index.html" data-drupal-facet-item-id="tasks-Preview-&amp;-Publish-Experiences" data-drupal-facet-item-value="Preview &amp; Publish Experiences"><span class="facet-item__value">Preview &amp; Publish Experiences</span>
+  <span class="facet-item__count badge">4</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=tasks%3AProtect%20Videos/index.html" data-drupal-facet-item-id="tasks-Protect-Videos" data-drupal-facet-item-value="Protect Videos"><span class="facet-item__value">Protect Videos</span>
+  <span class="facet-item__count badge">12</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=tasks%3APublish%20Videos/index.html" data-drupal-facet-item-id="tasks-Publish-Videos" data-drupal-facet-item-value="Publish Videos"><span class="facet-item__value">Publish Videos</span>
+  <span class="facet-item__count badge">27</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=tasks%3AReplace/Retranscode%20Videos/index.html" data-drupal-facet-item-id="tasks-Replace/Retranscode-Videos" data-drupal-facet-item-value="Replace/Retranscode Videos"><span class="facet-item__value">Replace/Retranscode Videos</span>
+  <span class="facet-item__count badge">8</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=tasks%3AShare%20Using%20Brightcove%20Social/index.html" data-drupal-facet-item-id="tasks-Share-Using-Brightcove-Social" data-drupal-facet-item-value="Share Using Brightcove Social"><span class="facet-item__value">Share Using Brightcove Social</span>
+  <span class="facet-item__count badge">12</span>
+</a></li></ul>
+</div>
+
+  </section>
+
+<section id="block-topic" class="block-facet--links block block-facets block-facet-blocktopics-taxonomy-term-name clearfix">
+  
+      <h2 class="block-title">Topic</h2>
+    
+
+      <div class="facets-widget-links">
+      <ul data-drupal-facet-id="topics_taxonomy_term_name" data-drupal-facet-alias="topics" class="js-facets-links item-list__links"><li class="facet-item"><a href="search?f%5B0%5D=topics%3A360%20Video/index.html" data-drupal-facet-item-id="topics-360-Video" data-drupal-facet-item-value="360 Video"><span class="facet-item__value">360 Video</span>
+  <span class="facet-item__count badge">4</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3AAccess%20Control/index.html" data-drupal-facet-item-id="topics-Access-Control" data-drupal-facet-item-value="Access Control"><span class="facet-item__value">Access Control</span>
+  <span class="facet-item__count badge">4</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3AAccessibility/index.html" data-drupal-facet-item-id="topics-Accessibility" data-drupal-facet-item-value="Accessibility"><span class="facet-item__value">Accessibility</span>
+  <span class="facet-item__count badge">8</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3AAdministration/index.html" data-drupal-facet-item-id="topics-Administration" data-drupal-facet-item-value="Administration"><span class="facet-item__value">Administration</span>
+  <span class="facet-item__count badge">28</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3AAdvanced%20HTML/CSS/index.html" data-drupal-facet-item-id="topics-Advanced-HTML/CSS" data-drupal-facet-item-value="Advanced HTML/CSS"><span class="facet-item__value">Advanced HTML/CSS</span>
+  <span class="facet-item__count badge">19</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3AAdvertising/index.html" data-drupal-facet-item-id="topics-Advertising" data-drupal-facet-item-value="Advertising"><span class="facet-item__value">Advertising</span>
+  <span class="facet-item__count badge">40</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3AAnalytics/index.html" data-drupal-facet-item-id="topics-Analytics" data-drupal-facet-item-value="Analytics"><span class="facet-item__value">Analytics</span>
+  <span class="facet-item__count badge">78</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3AAPI%20Overviews/index.html" data-drupal-facet-item-id="topics-API-Overviews" data-drupal-facet-item-value="API Overviews"><span class="facet-item__value">API Overviews</span>
+  <span class="facet-item__count badge">20</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3AArchitecture/index.html" data-drupal-facet-item-id="topics-Architecture" data-drupal-facet-item-value="Architecture"><span class="facet-item__value">Architecture</span>
+  <span class="facet-item__count badge">14</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3AAudience/Marketing%20Automation/index.html" data-drupal-facet-item-id="topics-Audience/Marketing-Automation" data-drupal-facet-item-value="Audience/Marketing Automation"><span class="facet-item__value">Audience/Marketing Automation</span>
+  <span class="facet-item__count badge">35</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3AAudio/index.html" data-drupal-facet-item-id="topics-Audio" data-drupal-facet-item-value="Audio"><span class="facet-item__value">Audio</span>
+  <span class="facet-item__count badge">17</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3AAuthentication/index.html" data-drupal-facet-item-id="topics-Authentication" data-drupal-facet-item-value="Authentication"><span class="facet-item__value">Authentication</span>
+  <span class="facet-item__count badge">15</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3ABasics/index.html" data-drupal-facet-item-id="topics-Basics" data-drupal-facet-item-value="Basics"><span class="facet-item__value">Basics</span>
+  <span class="facet-item__count badge">28</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3ACaptions/index.html" data-drupal-facet-item-id="topics-Captions" data-drupal-facet-item-value="Captions"><span class="facet-item__value">Captions</span>
+  <span class="facet-item__count badge">16</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3ACMS%20Integrations/index.html" data-drupal-facet-item-id="topics-CMS-Integrations" data-drupal-facet-item-value="CMS Integrations"><span class="facet-item__value">CMS Integrations</span>
+  <span class="facet-item__count badge">23</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3ACode%20Samples/index.html" data-drupal-facet-item-id="topics-Code-Samples" data-drupal-facet-item-value="Code Samples"><span class="facet-item__value">Code Samples</span>
+  <span class="facet-item__count badge">106</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3ACue%20Points/index.html" data-drupal-facet-item-id="topics-Cue-Points" data-drupal-facet-item-value="Cue Points"><span class="facet-item__value">Cue Points</span>
+  <span class="facet-item__count badge">4</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3ADeveloper%20Concepts/Tools/index.html" data-drupal-facet-item-id="topics-Developer-Concepts/Tools" data-drupal-facet-item-value="Developer Concepts/Tools"><span class="facet-item__value">Developer Concepts/Tools</span>
+  <span class="facet-item__count badge">19</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3ADomains%20%26%20SSL/index.html" data-drupal-facet-item-id="topics-Domains-&amp;-SSL" data-drupal-facet-item-value="Domains &amp; SSL"><span class="facet-item__value">Domains &amp; SSL</span>
+  <span class="facet-item__count badge">6</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3ADRM/index.html" data-drupal-facet-item-id="topics-DRM" data-drupal-facet-item-value="DRM"><span class="facet-item__value">DRM</span>
+  <span class="facet-item__count badge">13</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3ADynamic%20Delivery/index.html" data-drupal-facet-item-id="topics-Dynamic-Delivery" data-drupal-facet-item-value="Dynamic Delivery"><span class="facet-item__value">Dynamic Delivery</span>
+  <span class="facet-item__count badge">19</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3AeCDN%20Integrations/index.html" data-drupal-facet-item-id="topics-eCDN-Integrations" data-drupal-facet-item-value="eCDN Integrations"><span class="facet-item__value">eCDN Integrations</span>
+  <span class="facet-item__count badge">3</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3AEncoding%20Settings/index.html" data-drupal-facet-item-id="topics-Encoding-Settings" data-drupal-facet-item-value="Encoding Settings"><span class="facet-item__value">Encoding Settings</span>
+  <span class="facet-item__count badge">34</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3AEndscreens/index.html" data-drupal-facet-item-id="topics-Endscreens" data-drupal-facet-item-value="Endscreens"><span class="facet-item__value">Endscreens</span>
+  <span class="facet-item__count badge">3</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3AEvents/index.html" data-drupal-facet-item-id="topics-Events" data-drupal-facet-item-value="Events"><span class="facet-item__value">Events</span>
+  <span class="facet-item__count badge">5</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3AFAQ/index.html" data-drupal-facet-item-id="topics-FAQ" data-drupal-facet-item-value="FAQ"><span class="facet-item__value">FAQ</span>
+  <span class="facet-item__count badge">11</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3AGallery%20SSO/index.html" data-drupal-facet-item-id="topics-Gallery-SSO" data-drupal-facet-item-value="Gallery SSO"><span class="facet-item__value">Gallery SSO</span>
+  <span class="facet-item__count badge">1</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3AGeneral%20Info/index.html" data-drupal-facet-item-id="topics-General-Info" data-drupal-facet-item-value="General Info"><span class="facet-item__value">General Info</span>
+  <span class="facet-item__count badge">27</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3AGeo%20Restriction/index.html" data-drupal-facet-item-id="topics-Geo-Restriction" data-drupal-facet-item-value="Geo Restriction"><span class="facet-item__value">Geo Restriction</span>
+  <span class="facet-item__count badge">5</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3AID3/index.html" data-drupal-facet-item-id="topics-ID3" data-drupal-facet-item-value="ID3"><span class="facet-item__value">ID3</span>
+  <span class="facet-item__count badge">1</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3AImages/index.html" data-drupal-facet-item-id="topics-Images" data-drupal-facet-item-value="Images"><span class="facet-item__value">Images</span>
+  <span class="facet-item__count badge">6</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3AIngest%20Profiles/index.html" data-drupal-facet-item-id="topics-Ingest-Profiles" data-drupal-facet-item-value="Ingest Profiles"><span class="facet-item__value">Ingest Profiles</span>
+  <span class="facet-item__count badge">30</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3ALegacy%20Migration/index.html" data-drupal-facet-item-id="topics-Legacy-Migration" data-drupal-facet-item-value="Legacy Migration"><span class="facet-item__value">Legacy Migration</span>
+  <span class="facet-item__count badge">2</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3ALegacy%20Studio/index.html" data-drupal-facet-item-id="topics-Legacy-Studio" data-drupal-facet-item-value="Legacy Studio"><span class="facet-item__value">Legacy Studio</span>
+  <span class="facet-item__count badge">2</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3ALive%20Module/index.html" data-drupal-facet-item-id="topics-Live-Module" data-drupal-facet-item-value="Live Module"><span class="facet-item__value">Live Module</span>
+  <span class="facet-item__count badge">18</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3ALive%20Streaming/index.html" data-drupal-facet-item-id="topics-Live-Streaming" data-drupal-facet-item-value="Live Streaming"><span class="facet-item__value">Live Streaming</span>
+  <span class="facet-item__count badge">51</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3ALocalization/index.html" data-drupal-facet-item-id="topics-Localization" data-drupal-facet-item-value="Localization"><span class="facet-item__value">Localization</span>
+  <span class="facet-item__count badge">3</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3AMedia%20Sharing/index.html" data-drupal-facet-item-id="topics-Media-Sharing" data-drupal-facet-item-value="Media Sharing"><span class="facet-item__value">Media Sharing</span>
+  <span class="facet-item__count badge">9</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3ANotifications/index.html" data-drupal-facet-item-id="topics-Notifications" data-drupal-facet-item-value="Notifications"><span class="facet-item__value">Notifications</span>
+  <span class="facet-item__count badge">8</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3AOnline%20Training/index.html" data-drupal-facet-item-id="topics-Online-Training" data-drupal-facet-item-value="Online Training"><span class="facet-item__value">Online Training</span>
+  <span class="facet-item__count badge">10</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3AOoyala-to-Brightcove%20Migration/index.html" data-drupal-facet-item-id="topics-Ooyala-to-Brightcove-Migration" data-drupal-facet-item-value="Ooyala-to-Brightcove Migration"><span class="facet-item__value">Ooyala-to-Brightcove Migration</span>
+  <span class="facet-item__count badge">4</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3AOverlays/index.html" data-drupal-facet-item-id="topics-Overlays" data-drupal-facet-item-value="Overlays"><span class="facet-item__value">Overlays</span>
+  <span class="facet-item__count badge">15</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3APlayback/index.html" data-drupal-facet-item-id="topics-Playback" data-drupal-facet-item-value="Playback"><span class="facet-item__value">Playback</span>
+  <span class="facet-item__count badge">60</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3APlayer/Video%20Availability/index.html" data-drupal-facet-item-id="topics-Player/Video-Availability" data-drupal-facet-item-value="Player/Video Availability"><span class="facet-item__value">Player/Video Availability</span>
+  <span class="facet-item__count badge">5</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3APlayer%20API%20References/index.html" data-drupal-facet-item-id="topics-Player-API-References" data-drupal-facet-item-value="Player API References"><span class="facet-item__value">Player API References</span>
+  <span class="facet-item__count badge">8</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3APlaylists/index.html" data-drupal-facet-item-id="topics-Playlists" data-drupal-facet-item-value="Playlists"><span class="facet-item__value">Playlists</span>
+  <span class="facet-item__count badge">23</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3APlugin%20Development/index.html" data-drupal-facet-item-id="topics-Plugin-Development" data-drupal-facet-item-value="Plugin Development"><span class="facet-item__value">Plugin Development</span>
+  <span class="facet-item__count badge">13</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3APlugins/index.html" data-drupal-facet-item-id="topics-Plugins" data-drupal-facet-item-value="Plugins"><span class="facet-item__value">Plugins</span>
+  <span class="facet-item__count badge">30</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3APolicies/index.html" data-drupal-facet-item-id="topics-Policies" data-drupal-facet-item-value="Policies"><span class="facet-item__value">Policies</span>
+  <span class="facet-item__count badge">2</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3AProfiles/index.html" data-drupal-facet-item-id="topics-Profiles" data-drupal-facet-item-value="Profiles"><span class="facet-item__value">Profiles</span>
+  <span class="facet-item__count badge">1</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3AReferences/index.html" data-drupal-facet-item-id="topics-References" data-drupal-facet-item-value="References"><span class="facet-item__value">References</span>
+  <span class="facet-item__count badge">18</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3ARelease%20Notes/index.html" data-drupal-facet-item-id="topics-Release-Notes" data-drupal-facet-item-value="Release Notes"><span class="facet-item__value">Release Notes</span>
+  <span class="facet-item__count badge">9</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3ARemote%20Assets/index.html" data-drupal-facet-item-id="topics-Remote-Assets" data-drupal-facet-item-value="Remote Assets"><span class="facet-item__value">Remote Assets</span>
+  <span class="facet-item__count badge">3</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3ARenditions/index.html" data-drupal-facet-item-id="topics-Renditions" data-drupal-facet-item-value="Renditions"><span class="facet-item__value">Renditions</span>
+  <span class="facet-item__count badge">2</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3ASDK%20Overviews/index.html" data-drupal-facet-item-id="topics-SDK-Overviews" data-drupal-facet-item-value="SDK Overviews"><span class="facet-item__value">SDK Overviews</span>
+  <span class="facet-item__count badge">1</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3ASearching/index.html" data-drupal-facet-item-id="topics-Searching" data-drupal-facet-item-value="Searching"><span class="facet-item__value">Searching</span>
+  <span class="facet-item__count badge">8</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3ASEO/index.html" data-drupal-facet-item-id="topics-SEO" data-drupal-facet-item-value="SEO"><span class="facet-item__value">SEO</span>
+  <span class="facet-item__count badge">8</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3ASocial%20Sharing/index.html" data-drupal-facet-item-id="topics-Social-Sharing" data-drupal-facet-item-value="Social Sharing"><span class="facet-item__value">Social Sharing</span>
+  <span class="facet-item__count badge">16</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3ASSAI/index.html" data-drupal-facet-item-id="topics-SSAI" data-drupal-facet-item-value="SSAI"><span class="facet-item__value">SSAI</span>
+  <span class="facet-item__count badge">14</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3AStyling/index.html" data-drupal-facet-item-id="topics-Styling" data-drupal-facet-item-value="Styling"><span class="facet-item__value">Styling</span>
+  <span class="facet-item__count badge">29</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3ASystem%20Requirements/index.html" data-drupal-facet-item-id="topics-System-Requirements" data-drupal-facet-item-value="System Requirements"><span class="facet-item__value">System Requirements</span>
+  <span class="facet-item__count badge">7</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3ATemplates/index.html" data-drupal-facet-item-id="topics-Templates" data-drupal-facet-item-value="Templates"><span class="facet-item__value">Templates</span>
+  <span class="facet-item__count badge">3</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3AText%20Tracks/index.html" data-drupal-facet-item-id="topics-Text-Tracks" data-drupal-facet-item-value="Text Tracks"><span class="facet-item__value">Text Tracks</span>
+  <span class="facet-item__count badge">7</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=topics%3ATroubleshooting/Error%20Handling/index.html" data-drupal-facet-item-id="topics-Troubleshooting/Error-Handling" data-drupal-facet-item-value="Troubleshooting/Error Handling"><span class="facet-item__value">Troubleshooting/Error Handling</span>
+  <span class="facet-item__count badge">43</span>
+</a></li></ul>
+</div>
+
+  </section>
+
+<section id="block-api" class="block-facet--links block block-facets block-facet-blockapis-taxonomy-term-name clearfix">
+  
+      <h2 class="block-title">API</h2>
+    
+
+      <div class="facets-widget-links">
+      <ul data-drupal-facet-id="apis_taxonomy_term_name" data-drupal-facet-alias="apis" class="js-facets-links item-list__links"><li class="facet-item"><a href="search?f%5B0%5D=apis%3AAnalytics%20API/index.html" data-drupal-facet-item-id="apis-Analytics-API" data-drupal-facet-item-value="Analytics API"><span class="facet-item__value">Analytics API</span>
+  <span class="facet-item__count badge">58</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=apis%3AAudience%20API/index.html" data-drupal-facet-item-id="apis-Audience-API" data-drupal-facet-item-value="Audience API"><span class="facet-item__value">Audience API</span>
+  <span class="facet-item__count badge">9</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=apis%3ACMS%20API/index.html" data-drupal-facet-item-id="apis-CMS-API" data-drupal-facet-item-value="CMS API"><span class="facet-item__value">CMS API</span>
+  <span class="facet-item__count badge">72</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=apis%3ADelivery%20System%20API/index.html" data-drupal-facet-item-id="apis-Delivery-System-API" data-drupal-facet-item-value="Delivery System API"><span class="facet-item__value">Delivery System API</span>
+  <span class="facet-item__count badge">10</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=apis%3ADynamic%20Ingest%20API/index.html" data-drupal-facet-item-id="apis-Dynamic-Ingest-API" data-drupal-facet-item-value="Dynamic Ingest API"><span class="facet-item__value">Dynamic Ingest API</span>
+  <span class="facet-item__count badge">51</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=apis%3AIn-Page%20Experiences%20API%20%28Client%29/index.html" data-drupal-facet-item-id="apis-In-Page-Experiences-API-(Client)" data-drupal-facet-item-value="In-Page Experiences API (Client)"><span class="facet-item__value">In-Page Experiences API (Client)</span>
+  <span class="facet-item__count badge">4</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=apis%3AIn-Page%20Experiences%20API%20%28Platform%29/index.html" data-drupal-facet-item-id="apis-In-Page-Experiences-API-(Platform)" data-drupal-facet-item-value="In-Page Experiences API (Platform)"><span class="facet-item__value">In-Page Experiences API (Platform)</span>
+  <span class="facet-item__count badge">5</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=apis%3AIngest%20Profiles%20API/index.html" data-drupal-facet-item-id="apis-Ingest-Profiles-API" data-drupal-facet-item-value="Ingest Profiles API"><span class="facet-item__value">Ingest Profiles API</span>
+  <span class="facet-item__count badge">31</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=apis%3ALive%20API/index.html" data-drupal-facet-item-id="apis-Live-API" data-drupal-facet-item-value="Live API"><span class="facet-item__value">Live API</span>
+  <span class="facet-item__count badge">37</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=apis%3AOAuth%20API/index.html" data-drupal-facet-item-id="apis-OAuth-API" data-drupal-facet-item-value="OAuth API"><span class="facet-item__value">OAuth API</span>
+  <span class="facet-item__count badge">18</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=apis%3APlayback%20API/index.html" data-drupal-facet-item-id="apis-Playback-API" data-drupal-facet-item-value="Playback API"><span class="facet-item__value">Playback API</span>
+  <span class="facet-item__count badge">30</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=apis%3APlayer%20Management%20API/index.html" data-drupal-facet-item-id="apis-Player-Management-API" data-drupal-facet-item-value="Player Management API"><span class="facet-item__value">Player Management API</span>
+  <span class="facet-item__count badge">29</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=apis%3APolicy%20API/index.html" data-drupal-facet-item-id="apis-Policy-API" data-drupal-facet-item-value="Policy API"><span class="facet-item__value">Policy API</span>
+  <span class="facet-item__count badge">13</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=apis%3ASocial%20API/index.html" data-drupal-facet-item-id="apis-Social-API" data-drupal-facet-item-value="Social API"><span class="facet-item__value">Social API</span>
+  <span class="facet-item__count badge">4</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=apis%3ASSAI%20API/index.html" data-drupal-facet-item-id="apis-SSAI-API" data-drupal-facet-item-value="SSAI API"><span class="facet-item__value">SSAI API</span>
+  <span class="facet-item__count badge">1</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=apis%3AZencoder%20API/index.html" data-drupal-facet-item-id="apis-Zencoder-API" data-drupal-facet-item-value="Zencoder API"><span class="facet-item__value">Zencoder API</span>
+  <span class="facet-item__count badge">134</span>
+</a></li></ul>
+</div>
+
+  </section>
+
+<section id="block-sdk" class="block-facet--links block block-facets block-facet-blocksdk-taxonomy-term-name clearfix">
+  
+      <h2 class="block-title">SDK</h2>
+    
+
+      <div class="facets-widget-links">
+      <ul data-drupal-facet-id="sdk_taxonomy_term_name" data-drupal-facet-alias="sdk" class="js-facets-links item-list__links"><li class="facet-item"><a href="search?f%5B0%5D=sdk%3AAndroid/index.html" data-drupal-facet-item-id="sdk-Android" data-drupal-facet-item-value="Android"><span class="facet-item__value">Android</span>
+  <span class="facet-item__count badge">70</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=sdk%3AAnnouncement/index.html" data-drupal-facet-item-id="sdk-Announcement" data-drupal-facet-item-value="Announcement"><span class="facet-item__value">Announcement</span>
+  <span class="facet-item__count badge">4</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=sdk%3AGet%20Started/index.html" data-drupal-facet-item-id="sdk-Get-Started" data-drupal-facet-item-value="Get Started"><span class="facet-item__value">Get Started</span>
+  <span class="facet-item__count badge">16</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=sdk%3AiOS/index.html" data-drupal-facet-item-id="sdk-iOS" data-drupal-facet-item-value="iOS"><span class="facet-item__value">iOS</span>
+  <span class="facet-item__count badge">54</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=sdk%3AOverview/index.html" data-drupal-facet-item-id="sdk-Overview" data-drupal-facet-item-value="Overview"><span class="facet-item__value">Overview</span>
+  <span class="facet-item__count badge">5</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=sdk%3AtvOS/index.html" data-drupal-facet-item-id="sdk-tvOS" data-drupal-facet-item-value="tvOS"><span class="facet-item__value">tvOS</span>
+  <span class="facet-item__count badge">36</span>
+</a></li></ul>
+</div>
+
+  </section>
+
+<section id="block-contenttype" class="block-facet--links block block-facets block-facet-blockcontent-type clearfix">
+  
+      <h2 class="block-title">Content type</h2>
+    
+
+      <div class="facets-widget-links">
+      <ul data-drupal-facet-id="content_type" data-drupal-facet-alias="content_type" class="js-facets-links item-list__links"><li class="facet-item"><a href="search?f%5B0%5D=content_type%3Arelease_notes/index.html" data-drupal-facet-item-id="content_type-release_notes" data-drupal-facet-item-value="release_notes"><span class="facet-item__value">Release Notes</span>
+  <span class="facet-item__count badge">30</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=content_type%3Asupport_doc/index.html" data-drupal-facet-item-id="content_type-support_doc" data-drupal-facet-item-value="support_doc"><span class="facet-item__value">Support Doc</span>
+  <span class="facet-item__count badge">1018</span>
+</a></li><li class="facet-item"><a href="search?f%5B0%5D=content_type%3Atraining_video/index.html" data-drupal-facet-item-id="content_type-training_video" data-drupal-facet-item-value="training_video"><span class="facet-item__value">Training Video</span>
+  <span class="facet-item__count badge">24</span>
+</a></li></ul>
+</div>
+
+  </section>
+
+
+  </div>
+
+          </aside>
+              
+                  <section class="col-sm-9">
+
+                                      <div class="highlighted">  <div class="region region-highlighted">
+    <div data-drupal-messages-fallback="" class="hidden"></div>
+
+  </div>
+</div>
+                  
+                
+                
+                
+                          <a id="main-content"></a>
+            <div class="region region-content">
+    <section class="views-exposed-form block block-views block-views-exposed-filter-blocksearch-page-1 clearfix" data-drupal-selector="views-exposed-form-search-page-1" id="block-exposedformsearchpage-1">
+  
+    
+
+      <form action="/search" method="get" id="views-exposed-form-search-page-1" accept-charset="UTF-8">
+  <div class="form--inline form-inline clearfix">
+  <div class="form-item js-form-item form-type-textfield js-form-type-textfield form-item-search js-form-item-search form-group">
+      <label for="edit-search" class="control-label">Search</label>
+  
+  
+  <input data-drupal-selector="edit-search" class="form-text form-control" type="text" id="edit-search" name="search" value="" size="30" maxlength="128">
+
+  
+  
+  </div>
+<div data-drupal-selector="edit-actions" class="form-actions form-group js-form-wrapper form-wrapper" id="edit-actions"><button data-drupal-selector="edit-submit-search" class="button js-form-submit form-submit btn-primary btn icon-before" type="submit" id="edit-submit-search" value="Search" name=""><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span>
+Search</button></div>
+
+</div>
+
+</form>
+
+  </section>
+
+<section id="block-activefacets" class="block block-bc-search-fixes block-bc-search-fixes-active-facets clearfix">
+  
+      <h2 class="block-title">Active filters</h2>
+    
+
+      No filters selected.
+  </section>
+
+  <div class="views-element-container form-group"><div class="view view-search view-id-search view-display-id-page_1 js-view-dom-id-f7143178157b5cf50ed25bf55c17a615b870e2ebc2dbfd01996c32ef7d1c3052">
+  
+    
+      <div class="view-header">
+      Displaying 1 - 20 of 1072
+    </div>
+      
+      <div class="view-content">
+          <div class="views-row">
+<div class="node node--type-support-doc node--view-mode-teaser bcdocs-four-rows clearfix">
+
+  
+
+  <div class="group-first-row">
+          <svg class="icon__content-type--support-doc" viewBox="0 0 100 100">
+        <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__content-type--support-doc"></use>
+      </svg>
+      
+            <div class="field field--name-node-title field--type-ds field--label-hidden field--item"><h2>
+  <a href="brightcove-player-6-now-default-version/index.html" hreflang="en">Brightcove Player 6 Now Default Version</a>
+</h2>
+</div>
+      
+      </div>
+
+  <div class="group-second-row">
+  
+            <div class="field field--name-field-support-doc-body field--type-text-with-summary field--label-hidden field--item">Brightcove Player 6 is now the default version for newly created players, a major version update.</div>
+      
+  <div class="field field--name-field-products field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Product(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--product" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--product"></use>
+        </svg>
+              <div class="field--item">Video Cloud</div>
+          <div class="field--item">Brightcove Player</div>
+              </div>
+      </div>
+
+  <div class="field field--name-field-roles field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Role(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--roles" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--roles"></use>
+        </svg>
+              <div class="field--item">Player Developer</div>
+              </div>
+      </div>
+
+</div>
+
+  
+<div class="group-third-row taxonomy__tags">
+      <svg class="icon--label" viewBox="0 0 100 100">
+      <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--label"></use>
+    </svg>
+    
+  <div class="field field--name-field-topics field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Topic(s)</div>
+          <div class="field--items">
+              <div class="field--item">Release Notes</div>
+              </div>
+      </div>
+
+</div>
+
+  <div class="group-fourth-row">
+  
+</div>
+
+</div>
+
+</div>
+    <div class="views-row">
+<div class="node node--type-support-doc node--view-mode-teaser bcdocs-four-rows clearfix">
+
+  
+
+  <div class="group-first-row">
+          <svg class="icon__content-type--support-doc" viewBox="0 0 100 100">
+        <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__content-type--support-doc"></use>
+      </svg>
+      
+            <div class="field field--name-node-title field--type-ds field--label-hidden field--item"><h2>
+  <a href="adding-components-page-experience/index.html" hreflang="en">Adding Components to an In-Page Experience</a>
+</h2>
+</div>
+      
+      </div>
+
+  <div class="group-second-row">
+  
+            <div class="field field--name-field-support-doc-body field--type-text-with-summary field--label-hidden field--item">In this topic you will learn how to add components to an in-page experience.</div>
+      
+  <div class="field field--name-field-products field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Product(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--product" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--product"></use>
+        </svg>
+              <div class="field--item">Gallery</div>
+              </div>
+      </div>
+
+  <div class="field field--name-field-roles field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Role(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--roles" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--roles"></use>
+        </svg>
+              <div class="field--item">Studio User</div>
+              </div>
+      </div>
+
+</div>
+
+  
+<div class="group-third-row taxonomy__tags">
+      <svg class="icon--label" viewBox="0 0 100 100">
+      <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--label"></use>
+    </svg>
+    
+  <div class="field field--name-field-tasks field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Task(s)</div>
+          <div class="field--items">
+              <div class="field--item">Create an In-Page Experience</div>
+              </div>
+      </div>
+
+</div>
+
+  <div class="group-fourth-row">
+  
+</div>
+
+</div>
+
+</div>
+    <div class="views-row">
+<div class="node node--type-support-doc node--view-mode-teaser bcdocs-four-rows clearfix">
+
+  
+
+  <div class="group-first-row">
+          <svg class="icon__content-type--support-doc" viewBox="0 0 100 100">
+        <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__content-type--support-doc"></use>
+      </svg>
+      
+            <div class="field field--name-node-title field--type-ds field--label-hidden field--item"><h2>
+  <a href="step-step-creating-and-publishing-page-experience/index.html" hreflang="en">Step-by-Step: Creating and Publishing an In-Page Experience</a>
+</h2>
+</div>
+      
+      </div>
+
+  <div class="group-second-row">
+  
+            <div class="field field--name-field-support-doc-body field--type-text-with-summary field--label-hidden field--item">The purpose of this Quick Start is to show you how you can create an in-page experience using Brightcove Gallery.</div>
+      
+  <div class="field field--name-field-products field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Product(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--product" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--product"></use>
+        </svg>
+              <div class="field--item">Gallery</div>
+              </div>
+      </div>
+
+  <div class="field field--name-field-roles field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Role(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--roles" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--roles"></use>
+        </svg>
+              <div class="field--item">Studio User</div>
+              </div>
+      </div>
+
+</div>
+
+  
+<div class="group-third-row taxonomy__tags">
+      <svg class="icon--label" viewBox="0 0 100 100">
+      <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--label"></use>
+    </svg>
+    
+  <div class="field field--name-field-tasks field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Task(s)</div>
+          <div class="field--items">
+              <div class="field--item">Create an In-Page Experience</div>
+          <div class="field--item">Get Started using Gallery</div>
+              </div>
+      </div>
+
+</div>
+
+  <div class="group-fourth-row">
+  
+</div>
+
+</div>
+
+</div>
+    <div class="views-row">
+<div class="node node--type-support-doc node--view-mode-teaser bcdocs-four-rows clearfix">
+
+  
+
+  <div class="group-first-row">
+          <svg class="icon__content-type--support-doc" viewBox="0 0 100 100">
+        <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__content-type--support-doc"></use>
+      </svg>
+      
+            <div class="field field--name-node-title field--type-ds field--label-hidden field--item"><h2>
+  <a href="previewing-and-publishing-page-experience/index.html" hreflang="en">Previewing and Publishing an In-Page Experience</a>
+</h2>
+</div>
+      
+      </div>
+
+  <div class="group-second-row">
+  
+            <div class="field field--name-field-support-doc-body field--type-text-with-summary field--label-hidden field--item">In this topic you will learn how to preview and publish an in-page experience.</div>
+      
+  <div class="field field--name-field-products field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Product(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--product" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--product"></use>
+        </svg>
+              <div class="field--item">Gallery</div>
+              </div>
+      </div>
+
+  <div class="field field--name-field-roles field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Role(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--roles" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--roles"></use>
+        </svg>
+              <div class="field--item">Studio User</div>
+              </div>
+      </div>
+
+</div>
+
+  
+<div class="group-third-row taxonomy__tags">
+      <svg class="icon--label" viewBox="0 0 100 100">
+      <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--label"></use>
+    </svg>
+    
+  <div class="field field--name-field-tasks field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Task(s)</div>
+          <div class="field--items">
+              <div class="field--item">Create an In-Page Experience</div>
+          <div class="field--item">Preview &amp; Publish Experiences</div>
+              </div>
+      </div>
+
+</div>
+
+  <div class="group-fourth-row">
+  
+</div>
+
+</div>
+
+</div>
+    <div class="views-row">
+<div class="node node--type-support-doc node--view-mode-teaser bcdocs-four-rows clearfix">
+
+  
+
+  <div class="group-first-row">
+          <svg class="icon__content-type--support-doc" viewBox="0 0 100 100">
+        <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__content-type--support-doc"></use>
+      </svg>
+      
+            <div class="field field--name-node-title field--type-ds field--label-hidden field--item"><h2>
+  <a href="adding-videos-page-experience/index.html" hreflang="en">Adding Videos to an In-Page Experience</a>
+</h2>
+</div>
+      
+      </div>
+
+  <div class="group-second-row">
+  
+            <div class="field field--name-field-support-doc-body field--type-text-with-summary field--label-hidden field--item">In this topic you will learn how to add videos to an in-page experience.</div>
+      
+  <div class="field field--name-field-products field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Product(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--product" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--product"></use>
+        </svg>
+              <div class="field--item">Gallery</div>
+              </div>
+      </div>
+
+  <div class="field field--name-field-roles field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Role(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--roles" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--roles"></use>
+        </svg>
+              <div class="field--item">Studio User</div>
+              </div>
+      </div>
+
+</div>
+
+  
+<div class="group-third-row taxonomy__tags">
+      <svg class="icon--label" viewBox="0 0 100 100">
+      <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--label"></use>
+    </svg>
+    
+  <div class="field field--name-field-tasks field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Task(s)</div>
+          <div class="field--items">
+              <div class="field--item">Create an In-Page Experience</div>
+              </div>
+      </div>
+
+</div>
+
+  <div class="group-fourth-row">
+  
+</div>
+
+</div>
+
+</div>
+    <div class="views-row">
+<div class="node node--type-support-doc node--view-mode-teaser bcdocs-four-rows clearfix">
+
+  
+
+  <div class="group-first-row">
+          <svg class="icon__content-type--support-doc" viewBox="0 0 100 100">
+        <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__content-type--support-doc"></use>
+      </svg>
+      
+            <div class="field field--name-node-title field--type-ds field--label-hidden field--item"><h2>
+  <a href="creating-social-media-publishing-destinations/index.html" hreflang="en">Creating Social Media Publishing Destinations</a>
+</h2>
+</div>
+      
+      </div>
+
+  <div class="group-second-row">
+  
+            <div class="field field--name-field-support-doc-body field--type-text-with-summary field--label-hidden field--item">In this topic you will learn how to create publishing destinations using Brightcove Social.</div>
+      
+  <div class="field field--name-field-products field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Product(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--product" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--product"></use>
+        </svg>
+              <div class="field--item">Video Cloud</div>
+          <div class="field--item">Social</div>
+              </div>
+      </div>
+
+  <div class="field field--name-field-roles field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Role(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--roles" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--roles"></use>
+        </svg>
+              <div class="field--item">Studio User</div>
+              </div>
+      </div>
+
+</div>
+
+  
+<div class="group-third-row taxonomy__tags">
+      <svg class="icon--label" viewBox="0 0 100 100">
+      <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--label"></use>
+    </svg>
+    
+  <div class="field field--name-field-tasks field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Task(s)</div>
+          <div class="field--items">
+              <div class="field--item">Share Using Brightcove Social</div>
+              </div>
+      </div>
+
+</div>
+
+  <div class="group-fourth-row">
+  
+</div>
+
+</div>
+
+</div>
+    <div class="views-row">
+<div class="node node--type-support-doc node--view-mode-teaser bcdocs-four-rows clearfix">
+
+  
+
+  <div class="group-first-row">
+          <svg class="icon__content-type--support-doc" viewBox="0 0 100 100">
+        <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__content-type--support-doc"></use>
+      </svg>
+      
+            <div class="field field--name-node-title field--type-ds field--label-hidden field--item"><h2>
+  <a href="publishing-videos-social-media-platforms/index.html" hreflang="en">Publishing Videos to Social Media Platforms</a>
+</h2>
+</div>
+      
+      </div>
+
+  <div class="group-second-row">
+  
+            <div class="field field--name-field-support-doc-body field--type-text-with-summary field--label-hidden field--item">In this topic you will learn how to publish videos to social media using Brightcove Social.</div>
+      
+  <div class="field field--name-field-products field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Product(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--product" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--product"></use>
+        </svg>
+              <div class="field--item">Video Cloud</div>
+          <div class="field--item">Social</div>
+              </div>
+      </div>
+
+  <div class="field field--name-field-roles field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Role(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--roles" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--roles"></use>
+        </svg>
+              <div class="field--item">Studio User</div>
+              </div>
+      </div>
+
+</div>
+
+  
+<div class="group-third-row taxonomy__tags">
+      <svg class="icon--label" viewBox="0 0 100 100">
+      <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--label"></use>
+    </svg>
+    
+  <div class="field field--name-field-tasks field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Task(s)</div>
+          <div class="field--items">
+              <div class="field--item">Share Using Brightcove Social</div>
+              </div>
+      </div>
+
+</div>
+
+  <div class="group-fourth-row">
+  
+</div>
+
+</div>
+
+</div>
+    <div class="views-row">
+<div class="node node--type-support-doc node--view-mode-teaser bcdocs-four-rows clearfix">
+
+  
+
+  <div class="group-first-row">
+          <svg class="icon__content-type--support-doc" viewBox="0 0 100 100">
+        <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__content-type--support-doc"></use>
+      </svg>
+      
+            <div class="field field--name-node-title field--type-ds field--label-hidden field--item"><h2>
+  <a href="getting-started-brightcove-social/index.html" hreflang="en">Getting Started with Brightcove Social</a>
+</h2>
+</div>
+      
+      </div>
+
+  <div class="group-second-row">
+  
+            <div class="field field--name-field-support-doc-body field--type-text-with-summary field--label-hidden field--item">This topic provides an overview of Brightcove Social. Brightcove Social allows you to easily publish videos in your Video Cloud account out to popular social media platforms such as YouTube, Facebook and Twitter.</div>
+      
+  <div class="field field--name-field-products field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Product(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--product" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--product"></use>
+        </svg>
+              <div class="field--item">Video Cloud</div>
+          <div class="field--item">Social</div>
+              </div>
+      </div>
+
+  <div class="field field--name-field-roles field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Role(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--roles" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--roles"></use>
+        </svg>
+              <div class="field--item">Studio User</div>
+              </div>
+      </div>
+
+</div>
+
+  
+<div class="group-third-row taxonomy__tags">
+      <svg class="icon--label" viewBox="0 0 100 100">
+      <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--label"></use>
+    </svg>
+    
+  <div class="field field--name-field-tasks field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Task(s)</div>
+          <div class="field--items">
+              <div class="field--item">Share Using Brightcove Social</div>
+              </div>
+      </div>
+
+</div>
+
+  <div class="group-fourth-row">
+  
+</div>
+
+</div>
+
+</div>
+    <div class="views-row">
+<div class="node node--type-support-doc node--view-mode-teaser bcdocs-four-rows clearfix">
+
+  
+
+  <div class="group-first-row">
+          <svg class="icon__content-type--support-doc" viewBox="0 0 100 100">
+        <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__content-type--support-doc"></use>
+      </svg>
+      
+            <div class="field field--name-node-title field--type-ds field--label-hidden field--item"><h2>
+  <a href="choosing-correct-embed-code/index.html" hreflang="en">Choosing the Correct Embed Code</a>
+</h2>
+</div>
+      
+      </div>
+
+  <div class="group-second-row">
+  
+            <div class="field field--name-field-support-doc-body field--type-text-with-summary field--label-hidden field--item">This topic provides an overview of the types of embed code that are available when publishing videos using the Media module.</div>
+      
+  <div class="field field--name-field-products field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Product(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--product" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--product"></use>
+        </svg>
+              <div class="field--item">Video Cloud</div>
+              </div>
+      </div>
+
+  <div class="field field--name-field-roles field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Role(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--roles" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--roles"></use>
+        </svg>
+              <div class="field--item">Studio User</div>
+          <div class="field--item">Player Developer</div>
+              </div>
+      </div>
+
+</div>
+
+  
+<div class="group-third-row taxonomy__tags">
+      <svg class="icon--label" viewBox="0 0 100 100">
+      <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--label"></use>
+    </svg>
+    
+  <div class="field field--name-field-tasks field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Task(s)</div>
+          <div class="field--items">
+              <div class="field--item">Publish Videos</div>
+              </div>
+      </div>
+
+  <div class="field field--name-field-topics field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Topic(s)</div>
+          <div class="field--items">
+              <div class="field--item">Playback</div>
+              </div>
+      </div>
+
+</div>
+
+  <div class="group-fourth-row">
+  
+</div>
+
+</div>
+
+</div>
+    <div class="views-row">
+<div class="node node--type-support-doc node--view-mode-teaser bcdocs-four-rows clearfix">
+
+  
+
+  <div class="group-first-row">
+          <svg class="icon__content-type--support-doc" viewBox="0 0 100 100">
+        <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__content-type--support-doc"></use>
+      </svg>
+      
+            <div class="field field--name-node-title field--type-ds field--label-hidden field--item"><h2>
+  <a href="quick-start-video-cloud/index.html" hreflang="en">Quick Start to Video Cloud</a>
+</h2>
+</div>
+      
+      </div>
+
+  <div class="group-second-row">
+  
+            <div class="field field--name-field-support-doc-body field--type-text-with-summary field--label-hidden field--item">The objective of this Quick Start is to give you a short, simple guide to follow to help get you started using Video Cloud. This Quick Start will give you a set of hands on steps you can work through on your own to discover some of the features of Video Cloud.</div>
+      
+  <div class="field field--name-field-products field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Product(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--product" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--product"></use>
+        </svg>
+              <div class="field--item">Video Cloud</div>
+              </div>
+      </div>
+
+  <div class="field field--name-field-roles field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Role(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--roles" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--roles"></use>
+        </svg>
+              <div class="field--item">Studio User</div>
+              </div>
+      </div>
+
+</div>
+
+  
+<div class="group-third-row taxonomy__tags">
+      <svg class="icon--label" viewBox="0 0 100 100">
+      <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--label"></use>
+    </svg>
+    
+  <div class="field field--name-field-tasks field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Task(s)</div>
+          <div class="field--items">
+              <div class="field--item">Get Started using Video Cloud Studio</div>
+              </div>
+      </div>
+
+</div>
+
+  <div class="group-fourth-row">
+  
+</div>
+
+</div>
+
+</div>
+    <div class="views-row">
+<div class="node node--type-support-doc node--view-mode-teaser bcdocs-four-rows clearfix">
+
+  
+
+  <div class="group-first-row">
+          <svg class="icon__content-type--support-doc" viewBox="0 0 100 100">
+        <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__content-type--support-doc"></use>
+      </svg>
+      
+            <div class="field field--name-node-title field--type-ds field--label-hidden field--item"><h2>
+  <a href="editing-video-properties-using-media-module/index.html" hreflang="en">Editing Video Properties using the Media Module</a>
+</h2>
+</div>
+      
+      </div>
+
+  <div class="group-second-row">
+  
+            <div class="field field--name-field-support-doc-body field--type-text-with-summary field--label-hidden field--item">In this topic you will learn how to edit video properties using the Media module.</div>
+      
+  <div class="field field--name-field-products field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Product(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--product" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--product"></use>
+        </svg>
+              <div class="field--item">Video Cloud</div>
+              </div>
+      </div>
+
+  <div class="field field--name-field-roles field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Role(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--roles" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--roles"></use>
+        </svg>
+              <div class="field--item">Studio User</div>
+              </div>
+      </div>
+
+</div>
+
+  
+<div class="group-third-row taxonomy__tags">
+      <svg class="icon--label" viewBox="0 0 100 100">
+      <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--label"></use>
+    </svg>
+    
+  <div class="field field--name-field-tasks field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Task(s)</div>
+          <div class="field--items">
+              <div class="field--item">Manage Videos</div>
+              </div>
+      </div>
+
+</div>
+
+  <div class="group-fourth-row">
+  
+</div>
+
+</div>
+
+</div>
+    <div class="views-row">
+<div class="node node--type-support-doc node--view-mode-teaser bcdocs-four-rows clearfix">
+
+  
+
+  <div class="group-first-row">
+          <svg class="icon__content-type--support-doc" viewBox="0 0 100 100">
+        <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__content-type--support-doc"></use>
+      </svg>
+      
+            <div class="field field--name-node-title field--type-ds field--label-hidden field--item"><h2>
+  <a href="publishing-videos-and-playlists-media-module/index.html" hreflang="en">Publishing Videos and Playlists with the Media Module</a>
+</h2>
+</div>
+      
+      </div>
+
+  <div class="group-second-row">
+  
+            <div class="field field--name-field-support-doc-body field--type-text-with-summary field--label-hidden field--item">In this topic you will learn how to publish videos and playlists using the Media module.</div>
+      
+  <div class="field field--name-field-products field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Product(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--product" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--product"></use>
+        </svg>
+              <div class="field--item">Video Cloud</div>
+              </div>
+      </div>
+
+  <div class="field field--name-field-roles field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Role(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--roles" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--roles"></use>
+        </svg>
+              <div class="field--item">Studio User</div>
+          <div class="field--item">Player Developer</div>
+              </div>
+      </div>
+
+</div>
+
+  
+<div class="group-third-row taxonomy__tags">
+      <svg class="icon--label" viewBox="0 0 100 100">
+      <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--label"></use>
+    </svg>
+    
+  <div class="field field--name-field-tasks field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Task(s)</div>
+          <div class="field--items">
+              <div class="field--item">Publish Videos</div>
+              </div>
+      </div>
+
+  <div class="field field--name-field-topics field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Topic(s)</div>
+          <div class="field--items">
+              <div class="field--item">Playlists</div>
+              </div>
+      </div>
+
+</div>
+
+  <div class="group-fourth-row">
+  
+</div>
+
+</div>
+
+</div>
+    <div class="views-row">
+<div class="node node--type-support-doc node--view-mode-teaser bcdocs-four-rows clearfix">
+
+  
+
+  <div class="group-first-row">
+          <svg class="icon__content-type--support-doc" viewBox="0 0 100 100">
+        <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__content-type--support-doc"></use>
+      </svg>
+      
+            <div class="field field--name-node-title field--type-ds field--label-hidden field--item"><h2>
+  <a href="creating-and-managing-playlists/index.html" hreflang="en">Creating and Managing Playlists</a>
+</h2>
+</div>
+      
+      </div>
+
+  <div class="group-second-row">
+  
+            <div class="field field--name-field-support-doc-body field--type-text-with-summary field--label-hidden field--item">In this topic you will learn how to create and manage playlists in Video Cloud Studio.</div>
+      
+  <div class="field field--name-field-products field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Product(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--product" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--product"></use>
+        </svg>
+              <div class="field--item">Video Cloud</div>
+              </div>
+      </div>
+
+  <div class="field field--name-field-roles field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Role(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--roles" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--roles"></use>
+        </svg>
+              <div class="field--item">Studio User</div>
+              </div>
+      </div>
+
+</div>
+
+  
+<div class="group-third-row taxonomy__tags">
+      <svg class="icon--label" viewBox="0 0 100 100">
+      <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--label"></use>
+    </svg>
+    
+  <div class="field field--name-field-tasks field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Task(s)</div>
+          <div class="field--items">
+              <div class="field--item">Create &amp; Use Playlists</div>
+          <div class="field--item">Manage Videos</div>
+              </div>
+      </div>
+
+  <div class="field field--name-field-topics field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Topic(s)</div>
+          <div class="field--items">
+              <div class="field--item">Playlists</div>
+              </div>
+      </div>
+
+</div>
+
+  <div class="group-fourth-row">
+  
+</div>
+
+</div>
+
+</div>
+    <div class="views-row">
+<div class="node node--type-support-doc node--view-mode-teaser bcdocs-four-rows clearfix">
+
+  
+
+  <div class="group-first-row">
+          <svg class="icon__content-type--support-doc" viewBox="0 0 100 100">
+        <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__content-type--support-doc"></use>
+      </svg>
+      
+            <div class="field field--name-node-title field--type-ds field--label-hidden field--item"><h2>
+  <a href="creating-custom-analytics-reports/index.html" hreflang="en">Creating Custom Analytics Reports</a>
+</h2>
+</div>
+      
+      </div>
+
+  <div class="group-second-row">
+  
+            <div class="field field--name-field-support-doc-body field--type-text-with-summary field--label-hidden field--item">In this topic you will learn how to create custom reports using the Analytics module.</div>
+      
+  <div class="field field--name-field-products field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Product(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--product" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--product"></use>
+        </svg>
+              <div class="field--item">Video Cloud</div>
+              </div>
+      </div>
+
+  <div class="field field--name-field-roles field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Role(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--roles" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--roles"></use>
+        </svg>
+              <div class="field--item">Studio User</div>
+              </div>
+      </div>
+
+</div>
+
+  
+<div class="group-third-row taxonomy__tags">
+      <svg class="icon--label" viewBox="0 0 100 100">
+      <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--label"></use>
+    </svg>
+    
+  <div class="field field--name-field-topics field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Topic(s)</div>
+          <div class="field--items">
+              <div class="field--item">Analytics</div>
+              </div>
+      </div>
+
+</div>
+
+  <div class="group-fourth-row">
+  
+</div>
+
+</div>
+
+</div>
+    <div class="views-row">
+<div class="node node--type-support-doc node--view-mode-teaser bcdocs-four-rows clearfix">
+
+  
+
+  <div class="group-first-row">
+          <svg class="icon__content-type--support-doc" viewBox="0 0 100 100">
+        <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__content-type--support-doc"></use>
+      </svg>
+      
+            <div class="field field--name-node-title field--type-ds field--label-hidden field--item"><h2>
+  <a href="getting-started-video-cloud-studio/index.html" hreflang="en">Getting Started with Video Cloud Studio</a>
+</h2>
+</div>
+      
+      </div>
+
+  <div class="group-second-row">
+  
+            <div class="field field--name-field-support-doc-body field--type-text-with-summary field--label-hidden field--item">This topic provides an overview of the Video Cloud Studio interface and modules. Video Cloud Studio allows you to manage your video publishing workflow across desktop, tablet and mobile devices.</div>
+      
+  <div class="field field--name-field-products field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Product(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--product" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--product"></use>
+        </svg>
+              <div class="field--item">Video Cloud</div>
+              </div>
+      </div>
+
+  <div class="field field--name-field-roles field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Role(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--roles" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--roles"></use>
+        </svg>
+              <div class="field--item">Studio User</div>
+              </div>
+      </div>
+
+</div>
+
+  
+<div class="group-third-row taxonomy__tags">
+      <svg class="icon--label" viewBox="0 0 100 100">
+      <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--label"></use>
+    </svg>
+    
+  <div class="field field--name-field-tasks field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Task(s)</div>
+          <div class="field--items">
+              <div class="field--item">Get Started using Video Cloud Studio</div>
+              </div>
+      </div>
+
+</div>
+
+  <div class="group-fourth-row">
+  
+</div>
+
+</div>
+
+</div>
+    <div class="views-row">
+<div class="node node--type-support-doc node--view-mode-teaser bcdocs-four-rows clearfix">
+
+  
+
+  <div class="group-first-row">
+          <svg class="icon__content-type--support-doc" viewBox="0 0 100 100">
+        <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__content-type--support-doc"></use>
+      </svg>
+      
+            <div class="field field--name-node-title field--type-ds field--label-hidden field--item"><h2>
+  <a href="uploading-videos-using-upload-module/index.html" hreflang="en">Uploading Videos Using the Upload Module</a>
+</h2>
+</div>
+      
+      </div>
+
+  <div class="group-second-row">
+  
+            <div class="field field--name-field-support-doc-body field--type-text-with-summary field--label-hidden field--item">This topic provides an overview of the Upload module which is used to upload videos to a Video Cloud account.</div>
+      
+  <div class="field field--name-field-products field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Product(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--product" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--product"></use>
+        </svg>
+              <div class="field--item">Video Cloud</div>
+              </div>
+      </div>
+
+  <div class="field field--name-field-roles field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Role(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--roles" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--roles"></use>
+        </svg>
+              <div class="field--item">Studio User</div>
+              </div>
+      </div>
+
+</div>
+
+  
+<div class="group-third-row taxonomy__tags">
+      <svg class="icon--label" viewBox="0 0 100 100">
+      <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--label"></use>
+    </svg>
+    
+  <div class="field field--name-field-tasks field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Task(s)</div>
+          <div class="field--items">
+              <div class="field--item">Add Videos/Assets</div>
+              </div>
+      </div>
+
+</div>
+
+  <div class="group-fourth-row">
+  
+</div>
+
+</div>
+
+</div>
+    <div class="views-row">
+<div class="node node--type-support-doc node--view-mode-teaser bcdocs-four-rows clearfix">
+
+  
+
+  <div class="group-first-row">
+          <svg class="icon__content-type--support-doc" viewBox="0 0 100 100">
+        <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__content-type--support-doc"></use>
+      </svg>
+      
+            <div class="field field--name-node-title field--type-ds field--label-hidden field--item"><h2>
+  <a href="generating-player-embed-code/index.html" hreflang="en">Generating Player Embed Code</a>
+</h2>
+</div>
+      
+      </div>
+
+  <div class="group-second-row">
+  
+            <div class="field field--name-field-support-doc-body field--type-text-with-summary field--label-hidden field--item">This topic covers how to generate embed code for both preview and published players.</div>
+      
+  <div class="field field--name-field-products field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Product(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--product" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--product"></use>
+        </svg>
+              <div class="field--item">Video Cloud</div>
+          <div class="field--item">Brightcove Player</div>
+              </div>
+      </div>
+
+  <div class="field field--name-field-roles field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Role(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--roles" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--roles"></use>
+        </svg>
+              <div class="field--item">Studio User</div>
+          <div class="field--item">Player Developer</div>
+              </div>
+      </div>
+
+</div>
+
+  
+<div class="group-third-row taxonomy__tags">
+      <svg class="icon--label" viewBox="0 0 100 100">
+      <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--label"></use>
+    </svg>
+    
+  <div class="field field--name-field-tasks field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Task(s)</div>
+          <div class="field--items">
+              <div class="field--item">Publish Videos</div>
+              </div>
+      </div>
+
+</div>
+
+  <div class="group-fourth-row">
+  
+</div>
+
+</div>
+
+</div>
+    <div class="views-row">
+<div class="node node--type-support-doc node--view-mode-teaser bcdocs-four-rows clearfix">
+
+  
+
+  <div class="group-first-row">
+          <svg class="icon__content-type--support-doc" viewBox="0 0 100 100">
+        <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__content-type--support-doc"></use>
+      </svg>
+      
+            <div class="field field--name-node-title field--type-ds field--label-hidden field--item"><h2>
+  <a href="training-demand-building-portal-experiences-using-gallery/index.html" hreflang="en">Training on Demand:  Building Portal Experiences using Gallery</a>
+</h2>
+</div>
+      
+      </div>
+
+  <div class="group-second-row">
+  
+            <div class="field field--name-field-support-doc-body field--type-text-with-summary field--label-hidden field--item">Viewing the Building Portal Experiences using Gallery training course is a great way to become familiar with using Brightcove Gallery to build portal experiences.</div>
+      
+  <div class="field field--name-field-products field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Product(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--product" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--product"></use>
+        </svg>
+              <div class="field--item">Gallery</div>
+              </div>
+      </div>
+
+  <div class="field field--name-field-roles field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Role(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--roles" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--roles"></use>
+        </svg>
+              <div class="field--item">Studio User</div>
+              </div>
+      </div>
+
+</div>
+
+  
+<div class="group-third-row taxonomy__tags">
+      <svg class="icon--label" viewBox="0 0 100 100">
+      <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--label"></use>
+    </svg>
+    
+  <div class="field field--name-field-tasks field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Task(s)</div>
+          <div class="field--items">
+              <div class="field--item">Create a Portal Experience</div>
+          <div class="field--item">Get Started using Gallery</div>
+              </div>
+      </div>
+
+  <div class="field field--name-field-topics field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Topic(s)</div>
+          <div class="field--items">
+              <div class="field--item">Online Training</div>
+              </div>
+      </div>
+
+</div>
+
+  <div class="group-fourth-row">
+  
+</div>
+
+</div>
+
+</div>
+    <div class="views-row">
+<div class="node node--type-support-doc node--view-mode-teaser bcdocs-four-rows clearfix">
+
+  
+
+  <div class="group-first-row">
+          <svg class="icon__content-type--support-doc" viewBox="0 0 100 100">
+        <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__content-type--support-doc"></use>
+      </svg>
+      
+            <div class="field field--name-node-title field--type-ds field--label-hidden field--item"><h2>
+  <a href="overview-creating-editing-and-publishing-portal-experiences/index.html" hreflang="en">Overview: Creating, Editing and Publishing Portal Experiences</a>
+</h2>
+</div>
+      
+      </div>
+
+  <div class="group-second-row">
+  
+            <div class="field field--name-field-support-doc-body field--type-text-with-summary field--label-hidden field--item">In this topic you will learn about the basic steps to create, edit and publish a portal experience.</div>
+      
+  <div class="field field--name-field-products field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Product(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--product" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--product"></use>
+        </svg>
+              <div class="field--item">Gallery</div>
+              </div>
+      </div>
+
+  <div class="field field--name-field-roles field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Role(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--roles" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--roles"></use>
+        </svg>
+              <div class="field--item">Studio User</div>
+              </div>
+      </div>
+
+</div>
+
+  
+<div class="group-third-row taxonomy__tags">
+      <svg class="icon--label" viewBox="0 0 100 100">
+      <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--label"></use>
+    </svg>
+    
+  <div class="field field--name-field-tasks field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Task(s)</div>
+          <div class="field--items">
+              <div class="field--item">Create a Portal Experience</div>
+              </div>
+      </div>
+
+</div>
+
+  <div class="group-fourth-row">
+  
+</div>
+
+</div>
+
+</div>
+    <div class="views-row">
+<div class="node node--type-support-doc node--view-mode-teaser bcdocs-four-rows clearfix">
+
+  
+
+  <div class="group-first-row">
+          <svg class="icon__content-type--support-doc" viewBox="0 0 100 100">
+        <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__content-type--support-doc"></use>
+      </svg>
+      
+            <div class="field field--name-node-title field--type-ds field--label-hidden field--item"><h2>
+  <a href="step-step-creating-and-publishing-portal-experience/index.html" hreflang="en">Step-by-Step: Creating and Publishing a Portal Experience</a>
+</h2>
+</div>
+      
+      </div>
+
+  <div class="group-second-row">
+  
+            <div class="field field--name-field-support-doc-body field--type-text-with-summary field--label-hidden field--item">The purpose of this topic is to show you how you can create an engaging portal experience using Brightcove Gallery.</div>
+      
+  <div class="field field--name-field-products field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Product(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--product" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--product"></use>
+        </svg>
+              <div class="field--item">Gallery</div>
+              </div>
+      </div>
+
+  <div class="field field--name-field-roles field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Role(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--roles" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--roles"></use>
+        </svg>
+              <div class="field--item">Studio User</div>
+              </div>
+      </div>
+
+</div>
+
+  
+<div class="group-third-row taxonomy__tags">
+      <svg class="icon--label" viewBox="0 0 100 100">
+      <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--label"></use>
+    </svg>
+    
+  <div class="field field--name-field-tasks field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Task(s)</div>
+          <div class="field--items">
+              <div class="field--item">Create a Portal Experience</div>
+          <div class="field--item">Get Started using Gallery</div>
+              </div>
+      </div>
+
+</div>
+
+  <div class="group-fourth-row">
+  
+</div>
+
+</div>
+
+</div>
+
+    </div>
+  
+        <nav class="pager-nav text-center" role="navigation" aria-labelledby="pagination-heading">
+    <h4 id="pagination-heading" class="visually-hidden">Pagination</h4>
+    <ul class="pagination js-pager__items">
+
+            
+            
+                    <li class="pager__item is-active active">
+                                          <a href="?search=&page=0/index.html" title="Current page">
+            <span class="visually-hidden">
+              Current page
+            </span>1</a>
+        </li>
+              <li class="pager__item">
+                                          <a href="?search=&page=1/index.html" title="Go to page 2">
+            <span class="visually-hidden">
+              Page
+            </span>2</a>
+        </li>
+              <li class="pager__item">
+                                          <a href="?search=&page=2/index.html" title="Go to page 3">
+            <span class="visually-hidden">
+              Page
+            </span>3</a>
+        </li>
+              <li class="pager__item">
+                                          <a href="?search=&page=3/index.html" title="Go to page 4">
+            <span class="visually-hidden">
+              Page
+            </span>4</a>
+        </li>
+              <li class="pager__item">
+                                          <a href="?search=&page=4/index.html" title="Go to page 5">
+            <span class="visually-hidden">
+              Page
+            </span>5</a>
+        </li>
+              <li class="pager__item">
+                                          <a href="?search=&page=5/index.html" title="Go to page 6">
+            <span class="visually-hidden">
+              Page
+            </span>6</a>
+        </li>
+              <li class="pager__item">
+                                          <a href="?search=&page=6/index.html" title="Go to page 7">
+            <span class="visually-hidden">
+              Page
+            </span>7</a>
+        </li>
+              <li class="pager__item">
+                                          <a href="?search=&page=7/index.html" title="Go to page 8">
+            <span class="visually-hidden">
+              Page
+            </span>8</a>
+        </li>
+              <li class="pager__item">
+                                          <a href="?search=&page=8/index.html" title="Go to page 9">
+            <span class="visually-hidden">
+              Page
+            </span>9</a>
+        </li>
+      
+                    <li class="pager__item pager__item--next">
+          <a href="?search=&page=1/index.html" title="Go to next page" rel="next">
+            <span class="visually-hidden">Next page</span>
+            <span aria-hidden="true">››</span>
+          </a>
+        </li>
+      
+                  <li class="pager__item pager__item--last">
+        <a href="?search=&page=53/index.html" title="Go to last page" rel="last">
+          <span class="visually-hidden">Last page</span>
+          <span aria-hidden="true">Last »</span>
+        </a>
+      </li>
+      
+    </ul>
+  </nav>
+
+          </div>
+</div>
+
+
+  </div>
+
+              </section>
+
+                </div>
+  </div>
+
+      <footer class="footer container" role="contentinfo">
+              <div class="row">
+            <div class="region region-footer-top-left col-md-9" style="margin-bottom: 1em;">
+    <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Brightcove Support</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="https://status.brightcove.com">System Status</a>
+                  </li>
+                              <li class="expanded">
+        <a href="contact-support/index.html" data-drupal-link-system-path="node/18632">Support - Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="en/contact/create/index.html">Support - Zencoder</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-documentation-menu" id="block-documentation" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Documentation</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="" data-drupal-link-system-path="<front>">Home</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Training</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="online-training-courses/index.html" data-drupal-link-system-path="node/18286">Online Courses</a>
+                  </li>
+                              <li class="expanded">
+        <a href="register-training/index.html" data-drupal-link-system-path="node/18270">Register for a course</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-brightcove-menu" id="block-brightcove" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Brightcove</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="https://www.brightcove.com">Brightcove.com</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+            <div class="region region-footer-top-right col-md-3">
+    <section id="block-footerlegaltext" class="block block-block-content block-block-content4507d09c-a528-4947-b91d-36ec6671822b clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><p>Brightcove Inc. (NASDAQ: BCOV), is a leading global provider of powerful cloud solutions for delivering and monetizing video across connected devices.</p>
+</div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+                    <div class="row">
+            <div class="region region-footer-bottom-left col-md-8">
+    <section id="block-footercopyrightlinewithlinks" class="block block-block-content block-block-content3a164ef9-02d8-42c4-bcc6-3ab435f670b3 clearfix">
+  
+    
+
+      <div class="block-content block-content--type-copyright-block-with-links block-content--view-mode-full ds-1col clearfix">
+
+  
+
+  
+            <div class="field field--name-field-copyright-year field--type-string field--label-hidden field--item">2020</div>
+      
+            <div class="field field--name-field-copyright-text field--type-string-long field--label-hidden field--item">Brightcove Inc. All rights reserved.</div>
+      
+      <div class="field field--name-field-legal-links field--type-link field--label-hidden field--items">
+              <div class="field--item"><a href="https://www.brightcove.com/en/privacy">Privacy</a></div>
+              <div class="field--item"><a href="https://www.brightcove.com/en/terms-and-conditions">Terms &amp; Conditions</a></div>
+          </div>
+  
+
+</div>
+
+
+  </section>
+
+
+  </div>
+
+            <div class="region region-footer-bottom-right col-md-4">
+    <section id="block-footersocialblock" class="block block-block-content block-block-content4fc23afd-8d37-420e-ab28-73b2ba24e836 clearfix">
+  
+    
+
+      
+      <div class="field field--name-field-social-icon field--type-entity-reference-revisions field--label-hidden field--items">
+              <div class="field--item">
+
+<a href="https://www.linkedin.com/company/brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--linkedin">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--linkedin"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://twitter.com/brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--twitter">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--twitter"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://www.facebook.com/Brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--facebook">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--facebook"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item" style="display:none;color:white">
+
+<a href="https://plus.google.com/100830370440271567091" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--google-plus">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--google-plus"></use>
+  </svg>
+</a>
+
+</div>
+          </div>
+  
+
+
+  </section>
+
+<section id="block-scripts" class="block block-block-content block-block-content42e4bd63-d879-470d-a6de-d5e4529a01be clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><script src="https://learning-services-media.brightcove.com/doc-assets/js/gtrans.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/js/support-feedback.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/feedback-support.js"></script>
+<script src="https://learning-services-media.brightcove.com/doc-assets/js/hide-google-plus.js"></script></div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+          </footer>
+  
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"search","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","google_analytics":{"trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzi

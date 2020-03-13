@@ -1,0 +1,976 @@
+<html lang="en" dir="ltr" class=" js"><head>
+    <meta charset="utf-8">
+<script type="text/javascript" async="" src="//cdn.feedbackify.com/f.js"></script><script async="" src="https://fullstory.com/s/fs.js"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-2728311-17", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)">
+<meta name="MobileOptimized" content="width">
+<meta name="HandheldFriendly" content="true">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="http://support.brightcove.com/sites/default/files/favicon-64.png" type="image/png">
+<link rel="alternate" hreflang="en" href="https://support.brightcove.com/step-step-creating-and-publishing-portal-experience">
+<link rel="canonical" href="https://support.brightcove.com/step-step-creating-and-publishing-portal-experience">
+<link rel="shortlink" href="https://support.brightcove.com/node/13532">
+<link rel="revision" href="https://support.brightcove.com/step-step-creating-and-publishing-portal-experience">
+
+    <title>Step-by-Step: Creating and Publishing a Portal Experience | Brightcove Learning</title>
+    <link rel="stylesheet" media="all" href="http://support.brightcove.com/sites/default/files/css/css_d7PoQ20hWbRiei75VgExP_tm8C1ylIRfzB3zIYLc5Cw.css?q23msc">
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css">
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/@unicorn-fail/drupal-bootstrap-styles@0.0.2/dist/3.4.0/8.x-3.x/drupal-bootstrap.min.css">
+<link rel="stylesheet" media="all" href="http://support.brightcove.com/sites/default/files/css/css_fr7ugR_m15spMT57voAomC2Aklj0ATM7MmH6hvb3pp4.css?q23msc">
+
+    
+<!--[if lte IE 8]>
+<script src="/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+
+    <meta name="uri-translation" content="on">
+    <script>
+window['_fs_debug'] = false; window['_fs_host'] = 'fullstory.com';
+window['_fs_org'] = 'BX3Q1';
+window['_fs_namespace'] = 'FS';
+(function(m,n,e,t,l,o,g,y){
+if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
+g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+g.consent=function(a){g("consent",!arguments.length||a)};
+g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+g.clearUserCookie=function(){};
+})(window,document,window['_fs_namespace'],'script','user');
+    </script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"VideoObject","name":"Creating a Portal Experience Using Brightcove Gallery","description":"Learn how to create a video portal experience using Brightcove Gallery.","thumbnailUrl":"https://cf-images.us-east-1.prod.boltdns.net/v1/static/20318290001/aa3a3b8b-c39f-47fc-a28d-48f3809e77a3/3908226e-554b-49c9-b070-c273358c8c5b/160x90/match/image.jpg","dateCreated":"2014-05-08T00:54:40.560Z","dateModified":"2020-01-24T15:37:06.823Z","uploadDate":"2014-05-08T00:54:40.560Z","duration":"P485.088S","contentUrl":"http://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/20318290001/aa3a3b8b-c39f-47fc-a28d-48f3809e77a3/ef7234b0-92ab-4663-bf16-3c02a6905836/main.mp4?akamai_token=exp=1584710572~acl=/media/v1/pmp4/static/clear/20318290001/aa3a3b8b-c39f-47fc-a28d-48f3809e77a3/ef7234b0-92ab-4663-bf16-3c02a6905836/main.mp4*~hmac=dab6b1c7cefc8b61cbd7defb03113b403ce5ea86c0c8b390e8f4219746ce1e59","embedUrl":"https://ipx.bcove.me?url=https%3A%2F%2Fsupport.brightcove.com%2Fstep-step-creating-and-publishing-portal-experience%3FvideoId%3D3545271769001&accountId=20318290001&experienceId=5a73630f7afd7a00101bc1b5&videoId=3545271769001","keywords":"gallery,hapyak_sentiment"}]</script><style type="text/css">html{_background:url(//about:blank) fixed;}.fby-on select {visibility:hidden!important;}.fby-on .fby-hide-iframe {visibility:hidden!important;}.fby-hide-embed embed {visibility:hidden!important;}.fby-hide-object object {visibility:hidden!important;}@media not screen {.fby-tab {display: none;}}#feedbackify *{box-sizing:content-box!important;-moz-box-sizing:content-box!important;-webkit-box-sizing:content-box!important;}#feedbackify input{box-sizing:border-box!important;-moz-box-sizing:border-box!important;-webkit-box-sizing:border-box!important;max-width:none!important;}#feedbackify *:before{content:none!important;}#feedbackify *:after{content:none!important;}#feedbackify ,#feedbackify div,#feedbackify span,#feedbackify textarea,#feedbackify input,#feedbackify table,#feedbackify tbody,#feedbackify tr,#feedbackify td,#feedbackify img,#feedbackify p,#feedbackify a{border:0!important;outline:none!important;width:auto;height:auto;text-align:left!important;text-indent:0!important;float:none!important;padding:0!important;margin:0!important;font:12px arial,helvetica,sans-serif!important;overflow:visible!important;color:#000!important;line-height:1.2!important;background:0 none!important;position:static!important;vertical-align:baseline!important;box-shadow:none!important;}#feedbackify table{border-collapse:collapse!important;border-spacing:0!important;max-width:inherit!important;width:auto!important;}#feedbackify td{word-break:normal!important;}#feedbackify {z-index:2147483646!important;position:static!important;top:0;left:0;}#feedbackify .fby-screen{z-index:2147483646!important;position:fixed!important;top:0;left:0;width:0;height:100%;_position:absolute!important;_top:expression(eval(document.body.scrollTop||document.documentElement.scrollTop))!important;_left:expression(eval(document.body.scrollLeft||document.documentElement.scrollLeft))!important;_width:0!important;_height:expression(document.documentElement.clientHeight||document.body.clientHeight+"px")!important;}#feedbackify .fby-mask{display:none!important;position:fixed!important;top:0;left:0;width:100%;height:100%;background-color:#000!important;opacity:0.2;filter:alpha(opacity=20);_position:absolute!important;_width:expression(document.documentElement.clientWidth||document.body.clientWidth+"px")!important;_height:expression(this.parentNode.style.height)!important;}#feedbackify .fby-show{display:block!important;visibility:visible!important;}#feedbackify .fby-hide{display:none!important;visibility:hidden!important;}</style><style type="text/css">#feedbackify .fby-tab{position:fixed!important;width:36px;height:100px;overflow:hidden!important;_position:absolute!important;}#feedbackify .fby-tab a{display:block!important;position:absolute!important;width:36px;height:100px;background-color:#000000!important;cursor:pointer!important;background:url(https://cdn.feedbackify.com/img/classic/tab.png)!important;_background:none!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/tab.png)!important;}#feedbackify .fby-tab-l{top:50%;left:0;margin-top:-50px!important;_top:expression((parseInt(this.parentNode.style.height)-this.clientHeight)/2+"px")!important;_margin-top:0!important;}#feedbackify .fby-tab-l a{margin-left:-5px!important;}#feedbackify .fby-tab-l a:hover{margin-left:-2px!important;}#feedbackify .fby-tab-r{top:50%;right:0px!important;margin-top:-50px!important;_top:expression((parseInt(this.parentNode.style.height)-this.clientHeight)/2+"px")!important;_left:expression((document.documentElement.clientWidth||document.body.clientWidth)-this.clientWidth+"px")!important;_margin-top:0!important;}#feedbackify .fby-tab-r a{margin-left:5px!important;}#feedbackify .fby-tab-r a:hover{margin-left:2px!important;}#feedbackify .fby-tab-t{top:0;margin-top:0px!important;}#feedbackify .fby-tab-b{top:auto;bottom:0!important;_top:expression(parseInt(this.parentNode.style.height)-this.clientHeight+"px")!important;}</style><style type="text/css">#feedbackify grammarly-ghost{display:none!important;}#feedbackify grammarly-btn{display:none!important;}#feedbackify #fby-form{z-index:2147483646!important;width:618px!important;position:absolute!important;}#feedbackify .fby-d-main{width:600px;height:50px;vertical-align:top!important;background-color:#FFFFFF!important;position:relative!important;}#feedbackify .fby-d{background:url(https://cdn.feedbackify.com/img/classic/dlg_shad_sprite.png)!important;_background:none!important;}#feedbackify .fby-d-h{height:9px;background:url(https://cdn.feedbackify.com/img/classic/dlg_shad_sprite_h.png)!important;_background:none!important;}#feedbackify .fby-d-h2{height:9px;background-color:#FFFFFF!important;}#feedbackify .fby-d-tl{background-position:-18px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_tl.png)!important;}#feedbackify .fby-d-t{_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_t.png,sizingMethod=scale)!important;}#feedbackify .fby-d-tr{background-position:-36px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_tr.png)!important;}#feedbackify .fby-d-l{_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_l.png,sizingMethod=scale)!important;}#feedbackify .fby-d-r{background-position:-9px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_r.png,sizingMethod=scale)!important;}#feedbackify .fby-d-bl{background-position:-54px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_bl.png)!important;}#feedbackify .fby-d-br{background-position:-72px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_br.png)!important;}#feedbackify .fby-d-b{background-position:0px -9px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_b.png,sizingMethod=scale)!important;}#feedbackify .fby-d-load{position:relative!important;}#feedbackify .fby-d-load img{position:absolute!important;left:8px;}#feedbackify .fby-d-load div{position:absolute!important;padding:4px 18px!important;font-size:16px!important;font-weight:bold!important;color:#333!important;}</style></head>
+  <body class="path-node page-node-type-support-doc has-glyphicons">
+    <a href="#main-content/index.html" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas="">
+              <header class="navbar navbar-default container" id="navbar" role="banner">
+      <div class="navigation-secondary clearfix">
+          <div class="region region-navigation-secondary">
+    <section id="block-styles" class="block block-block-content block-block-contentfbb71e48-a6cd-4d2b-8239-43f18db69e60 clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><link rel="stylesheet" media="all" href="https://learning-services-media.brightcove.com/doc-assets/css/drupal-fix.css"></div>
+      
+  </section>
+
+<nav role="navigation" aria-labelledby="block-secondarynavigation-menu" id="block-secondarynavigation">
+            
+  <h2 class="visually-hidden" id="block-secondarynavigation-menu">Secondary Navigation</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="contact-support/index.html" title="Create a Support Request" data-drupal-link-system-path="node/18632">Support Request</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://status.brightcove.com/">System Status</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://university.brightcove.com/">Brightcove University</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<section id="block-gtranslate" class="block block-gtranslate block-gtranslate-block clearfix">
+  
+    
+
+      
+<div class="gtranslate">
+<script type="text/javascript">/* <![CDATA[ */
+function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;var lang=lang_pair.split('|')[1];var plang=location.pathname.split('/')[1];if(plang.length !=2 && plang != 'zh-CN' && plang != 'zh-TW')plang='en';if(lang == 'en')location.pathname=location.pathname.replace('/'+plang+'/', '/');else location.pathname='/'+lang+location.pathname.replace('/'+plang+'/', '/');}
+/* ]]> */
+</script><select onchange="doGTranslate(this);"><option value="">Select Language</option><option value="en|en" style="font-weight:bold;background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -0px;padding-left:18px;">English</option><option value="en|fr" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -160px;padding-left:18px;">French</option><option value="en|de" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -176px;padding-left:18px;">German</option><option value="en|ja" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -240px;padding-left:18px;">Japanese</option><option value="en|ko" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -256px;padding-left:18px;">Korean</option><option value="en|es" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -352px;padding-left:18px;">Spanish</option></select>
+</div>
+<div class="gtranslate__credits">
+  Translations Provided by Google Translate
+</div>
+
+  </section>
+
+
+  </div>
+
+      </div>
+      <div class="navbar-header col-md-3">
+                  <a class="logo navbar-btn pull-left" href="" title="Home" rel="home">
+            <img src="http://support.brightcove.com/themes/custom/bcdocs/images/brightcove.png" alt="Home">
+          </a>
+                
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+                    <div class="navbar-collapse collapse">
+            <div class="region region-navigation-collapsible">
+    <nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation">
+            <h2 class="sr-only" id="block-mainnavigation-menu">Main navigation</h2>
+
+      
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="brightcove-learning-home/index.html" title="Home page" data-drupal-link-system-path="node/18643">Home</a>
+                  </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Products
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="video-cloud/index.html" data-drupal-link-system-path="node/18332">Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://gallery.support.brightcove.com">Gallery</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player/index.html" data-drupal-link-system-path="node/18283">Brightcove Player</a>
+                  </li>
+                              <li class="expanded">
+        <a href="live/index.html" data-drupal-link-system-path="node/18642">Live</a>
+                  </li>
+                              <li class="expanded">
+        <a href="social/index.html" data-drupal-link-system-path="node/18444">Social</a>
+                  </li>
+                              <li class="expanded">
+        <a href="audience/index.html" data-drupal-link-system-path="node/18445">Audience</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://zencoder.support.brightcove.com">Zencoder</a>
+                  </li>
+                              <li class="expanded">
+        <a href="ssai/index.html" data-drupal-link-system-path="node/18650">SSAI</a>
+                  </li>
+                              <li class="expanded">
+        <a href="https://support.ottflow.com">OTT Flow</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Quick Links
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="analytics-api/index.html" data-drupal-link-system-path="node/18370">Analytics API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="audience-api/index.html" data-drupal-link-system-path="node/18371">Audience API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="cms-api/index.html" data-drupal-link-system-path="node/18372">CMS API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="cms-connectors-video-cloud/index.html" data-drupal-link-system-path="node/18662">CMS Connectors for Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="data-collection-api/index.html" data-drupal-link-system-path="node/18876">Data Collection API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="delivery-system-api/index.html" data-drupal-link-system-path="node/18387">Delivery System API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="developer-tools-and-concepts/index.html" data-drupal-link-system-path="node/18430">Developer Tools and Concepts</a>
+                  </li>
+                              <li class="expanded">
+        <a href="native-player-sdks/index.html" data-drupal-link-system-path="node/18367">Device SDKs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="dynamic-ingest-api/index.html" data-drupal-link-system-path="node/18373">Dynamic Ingest API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="getting-started-brightcove-apis-0/index.html" data-drupal-link-system-path="node/18711">Getting Started - Brightcove APIs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="page-experience-api/index.html" data-drupal-link-system-path="node/18616">In-Page Experience APIs</a>
+                  </li>
+                              <li class="expanded">
+        <a href="ingest-profiles-api/index.html" data-drupal-link-system-path="node/18374">Ingest Profiles API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="live/index.html" data-drupal-link-system-path="node/18642">Live API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="oauth-api/index.html" data-drupal-link-system-path="node/18376">OAuth API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="platform-api-code-samples/index.html" data-drupal-link-system-path="node/18675">Platform API Code Samples</a>
+                  </li>
+                              <li class="expanded">
+        <a href="playback-api/index.html" data-drupal-link-system-path="node/18380">Playback API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player-code-samples/index.html" data-drupal-link-system-path="node/18630">Player Code Samples</a>
+                  </li>
+                              <li class="expanded">
+        <a href="brightcove-player-developer/index.html" data-drupal-link-system-path="node/18362">Player Developer</a>
+                  </li>
+                              <li class="expanded">
+        <a href="player-management-api/index.html" data-drupal-link-system-path="node/18378">Player Management API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="policy-api/index.html" data-drupal-link-system-path="node/18381">Policy API</a>
+                  </li>
+                              <li class="expanded">
+        <a href="release-notes/index.html" data-drupal-link-system-path="node/18687">Release Notes</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          Training
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a href="https://university.brightcove.com">Online Courses</a>
+                  </li>
+                              <li class="expanded">
+        <a href="register-training/index.html" data-drupal-link-system-path="node/18270">Register for a Course</a>
+                  </li>
+        </ul>
+  
+            </li>
+                              <li class="expanded">
+        <a href="brightcove-support-documentation-announcements/index.html" title="See what's new in Brightcove Documentation" data-drupal-link-system-path="node/18896">What's New</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+        </div>
+          </header>
+  
+    <div class="full-width-headline">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12" role="heading">
+            <div class="region region-header">
+          <section id="block-brightcoveheadlineblock" class="block block-bc-general block-bc-general-headline-block clearfix">
+  
+    
+
+      Documentation
+  </section>
+
+
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+      <div role="main" class="main-container container  js-quickedit-main-content">
+    <div class="row">
+
+                              <aside class="col-sm-3" role="complementary">
+              <div class="region region-sidebar-first">
+    <section class="bc-search-fixes-search-block-form block block-bc-search-fixes block-bc-search-fixes-search-block clearfix" data-drupal-selector="bc-search-fixes-search-block-form" id="block-brightcovesearchblock">
+  
+    
+
+      <form action="/step-step-creating-and-publishing-portal-experience" method="post" id="bc-search-fixes-search-block-form" accept-charset="UTF-8">
+  <div class="form-item js-form-item form-type-textfield js-form-type-textfield form-item-search js-form-item-search form-no-label form-group">
+      <label for="edit-search" class="control-label sr-only">Search</label>
+  
+  
+  <input data-drupal-selector="edit-search" class="form-text form-control" type="text" id="edit-search" name="search" value="" size="15" maxlength="128" placeholder="Search">
+
+  
+  
+  </div>
+<input autocomplete="off" data-drupal-selector="form-y-nd6orovgji1akuaw9queocjqrgkfu4n5ofb5i5z1k" type="hidden" name="form_build_id" value="form-Y_nd6orOvGJI1aKuAW9qUEOCJQrGkfU4n5OFb5i5z1k"><input data-drupal-selector="edit-bc-search-fixes-search-block-form" type="hidden" name="form_id" value="bc_search_fixes_search_block_form"><div data-drupal-selector="edit-actions" class="form-actions form-group js-form-wrapper form-wrapper" id="edit-actions"><button data-drupal-selector="edit-submit" class="button js-form-submit form-submit btn-primary btn icon-only" type="submit" id="edit-submit" name="op" value="Search"><span class="sr-only">Search</span><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button></div>
+
+</form>
+
+  </section>
+
+<section id="block-inpagenavigationblock" class="hidden-xs block block-bc-ipnav block-bc-ipnav-block clearfix" style="width: 476px;">
+  
+      <h2 class="block-title">On This Page</h2>
+    
+
+      <div class="bc-ipnav-block"><ul><li><a href="#audience/index.html">Audience</a></li><li><a href="#prereq/index.html">Prerequisites</a></li><li><a href="#setup/index.html">Before you get started</a></li><li><a href="#create/index.html">Creating a portal experience</a></li><li><a href="#player/index.html">Configuring Gallery with a default player</a></li><li><a href="#create_domain/index.html">Creating a custom domain name</a></li><li><a href="#create/index.html">Creating a new portal experience</a></li><li><a href="#details/index.html">Editing the site details</a></li><li><a href="#objects/index.html">Adding objects to a page template</a></li><li><a href="#preview/index.html">Previewing the experience</a></li><li><a href="#addvideos/index.html">Creating collections and adding videos to the collections</a></li><li><a href="#style/index.html">Changing the site style</a></li><li><a href="#search/index.html">Enabling site search</a></li><li><a href="#social/index.html">Customizing the social settings</a></li><li><a href="#video_playback/index.html">Customizing video and playback settings</a></li><li><a href="#assign_domain/index.html">Assigning a custom domain</a></li><li><a href="#publish/index.html">Publishing the experience</a></li><li><a href="#bc-ipnav-17/index.html">Related content</a></li></ul></div>
+  </section>
+
+
+  </div>
+
+          </aside>
+              
+                  <section class="col-sm-9">
+
+                                      <div class="highlighted">  <div class="region region-highlighted">
+    <div data-drupal-messages-fallback="" class="hidden"></div>
+
+  </div>
+</div>
+                  
+                
+                
+                
+                          <a id="main-content"></a>
+            <div class="region region-content">
+        <h1 class="page-header"><span>Step-by-Step: Creating and Publishing a Portal Experience</span>
+</h1>
+
+  
+<div class="node node--type-support-doc node--view-mode-full bcdocs-four-rows clearfix">
+
+  
+
+  <div class="group-first-row">
+      </div>
+
+  <div class="group-second-row">
+  
+  <div class="field field--name-field-products field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Product(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--product" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--product"></use>
+        </svg>
+              <div class="field--item">Gallery</div>
+              </div>
+      </div>
+
+  <div class="field field--name-field-roles field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Role(s)</div>
+          <div class="field__items taxonomy__tags">
+        <svg class="icon--roles" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--roles"></use>
+        </svg>
+              <div class="field--item">Studio User</div>
+              </div>
+      </div>
+
+</div>
+
+  
+<div class="group-third-row taxonomy__tags">
+      <svg class="icon--label" viewBox="0 0 100 100">
+      <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--label"></use>
+    </svg>
+    
+  <div class="field field--name-field-tasks field--type-entity-reference field--label-visually_hidden">
+    <div class="field--label sr-only">Task(s)</div>
+          <div class="field--items">
+              <div class="field--item">Create a Portal Experience</div>
+          <div class="field--item">Get Started using Gallery</div>
+              </div>
+      </div>
+
+</div>
+
+  <div class="group-fourth-row">
+  
+            <div class="field field--name-field-support-doc-body field--type-text-with-summary field--label-hidden field--item"><p>The purpose of this topic is to show you how you can create an engaging portal experience using Brightcove Gallery.</p><div class="training-video-player-ipx" data-experience="5a73630f7afd7a00101bc1b5" data-video-ids="3545271769001" style="overflow: auto;">&nbsp;<iframe allowfullscreen="" scrolling="no" style="width: 100%; border: none; transition: height 0.1s linear; display: block; height: 367.5px;"></iframe></div>
+<script src="https://players.brightcove.net/20318290001/experience_5a73630f7afd7a00101bc1b5/live.js"></script><div class="BCL-concept">
+<p>After completing this topic, you should be able to:</p>
+
+<ul><li>Configure Gallery settings</li>
+	<li>Use Gallery to create a new portal experience</li>
+	<li>Add videos to a portal experience</li>
+	<li>Customize a portal experience</li>
+	<li>Preview and publish a portal experience</li>
+</ul><p class="BCL-aside">Note: For a step-by-step guide to creating an In-Page experience, see <a href="node/16796/index.html">Step-by-Step: Creating and Publishing an In-Page Experience</a>.</p>
+</div>
+
+<div class="BCL-concept">
+<h2 id="audience">Audience</h2>
+
+<p>Any Video Cloud publisher who needs to create engaging portal experiences without the need for any type of custom development.</p>
+</div>
+
+<div class="BCL-concept">
+<h2 id="prereq">Prerequisites</h2>
+
+<ul><li>A Video Cloud account with access to the Gallery module</li>
+	<li>Working knowledge of Video Cloud</li>
+	<li>The sample videos used in this topic are available for <a href="https://files.brightcove.com/GalleryQuickStartAssets.zip">download</a> if needed</li>
+	<li>Helpful to view/attend the <a href="training-demand-building-portal-experiences-using-gallery/index.html">Building Portal Experiences using Gallery</a> training</li>
+</ul></div>
+
+<div class="BCL-concept">
+<h2 id="setup">Before you get started</h2>
+
+<p>To use the sample videos provided, perform the following steps.</p>
+
+<ol class="bcls-tasklist"><li><a href="https://files.brightcove.com/GalleryQuickStartAssets.zip">Download</a> the sample files.</li>
+	<li>Upload the videos to your Video Cloud account.</li>
+	<li>Add a tag of '<strong class="notranslate">bird in flight</strong>' to the Chickadee video.</li>
+	<li>Create three playlists and add the videos to the playlists as follows.
+	<table width="38%" class="bcls-table"><thead class="bcls-table__head"><tr><th width="68%">Video</th>
+				<th width="32%">Playlist</th>
+			</tr></thead><tbody class="notranslate bcls-table__body"><tr><td>Clown Fish<br>
+				Crab<br>
+				Dolphins<br>
+				Leafy Seadragon<br>
+				Lionfish<br>
+				Sea Turtle<br>
+				Seahorse</td>
+				<td>Sea Creatures</td>
+			</tr><tr><td>Chickadee<br>
+				Peacock<br>
+				Woodpecker</td>
+				<td>Birds</td>
+			</tr><tr><td>Elephant<br>
+				Tiger<br>
+				Zebra</td>
+				<td>Animals</td>
+			</tr></tbody></table></li>
+	<li>Add some related link URLs to a few of the videos. In a later section, we will configure the portal to display related links for videos.</li>
+	<li>Using the <strong>Players</strong> module, create a new player called <strong>Gallery Player</strong>.</li>
+	<li>Configure the player to NOT display the title and description. Publish the player.</li>
+</ol></div>
+
+<div class="BCL-concept">
+<h2 id="create">Creating a portal experience</h2>
+
+<p>To create a portal experience using Brightcove Gallery, you will complete the following tasks:</p>
+
+<ul><li><a href="#player/index.html">Configure Gallery with a default player</a></li>
+	<li><a href="#create_domain/index.html">Create a custom domain name</a></li>
+	<li><a href="#create/index.html">Create a new portal experience</a></li>
+	<li><a href="#details/index.html">Edit the site details</a></li>
+	<li><a href="#objects/index.html">Add objects to a page template</a></li>
+	<li><a href="#preview/index.html">Preview the experience</a></li>
+	<li><a href="#addvideos/index.html">Create collections and add videos to the collections</a></li>
+	<li><a href="#style/index.html">Change the site style</a></li>
+	<li><a href="#search/index.html">Enable site search</a></li>
+	<li><a href="#social/index.html">Customize the social settings</a></li>
+	<li><a href="#video_playback/index.html">Customizing video and playback settings</a></li>
+	<li><a href="#assign_domain/index.html">Assign a custom domain</a></li>
+	<li><a href="#publish/index.html">Publish the experience</a></li>
+</ul></div>
+
+<div class="BCL-concept">
+<h2 id="player">Configuring Gallery with a default player</h2>
+
+<p>Brightcove Gallery can be configured with a default video player that will be used on your Gallery sites. If no default player is specified, the <strong>Brightcove Default Player</strong> will be the default. To configure Gallery with a default player, follow these steps.</p>
+
+<ol class="bcls-tasklist"><li>Login to <a href="https://studio.brightcove.com">Video Cloud Studio</a>.</li>
+	<li>The current Video Cloud account name will appear in the upper right corner of the page. If you have multiple accounts, click the account selector drop down and select the account you would like to create the experience in. Note that this should also be the account that has the videos you want to use as well.</li>
+	<li>Click <strong>Gallery</strong> in the navigation menu.</li>
+	<li>Click the <strong>Settings</strong> link at the top of the page.
+	<div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node13532-settings-link.png"></div>
+	</li>
+	<li>Select the player that will be used on your Gallery sites. If you are following the steps, select the <strong>Gallery Player</strong> you created earlier.
+	<div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node13532-select-player1.png"></div>
+
+	<p class="BCL-aside">Note: As a best practice, we recommend you create and style dedicated players for your Gallery experiences.</p>
+	</li>
+	<li>Click <strong>Save</strong>.</li>
+</ol></div>
+
+<div class="BCL-concept">
+<h2 id="create_domain">Creating a custom domain name</h2>
+
+<p>When you create a new portal experience, Gallery will assign a random URL to it (i.e. <code>site-12345.bcvp0rtal.com</code>). Portal experiences can be assigned a Brightcove provided domain (what we will do in this topic) or you can use your own custom domain. To create a new Brightcove provided domain, follow these steps.</p>
+
+<ol class="bcls-tasklist"><li>From the <strong>Settings</strong> page, click <strong>Custom Domains &amp; SSL</strong> in the left navigation.</li>
+	<li>Click <strong>Create Custom Domain</strong>.</li>
+	<li>Select either a <strong>brightcovegallery.com</strong> or <strong>gallery.video</strong> domain.</li>
+	<li>Enter a custom domain. Use your own name or company name. If the domain is not available, a message will display. Enter another name.
+	<div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node13532-custom-domain.png"></div>
+	</li>
+	<li>When you have entered a valid domain, click <strong>Save</strong>.</li>
+</ol><p class="BCL-aside">Note: The custom domain will be assigned to the portal in a later section.</p>
+</div>
+
+<div class="BCL-concept">
+<h2 id="create">Creating a new portal experience</h2>
+
+<p>To create a new Gallery portal experience, follow these steps.</p>
+
+<ol class="bcls-tasklist"><li>Click the <strong>Experiences </strong>link at the top of the page.</li>
+	<li>Click <strong>New Experience</strong>.</li>
+	<li>Click the <strong>Portal</strong> tab at the top of the page. A list of portal templates will be displayed. Locate the <strong>Marquee</strong> template and click <strong>Choose</strong>.
+	<div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node13532-marquee.png"></div>
+
+	<p class="BCL-aside">Note: Once you select a template it can't be changed. For more information Gallery templates, see the <a href="overview-gallery-portal-templates/index.html">Overview of Gallery Portal Templates</a> topic.</p>
+	</li>
+	<li>Enter <strong>Animal World</strong> for the <strong>Experience Title</strong>. For the <strong>Pre-Populate experience?</strong> setting, select <strong>No thanks</strong>.
+	<div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node13532-new-project1.png"></div>
+	</li>
+	<li>Click <strong>Create Experience</strong>.</li>
+</ol><p>The Gallery Site Editor will open. The Gallery Site Editor is used to customize the experience and provides the ability to manage page layouts, add videos, choose styles and configure other settings for the portal. All of the customization settings are accessed using the left navigation menu.</p>
+
+<div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node13532-site-editor-nav1.png"></div>
+</div>
+
+<div class="BCL-concept">
+<h2 id="details">Editing the site details</h2>
+
+<p>The experience title, description and language settings can be edited using the Gallery Site Editor.</p>
+
+<ol class="bcls-tasklist"><li>Click <strong>OVERVIEW </strong>in the left navigation.</li>
+	<li>For the <strong>Experience Description</strong>, add <strong>Animal World Video Portal</strong>.
+	<div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node13532-edit-details.png"></div>
+	</li>
+	<li>Click <strong>Save</strong>.</li>
+</ol></div>
+
+<div class="BCL-concept">
+<h2 id="objects">Adding objects to a page template</h2>
+
+<p>Each portal template provides a set of page templates that can be customized. The page templates that are provided depend upon the template that was selected when the experience was first created. The Marquee template provides <strong>Home</strong>, <strong>Playback</strong> and <strong>Category</strong> page templates. These pages can be seen in the left margin as part of the <strong>PAGES</strong> menu.</p>
+
+<div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node13532-page-templates1.png"></div>
+
+<p>For more information on adding objects to page templates, see <a href="customizing-content-portal-experience-pages/index.html">Customizing the Content of Portal Experience Pages</a>.</p>
+
+<p>To add objects to a page template, follow these steps.</p>
+
+<ol class="bcls-tasklist"><li>Click <strong>PAGES</strong> in the left navigation.</li>
+	<li>Click the <strong>Home</strong> page in the left margin. Plus icons (<img alt="" src="https://img.brightcove.com/node13532-plus-icon.png">) indicate areas on the page where objects can be added. Static text objects on the page can be edited by clicking on them.</li>
+	<li>At the top of the page, click on <strong>+ Add Image or Text</strong>.</li>
+	<li>Click on the <strong>Image</strong> tab.</li>
+	<li>Click <strong>browse</strong> and then browse and select <strong>Animal World Logo.png</strong>. This file is provided as part of the sample assets. Click <strong>Save</strong>.
+	<div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node13532-select-image1.png"></div>
+	</li>
+	<li>Verify that the image appears in the page header.
+	<div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node13532-header-image1.png"></div>
+	</li>
+	<li>Scroll to the bottom of the page. Click on <strong>[YOUR BRAND]</strong>. Enter <strong>Animal World</strong> for the title and then click <strong>Save</strong>.
+	<div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node13532-animal-world-title1.png"></div>
+	</li>
+	<li>Click on the <strong>Playback </strong> and <strong>Category</strong> pages in the left margin. Notice that the header image and title text appear on those pages as well. Go back to the <strong>Home</strong> page.</li>
+</ol></div>
+
+<div class="BCL-concept">
+<h2 id="preview">Previewing the experience</h2>
+
+<p>Previewing an experience lets you see how the portal is going to display on mobile, tablet and desktop devices. You will want to preview the portal as you go through the steps to customize it. The portal can be previewed in a new browser tab or a shareable link can be generated so others can preview the portal. For more information on previewing and publishing a portal experience, see <a href="previewing-and-publishing-portal-experience/index.html">Previewing and Publishing a Portal Experience</a>.</p>
+
+<p>To preview the portal, follow these steps.</p>
+
+<ol class="bcls-tasklist"><li>While editing the site using the Gallery Site Editor, click <strong>Preview</strong> and then click <strong>Responsive Preview</strong>.
+
+	<div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node13532-preview.png"></div>
+	</li>
+	<li>The preview will open in a new browser tab.
+	<div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node13532-desktop-preview1.png"></div>
+	</li>
+	<li>Close the site preview tab.</li>
+</ol></div>
+
+<div class="BCL-concept">
+<h2 id="addvideos">Creating collections and adding videos to the collections</h2>
+
+<p>Using the Gallery Site Editor, you can select which videos to display on the portal. When creating a portal experience, videos are organized into collections. Collections are created based upon Video Cloud video metadata and can include:</p>
+
+<ul><li>Video Cloud playlists</li>
+	<li>Keywords</li>
+	<li>Custom metadata</li>
+	<li>Tags</li>
+</ul><p>Videos from a YouTube account can also be added to collections. For more information on creating collections and adding video to your site, see <a href="adding-videos-portal-experience/index.html">Adding Videos to a Portal Experience</a>.</p>
+
+<p>To add videos to a portal site, follow these steps.</p>
+
+<ol class="bcls-tasklist"><li>Click <strong>VIDEOS</strong> in the left navigation.
+
+	<div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node13532-manage-videos1.png"></div>
+	</li>
+	<li>Name the first collection <strong>Birds</strong> and then press enter.</li>
+	<li>Click the collection name to open the collection editor.
+	<div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node13532-click-collection-name1.png"></div>
+	</li>
+	<li>Select <strong>Video Cloud</strong> for the <strong>Collection Source</strong> and select <strong>Playlist</strong> for the criteria.</li>
+	<li>Click the <strong>Birds</strong> playlist. All of the videos in the Birds playlist will appear in the videos list. Click <strong>Save</strong>.
+	<div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node13532-birds-playlist1.png"></div>
+
+	<p class="BCL-aside">Note: When using a playlist video assignment, the order of the videos is based upon the playlist settings that were set in the Media module.</p>
+	</li>
+	<li>Create another collection named <strong>Animals</strong> using the Animals playlist as the criteria.</li>
+	<li>Create another collection named <strong>Sea Creatures</strong> using the Sea Creatures playlist as the criteria.</li>
+	<li>Create another collection named <strong>Birds in Flight</strong>. Select <strong>Custom</strong> as the criteria.</li>
+	<li>For the videos to include, select <strong>Tags</strong> and add a tag of '<strong class="notranslate">bird in flight</strong>'. Press enter.</li>
+	<li>Order videos by <strong>Most Recent</strong>.</li>
+	<li>Confirm the Chickadee video appears in the Video Collection list. Click <strong>Save</strong>.
+	<div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node13532-custom-bif1.png"></div>
+	</li>
+	<li>Confirm that 4 collections have been created.
+	<div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node13532-4-collections1.png"></div>
+
+	<p class="BCL-aside">Note: You can change the order of the collections by clicking and dragging the collection to a new position.</p>
+	</li>
+</ol></div>
+
+<div class="BCL-concept">
+<h2 id="style">Changing the site style</h2>
+
+<p>The Style settings can be used to customize the site colors and fonts that are used on the experience. For more information on changing the site style, see <a href="customizing-style-portal-experience/index.html">Customizing the Style of a Portal Experience</a>.</p>
+
+<p>To change the site style, follow these steps.</p>
+
+<ol class="bcls-tasklist"><li>Click <strong> STYLE </strong> in the left navigation.
+
+	<div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node13532-style-menu.png"></div>
+	</li>
+	<li>A <strong>Theme</strong> is a set of colors and fonts that can be applied to a template. Select a <strong>Theme</strong>. This portal will use the <strong>Triton</strong> theme.</li>
+	<li>Select a <strong>Primary</strong> and <strong>Secondary</strong> font to use. This portal will use the <strong>Open Sans</strong> font.</li>
+	<li>Click the <strong>&lt; Back to Experience</strong> link at the top of the style menu.</li>
+</ol><p>Additional styling related settings are also available as part of the <strong>APPEARANCE AND BEHAVIOR</strong> settings.</p>
+
+<ol class="bcls-tasklist" start="5"><li>Click <strong> APPEARANCE AND BEHAVIOR &gt; Template Settings</strong> in the left navigation.</li>
+	<li>Select <strong>Change the featured video to the first video of the selected category</strong>.
+	<p class="BCL-aside">Note: The <strong>Template Settings</strong> that are available are based upon the template that was selected when the experience was created. Not all templates have template settings.</p>
+	</li>
+	<li>Click <strong>Save</strong>.</li>
+</ol><p>For more information on the appearance and behavior settings, see <a href="customizing-appearance-and-behavior-portal-experience/index.html">Customizing the Appearance and Behavior of a Portal Experience</a>.</p>
+</div>
+
+<div class="BCL-concept">
+<h2 id="search">Enabling site search</h2>
+
+<p>The Site Search settings can be used to enable and customize site search capabilities. By enabling site search, search capabilities will be added to the site pages giving viewers a way to search your content. For more information on customizing site search, see <a href="customizing-site-features-portal-experience/index.html">Customizing the Site Features of a Portal Experience</a>.</p>
+
+<p>To enable site search, follow these steps.</p>
+
+<ol class="bcls-tasklist"><li>Click <strong>SITE FEATURES &gt; Site Search</strong> in the left navigation.
+
+	<div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node13532-site-search.png"></div>
+	</li>
+	<li>Check the <strong>Enable site search</strong> option.</li>
+	<li>Click <strong>Save</strong> to save the settings.</li>
+</ol></div>
+
+<div class="BCL-concept">
+<h2 id="social">Customizing the social settings</h2>
+
+<p>The Social settings provide viewers a way to easily share your content to popular social media sites. You can also provide a way for viewers to quickly access your social media sites. For more information on customizing the social settings, see <a href="customizing-social-settings-portal-experience/index.html">Customizing the Social Settings for a Portal Experience</a>.</p>
+
+<p>To configure the Social settings, follow these steps.</p>
+
+<ol class="bcls-tasklist"><li>Click <strong>SITE FEATURES &gt; Social</strong> in the left navigation.
+
+	<div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node13532-social.png"></div>
+	</li>
+	<li>Select all of the <strong>Sharing Options</strong>. This will add social sharing icons next to the player.</li>
+	<li>Select the <strong>Dark icon on light</strong> option.</li>
+	<li>Click <strong>Save</strong>.</li>
+	<li>Click the <strong>Stay Connected</strong> tab at the top of the page. By supplying your social media account information, the Gallery site will display icons in the footer of pages giving viewers direct access to your social media sites.
+	<div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node13532-social-links-footer1.png"></div>
+	</li>
+	<li>Enter your social media information or just enter <strong>brightcove</strong> for the <strong>Facebook Name</strong>, <strong>Twitter handle </strong>and <strong>LinkedIn Username</strong>.
+	<div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node13532-social-settings1.png"></div>
+	</li>
+	<li>Select the <strong>Light icon on dark</strong> option.</li>
+	<li>Click <strong>Save</strong> to save the settings.</li>
+</ol></div>
+
+<div class="BCL-concept">
+<h2 id="video_playback">Customizing video and playback settings</h2>
+
+<p>The Video and Playback settings can be used to select a custom player for the experience, add a lead form and customize other video related settings. For more information on customizing the social settings, see <a href="customizing-video-and-playback-settings-portal-experience/index.html">Customizing the Video and Playback Settings of a Portal Experience</a>.</p>
+
+<p>To customize the Video and Playback settings, follow these steps:</p>
+
+<ol class="bcls-tasklist"><li>From the Gallery Site Editor, click <strong>VIDEO AND PLAYBACK &gt; Player and Lead Form</strong>.</li>
+	<li>Ensure that both <strong>Player Behavior</strong> settings are checked. Click <strong>Save</strong> if needed.</li>
+	<li>Click <strong>VIDEO AND PLAYBACK &gt;Video</strong> in the left navigation.</li>
+	<li>Select the <strong>Show related link for each video</strong> option.</li>
+	<li>Click <strong>Save</strong>.</li>
+</ol></div>
+
+<div class="BCL-concept">
+<h2 id="assign_domain">Assigning a custom domain</h2>
+
+<p>When portal experiences are created, they are assigned a random, static URL. In most cases, you will want to access the site at a more friendly URL. For more information on assigning a custom domain to a portal experience, see <a href="assigning-custom-domain-portal-experience/index.html">Assigning a Custom Domain to a Portal Experience</a>.</p>
+
+<p>To view the URL assigned to a portal and assign a custom URL, follow these steps:</p>
+
+<ol class="bcls-tasklist"><li>From the Gallery Site Editor, click <strong>SITE CONFIGURATION &gt; URL</strong>. The URL assigned to the site will be displayed.
+
+	<div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node13532-url.png"></div>
+	</li>
+	<li>Click <strong>Add Custom Domain</strong>.
+	<p class="BCL-aside">Note: If there is no <strong>Add Custom Domain</strong> button, no custom domains <a href="#create_domain/index.html">have been created</a>.</p>
+	</li>
+	<li>Select the domain you created earlier.
+	<div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node13532-select-domain.png"></div>
+	</li>
+	<li>Click <strong>Save</strong>.</li>
+</ol></div>
+
+<div class="BCL-concept">
+<h2 id="publish">Publishing the experience</h2>
+
+<p>Publishing a portal experience makes the experience available at a public URL. For more information on previewing and publishing a portal experience, see <a href="previewing-and-publishing-portal-experience/index.html">Previewing and Publishing a Portal Experience</a>.</p>
+
+<p>To publish the experience, follow these steps.</p>
+
+<ol class="bcls-tasklist"><li>From the Gallery Site Editor, click <strong>Publish</strong>.
+
+	<div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node13532-publish-confirm1.png"></div>
+
+	<p class="BCL-aside">Note: The custom domain you assigned to the site should be listed in the dialog.</p>
+	</li>
+	<li>On the Publish Site dialog, click <strong>Publish Now</strong> to confirm the site publication.
+	<div><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node13532-published-site1.png"></div>
+	</li>
+</ol></div>
+<!-- End of Drupal content --></div>
+      
+</div>
+
+</div>
+
+
+<section class="views-element-container block block-views block-views-blockrelated-content-by-field-block-1 clearfix" id="block-views-block-related-content-by-field-block-1">
+  
+    
+
+      <div class="form-group"><div class="view view-related-content-by-field view-id-related_content_by_field view-display-id-block_1 js-view-dom-id-6fb45d13028501a31c9f52707d5ed8fe5fb017904536fb6c58179d7788369354">
+  
+    
+      <div class="view-header">
+      <h2 id="bc-ipnav-17">Related content</h2>
+    </div>
+      
+      <div class="view-content">
+      <div class="item-list">
+  
+  <ul>
+
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="overview-gallery-portal-templates/index.html" hreflang="en">Overview of Gallery Portal Templates</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="customizing-style-portal-experience/index.html" hreflang="en">Customizing the Style of a Portal Experience</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="customizing-content-portal-experience-pages/index.html" hreflang="en">Customizing the Content of Portal Experience Pages</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="adding-videos-portal-experience/index.html" hreflang="en">Adding Videos to a Portal Experience</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="customizing-social-settings-portal-experience/index.html" hreflang="en">Customizing the Social Settings for a Portal Experience</a></span></span></div></li>
+          <li><div class="views-field views-field-title"><span class="field-content"><span class="content-type-support_doc"><a href="previewing-and-publishing-portal-experience/index.html" hreflang="en">Previewing and Publishing a Portal Experience</a></span></span></div></li>
+    
+  </ul>
+
+</div>
+
+    </div>
+  
+          </div>
+</div>
+
+  </section>
+
+
+  </div>
+
+              </section>
+
+                </div>
+  </div>
+
+      <footer class="footer container" role="contentinfo">
+              <div class="row">
+            <div class="region region-footer-top-left col-md-9" style="margin-bottom: 1em;">
+    <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Brightcove Support</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="https://status.brightcove.com">System Status</a>
+                  </li>
+                              <li class="expanded">
+        <a href="contact-support/index.html" data-drupal-link-system-path="node/18632">Support - Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a href="en/contact/create/index.html">Support - Zencoder</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-documentation-menu" id="block-documentation" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Documentation</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="" data-drupal-link-system-path="<front>">Home</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Training</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="online-training-courses/index.html" data-drupal-link-system-path="node/18286">Online Courses</a>
+                  </li>
+                              <li class="expanded">
+        <a href="register-training/index.html" data-drupal-link-system-path="node/18270">Register for a course</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-brightcove-menu" id="block-brightcove" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2>Brightcove</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a href="https://www.brightcove.com">Brightcove.com</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+            <div class="region region-footer-top-right col-md-3">
+    <section id="block-footerlegaltext" class="block block-block-content block-block-content4507d09c-a528-4947-b91d-36ec6671822b clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><p>Brightcove Inc. (NASDAQ: BCOV), is a leading global provider of powerful cloud solutions for delivering and monetizing video across connected devices.</p>
+</div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+                    <div class="row">
+            <div class="region region-footer-bottom-left col-md-8">
+    <section id="block-footercopyrightlinewithlinks" class="block block-block-content block-block-content3a164ef9-02d8-42c4-bcc6-3ab435f670b3 clearfix">
+  
+    
+
+      <div class="block-content block-content--type-copyright-block-with-links block-content--view-mode-full ds-1col clearfix">
+
+  
+
+  
+            <div class="field field--name-field-copyright-year field--type-string field--label-hidden field--item">2020</div>
+      
+            <div class="field field--name-field-copyright-text field--type-string-long field--label-hidden field--item">Brightcove Inc. All rights reserved.</div>
+      
+      <div class="field field--name-field-legal-links field--type-link field--label-hidden field--items">
+              <div class="field--item"><a href="https://www.brightcove.com/en/privacy">Privacy</a></div>
+              <div class="field--item"><a href="https://www.brightcove.com/en/terms-and-conditions">Terms &amp; Conditions</a></div>
+          </div>
+  
+
+</div>
+
+
+  </section>
+
+
+  </div>
+
+            <div class="region region-footer-bottom-right col-md-4">
+    <section id="block-footersocialblock" class="block block-block-content block-block-content4fc23afd-8d37-420e-ab28-73b2ba24e836 clearfix">
+  
+    
+
+      
+      <div class="field field--name-field-social-icon field--type-entity-reference-revisions field--label-hidden field--items">
+              <div class="field--item">
+
+<a href="https://www.linkedin.com/company/brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--linkedin">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--linkedin"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://twitter.com/brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--twitter">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--twitter"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item">
+
+<a href="https://www.facebook.com/Brightcove" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--facebook">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--facebook"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="field--item" style="display:none;color:white">
+
+<a href="https://plus.google.com/100830370440271567091" title="" class="icon icon__social--link">
+  <svg viewBox="0 0 100 100" class="icon__social--google-plus">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--google-plus"></use>
+  </svg>
+</a>
+
+</div>
+          </div>
+  
+
+
+  </section>
+
+<section id="block-scripts" class="block block-block-content block-block-content42e4bd63-d879-470d-a6de-d5e4529a01be clearfix">
+  
+    
+
+      
+            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><script src="https://learning-services-media.brightcove.com/doc-assets/js/gtrans.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/js/support-feedback.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/feedback-support.js"></script>
+<script src="https://learning-services-media.brightcove.com/doc-assets/js/hide-google-plus.js"></script></div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+          </footer>
+  
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/13532","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","google_analytics":{"trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"bootstrap":{"forms_has_error_value_toggle":1,"modal_animation":1,"modal_backdrop":"true","modal_focus_input":1,"modal_keyboard":1,"modal_select_text":1,"modal_show":1,"modal_size":"","popover_enabled":1,"popover_animation":1,"popover_auto_close":1,"popover_container":"body","popover_content":"","popover_delay":"0","popover_html":0,"popover_placement":"right","popover_selector":"","popover_title":"","popover_trigger":"click"},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPT
